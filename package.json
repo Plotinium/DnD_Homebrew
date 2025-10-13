@@ -1,12 +1,14 @@
 {
   "name": "dnd_homebrew",
+  "version": "1.0.0",
   "private": true,
   "type": "module",
   "scripts": {
-    "build:bundle": "node scripts/build-bundle.js",
-    "test:bundle": "npx test-json-brew dist/homebrew-bundle.json"
+    "build:bundle": "node scripts/build-bundle.mjs",
+    "test:bundle": "npx test-json-brew dist/homebrew-bundle.json",
+    "build": "npm run build:bundle && npm run test:bundle"
   },
   "devDependencies": {
-    "5etools-utils": "^0.14.4"
+    "5etools-utils": "^0.14.6"
   }
 }

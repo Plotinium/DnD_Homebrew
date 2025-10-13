@@ -1,32 +1,26 @@
-name: Build 5eTools Homebrew Bundle
-
+name: Build & Validate Homebrew
 on:
   push:
-    branches: [main]
-  workflow_dispatch:
+    branches: [ main ]
+  pull_request:
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Setup Node
-        uses: actions/setup-node@v4
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: 20
+          cache: 'npm'
 
       - name: Install deps
         run: npm ci || npm i
 
-      - name: Build bundle
-        run: node scripts/build-bundle.js
+      - name: Build + Validate bundle
+        run: npm run build
 
-      - name: Validate bundle (5etools-utils)
-        run: npx test-json-brew dist/homebrew-bundle.json
-
-      - name: Upload bundle artifact
+      - name: Upload bundle artifact (optional)
         uses: actions/upload-artifact@v4
         with:
           name: homebrew-bundle
