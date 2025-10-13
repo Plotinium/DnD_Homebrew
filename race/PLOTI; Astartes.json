@@ -1,0 +1,133 @@
+{
+  "_meta": {
+    "sources": [
+      {
+        "json": "PLOTI",
+        "abbreviation": "PLOTI",
+        "full": "Astartes",
+        "version": "1.0.0",
+        "authors": [
+          "MrSamael"
+        ],
+        "convertedBy": [
+          "Plotinium"
+        ],
+        "color": "9813C9"
+      }
+    ],
+    "dateAdded": 1760351369,
+    "edition": "classic"
+  },
+  "race": [
+    {
+      "name": "Astartes",
+      "source": "PLOTI",
+      "page": 0,
+      "size": [
+        "M"
+      ],
+      "speed": {
+        "walk": 30
+      },
+      "ability": [
+        {
+          "str": 2,
+          "con": 1
+        }
+      ],
+      "darkvision": 60,
+      "traitTags": [
+        "Advantage on Saving Throws",
+        "Frightened",
+        "Poison",
+        "Disease",
+        "Darkvision",
+        "Skill Proficiency",
+        "Damage Reduction"
+      ],
+      "skillProficiencies": [
+        {
+          "athletics": true,
+          "intimidation": true
+        }
+      ],
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Incremento dei Punteggi di Caratteristica",
+          "entries": [
+            "Il tuo punteggio di Forza aumenta di 2 e quello di Costituzione aumenta di 1."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Età",
+          "entries": [
+            "Gli Astartes maturano rapidamente dopo l’impianto dei loro organi genetici, raggiungendo la piena maturità fisica intorno ai 18-20 anni. Grazie alle loro modifiche genetiche e alla tecnologia possono vivere per centenni. Anche se sono teoricamente essere immortali, in media gli Astartes vivono circa 300 anni, cadendo in battaglia prima di morire di vecchiaia."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Allineamento",
+          "entries": [
+            "Gli Astartes sono addestrati a essere leali e disciplinati. La maggior parte tende verso {@alignment LG|Legale Buono} o {@alignment LN|Legale Neutrale}, ma l’allineamento può variare in base al Capitolo di appartenenza e alla storia personale."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Size",
+          "entries": [
+            "Gli Astartes sono enormi rispetto ai comuni umanoidi, sempre considerati di {@size M|taglia Media} possono superare i 2.5 metri e pesare tra i 250 e 350 kg senza armatura."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Velocità",
+          "entries": [
+            "La tua velocità base sul terreno è 9 metri (30 ft)."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Genetica Astartes",
+          "entries": [
+            "Hai vantaggio ai tiri salvezza contro la condizione {@condition frightened}, contro gli effetti di veleno (incluso l'{@condition poisoned}) e contro le malattie."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Resilienza Potenziata",
+          "entries": [
+            "Riduci di 3 i danni da fonti non magiche"
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Sensi Avanzati",
+          "entries": [
+            "Hai scurovisione con raggio di 18 metri (60 ft).",
+            "La tua Percezione Passiva aumenta di 2."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Disciplina da Guerra",
+          "entries": [
+            "Ottieni competenza nelle abilità {@skill Athletics|Atletica} e {@skill Intimidation|Intimidire}."
+          ]
+        }
+      ],
+      "fluff": {
+        "entries": [
+          {
+            "type": "entries",
+            "name": "Aspetto e Natura",
+            "entries": [
+              "Gli Astartes sono super-soldati potenziati, con corporatura massiccia, ossatura rinforzata e muscolatura estrema. La loro presenza incute rispetto e timore, e sono forgiati per la guerra tanto nel corpo quanto nella mente."
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
