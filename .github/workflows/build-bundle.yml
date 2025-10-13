@@ -4,9 +4,10 @@ on:
   push:
     branches: [main]
   pull_request:
+    branches: [main]  # opzionale, se vuoi validare solo PR verso main
 
 permissions:
-  contents: write # NECESSARIO per fare push dal workflow
+  contents: write
 
 jobs:
   build:
@@ -15,8 +16,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0 # utile per git log nel bundler
-          persist-credentials: true # usa GITHUB_TOKEN per il push
+          fetch-depth: 0
+          persist-credentials: true
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -25,41 +26,32 @@ jobs:
           cache: npm
 
       - name: Install deps
-        run: npm ci || npm i
+        run: npm ci --no-audit --no-fund || npm i --no-audit --no-fund
 
-      # Build (per-file validate in modalità relaxed, come da nostro bundler)
-      - name: Build bundle
+      # Qui tutta la build+validazione (per-file + bundle) è dentro lo script
+      - name: Build bundle (relaxed in CI)
+        env:
+          # Se serve, puoi configurare pattern extra da ignorare qui:
+          # HOMEBREW_IGNORE_PATTERNS: '/(homebrew|brew).*authori[sz]ed/i'
+          NODE_ENV: production
         run: npm run build:bundle
 
-      # 2) Carica l'artifact, anche se i passi successivi dovessero fallire, solo nel caso di failure
-      - name: Upload bundle artifact (on failure)
-        if: failure()
-        uses: actions/upload-artifact@v4
-        with:
-          name: homebrew-bundle
-          path: dist/homebrew-bundle.json
-          if-no-files-found: warn
-
-      # Validazione del bundle con soft-fail mirato su enum source
-      - name: Validate bundle (strict except source-enum)
-        shell: bash
-        run: |
-          set -o pipefail
-          OUT="$(npx test-json-brew dist/homebrew-bundle.json 2>&1)" && { echo "$OUT"; exit 0; }
-          echo "$OUT" | tee /tmp/bundle-validate.log
-          if grep -q '/_meta/sources/.*/json' /tmp/bundle-validate.log \
-             && grep -q 'sourcesShort/enum' /tmp/bundle-validate.log; then
-            echo "::warning ::Ignorato controllo enum su _meta.sources[].json (ID sorgente non partner)."
-            exit 0
-          fi
-          exit 1
-
-      # Commit automatico SOLO del bundle su branch "bundle"
       - name: Commit bundle to 'bundle' branch
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore(bundle): update dist/homebrew-bundle.json"
           file_pattern: dist/homebrew-bundle.json
+          add_options: "-f"
           branch: bundle
           create_branch: true
-          add_options: "-f" # forza l'add anche se dist/ è nel .gitignore
+
+      - name: Upload artifacts on failure (bundle + validate log)
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: homebrew-bundle-debug
+          path: |
+            dist/homebrew-bundle.json
+            /tmp/bundle-validate.log
+          if-no-files-found: ignore
