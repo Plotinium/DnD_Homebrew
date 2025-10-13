@@ -4,7 +4,7 @@ on:
   push:
     branches: [main]
   pull_request:
-    branches: [main]  # opzionale, se vuoi validare solo PR verso main
+    branches: [main] # opzionale, se vuoi validare solo PR verso main
 
 permissions:
   contents: write
@@ -36,15 +36,111 @@ jobs:
           NODE_ENV: production
         run: npm run build:bundle
 
+      - name: Pre-commit diagnostics
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          echo "== Context =="
+          echo "event: ${{ github.event_name }}"
+          echo "ref:   ${{ github.ref }}"
+          echo "sha:   ${{ github.sha }}"
+          echo
+
+          echo "== Git basic =="
+          git --version
+          echo "Current branch:"
+          git rev-parse --abbrev-ref HEAD || true
+          echo "Remotes:"
+          git remote -v || true
+          echo
+
+          echo "== Working tree =="
+          echo "Git status:"
+          git status --porcelain=v1 || true
+          echo
+          echo "Check-ignore (is the file ignored?):"
+          git check-ignore -v dist/homebrew-bundle.json || echo "not ignored"
+          echo
+
+          echo "== Output file presence =="
+          ls -l dist || true
+          if [[ -f dist/homebrew-bundle.json ]]; then
+            echo "File exists. Size and hash:"
+            wc -c < dist/homebrew-bundle.json | awk '{print "bytes:", $1}'
+            sha256sum dist/homebrew-bundle.json || true
+
+            echo "Preview first 40 lines:"
+            head -n 40 dist/homebrew-bundle.json || true
+          else
+            echo "❌ dist/homebrew-bundle.json NOT FOUND"
+          fi
+          echo
+
+          echo "== Remote branch 'bundle' existence =="
+          if git ls-remote --exit-code --heads origin bundle >/dev/null 2>&1; then
+            echo "origin/bundle exists."
+            echo "Fetching remote bundle..."
+            git fetch --no-tags --depth=1 origin bundle:refs/remotes/origin/bundle || true
+
+            echo "Remote file hash (if present):"
+            if git cat-file -e origin/bundle:dist/homebrew-bundle.json 2>/dev/null; then
+              git show origin/bundle:dist/homebrew-bundle.json | sha256sum || true
+            else
+              echo "Remote file dist/homebrew-bundle.json NOT present in origin/bundle"
+            fi
+
+            echo
+            echo "== Diff vs origin/bundle (no-index) =="
+            if git cat-file -e origin/bundle:dist/homebrew-bundle.json 2>/dev/null && [[ -f dist/homebrew-bundle.json ]]; then
+              # Confronto contenuti senza toccare l'index
+              TMP_REMOTE=$(mktemp)
+              git show origin/bundle:dist/homebrew-bundle.json > "$TMP_REMOTE"
+              diff -u "$TMP_REMOTE" dist/homebrew-bundle.json || true
+              rm -f "$TMP_REMOTE"
+            else
+              echo "Skipping diff: one of the files is missing."
+            fi
+          else
+            echo "origin/bundle does NOT exist yet."
+          fi
+
       - name: Commit bundle to 'bundle' branch
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         uses: stefanzweifel/git-auto-commit-action@v5
+        env:
+          # Opzionale: attiva logs dettagliati di git dentro l'action
+          GIT_TRACE: "1"
+          GIT_CURL_VERBOSE: "1"
         with:
           commit_message: "chore(bundle): update dist/homebrew-bundle.json"
           file_pattern: dist/homebrew-bundle.json
           add_options: "-f"
           branch: bundle
           create_branch: true
+
+      - name: Post-commit verification
+        if: always()
+        shell: bash
+        run: |
+          set -euo pipefail
+          echo "Fetching origin/bundle to verify..."
+          if git ls-remote --exit-code --heads origin bundle >/dev/null 2>&1; then
+            git fetch --no-tags --depth=1 origin bundle:refs/remotes/origin/bundle || true
+
+            echo "Last 3 commits on origin/bundle:"
+            git log --oneline -3 origin/bundle || true
+
+            echo
+            echo "Remote file hash (post-commit):"
+            if git cat-file -e origin/bundle:dist/homebrew-bundle.json 2>/dev/null; then
+              git show origin/bundle:dist/homebrew-bundle.json | sha256sum || true
+            else
+              echo "Remote file dist/homebrew-bundle.json NOT present on origin/bundle"
+            fi
+          else
+            echo "origin/bundle still does NOT exist."
+          fi
 
       - name: Upload artifacts on failure (bundle + validate log)
         if: failure()
