@@ -1,9 +1,0 @@
-{
-  "readme": [
-    "Indice auto-generato"
-  ],
-  "toImport": [
-    "race/PLOTI; Astartes.json",
-    "class/PLOTIdoomslayer.json"
-  ]
-}
