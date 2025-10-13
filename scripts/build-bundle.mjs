@@ -1,82 +1,62 @@
 // scripts/build-bundle.mjs
-import fs from "fs";
-import path from "path";
-import { fileURLToPath } from "url";
+import fs from "node:fs";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
+const CWD = process.cwd();
 
-const ROOT = path.resolve(__dirname, "..");
+ // adatta alle tue cartelle
+const ROOTS = [
+  "races",
+  "feats",
+  "classes",
+  "subclasses",
+  "items",
+  "spells"
+];
 
-// Whitelist delle chiavi top-level che 5eTools si aspetta come array
-// Aggiungi qui man mano che espandi il repo.
-const ALLOWED_KEYS = new Set([
-  "race",
-  "class",
-  "subclass",
-  "background",
-  "feat",
-  "item",
-  "spell",
-  "optionalfeature",
-  "psionic",
-  "monster",
-  "vehicle",
-  "variantrule",
-  "table",
-  "adventure",
-  "book"
-]);
+const OUT_DIR = path.join(CWD, "dist");
+const OUT_FILE = path.join(OUT_DIR, "homebrew-bundle.json");
 
-/** Raccoglie tutti i file .json nelle cartelle di primo livello (race, class, ecc.) */
-function getJsonFiles() {
-  const entries = fs.readdirSync(ROOT, { withFileTypes: true });
-  const dirs = entries.filter(e => e.isDirectory())
-    .map(d => d.name)
-    .filter(d =>
-      !d.startsWith(".") &&
-      !["_generated", "dist", "node_modules", "scripts", ".github"].includes(d)
-    );
+const bundle = {};
+const meta = { sources: [] };
 
-  const out = [];
-  for (const dir of dirs) {
-    const abs = path.join(ROOT, dir);
-    for (const f of fs.readdirSync(abs)) {
-      if (f.toLowerCase().endsWith(".json")) out.push(path.join(abs, f));
+const addSources = (srcArr) => {
+  if (!Array.isArray(srcArr)) return;
+  for (const s of srcArr) {
+    if (!s || !s.json) continue;
+    if (!meta.sources.some((x) => x.json === s.json)) meta.sources.push(s);
+  }
+};
+
+for (const dir of ROOTS) {
+  const p = path.join(CWD, dir);
+  if (!fs.existsSync(p)) continue;
+
+  for (const f of fs.readdirSync(p).filter((x) => x.endsWith(".json"))) {
+    const full = path.join(p, f);
+    const j = JSON.parse(fs.readFileSync(full, "utf8"));
+
+    if (j._meta?.sources) addSources(j._meta.sources);
+    if (j._meta?.edition && !meta.edition) meta.edition = j._meta.edition;
+
+    for (const k of Object.keys(j)) {
+      if (k === "_meta") continue;
+      if (Array.isArray(j[k])) {
+        bundle[k] = (bundle[k] || []).concat(j[k]);
+      }
     }
   }
-  return out;
 }
 
-function buildBundle() {
-  const bundle = {};
-  const files = getJsonFiles();
+// fallback se non trovato in input
+meta.edition = meta.edition || "2024";
+meta.dateAdded = Math.floor(Date.now() / 1000);
 
-  for (const file of files) {
-    const raw = fs.readFileSync(file, "utf8");
-    let j;
-    try {
-      j = JSON.parse(raw);
-    } catch (e) {
-      console.error(`JSON non valido: ${file}\n${e.message}`);
-      process.exitCode = 1;
-      continue;
-    }
+const out = { _meta: meta, ...bundle };
+fs.mkdirSync(OUT_DIR, { recursive: true });
+fs.writeFileSync(OUT_FILE, JSON.stringify(out, null, 2));
 
-    for (const [k, v] of Object.entries(j)) {
-      if (!Array.isArray(v)) continue;            // Prende solo array top-level
-      if (!ALLOWED_KEYS.has(k)) continue;         // Filtro sulle chiavi note 5eTools
-      bundle[k] = (bundle[k] || []).concat(v);
-    }
-  }
-
-  fs.mkdirSync(path.join(ROOT, "dist"), { recursive: true });
-  fs.writeFileSync(
-    path.join(ROOT, "dist", "homebrew-bundle.json"),
-    JSON.stringify(bundle, null, 2),
-    "utf8"
-  );
-  console.log(`Bundle creato: dist/homebrew-bundle.json`);
-}
-
-buildBundle();
+console.log(`Bundle scritto in: ${OUT_FILE}`);

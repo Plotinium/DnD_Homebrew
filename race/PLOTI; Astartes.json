@@ -22,7 +22,6 @@
     {
       "name": "Astartes",
       "source": "PLOTI",
-      "page": 0,
       "size": [
         "M"
       ],
@@ -75,7 +74,7 @@
         },
         {
           "type": "entries",
-          "name": "Size",
+          "name": "Taglia",
           "entries": [
             "Gli Astartes sono enormi rispetto ai comuni umanoidi, sempre considerati di {@size M|taglia Media} possono superare i 2.5 metri e pesare tra i 250 e 350 kg senza armatura."
           ]

@@ -21,12 +21,12 @@ jobs:
         run: npm ci || npm i
 
       - name: Build bundle
-        run: npm run build
+        run: node scripts/build-bundle.js
 
       - name: Validate bundle (5etools-utils)
-        run: npm run test:brew
+        run: npx test-json-brew dist/homebrew-bundle.json
 
-      - name: Upload artifact
+      - name: Upload bundle artifact
         uses: actions/upload-artifact@v4
         with:
           name: homebrew-bundle

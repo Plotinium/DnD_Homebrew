@@ -3,8 +3,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "node ./scripts/build-bundle.mjs",
-    "test:brew": "npx test-json-brew dist/homebrew-bundle.json"
+    "build:bundle": "node scripts/build-bundle.mjs",
+    "test:bundle": "npx test-json-brew dist/homebrew-bundle.json"
   },
   "devDependencies": {
     "5etools-utils": "^0.14.4"
