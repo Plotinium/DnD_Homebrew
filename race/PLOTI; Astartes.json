@@ -70,14 +70,14 @@
           "type": "entries",
           "name": "Allineamento",
           "entries": [
-            "Gli Astartes sono addestrati a essere leali e disciplinati. La maggior parte tende verso {@alignment LG|Legale Buono} o {@alignment LN|Legale Neutrale}, ma l’allineamento può variare in base al Capitolo di appartenenza e alla storia personale."
+            "Gli Astartes sono addestrati a essere leali e disciplinati. La maggior parte tende verso Legale Buono o Legale Neutrale, ma l’allineamento può variare in base al Capitolo di appartenenza e alla storia personale."
           ]
         },
         {
           "type": "entries",
           "name": "Taglia",
           "entries": [
-            "Gli Astartes sono enormi rispetto ai comuni umanoidi, sempre considerati di {@size M|taglia Media} possono superare i 2.5 metri e pesare tra i 250 e 350 kg senza armatura."
+            "Gli Astartes sono enormi rispetto ai comuni umanoidi, sempre considerati di taglia Media possono superare i 2.5 metri e pesare tra i 250 e 350 kg senza armatura."
           ]
         },
         {
@@ -91,7 +91,7 @@
           "type": "entries",
           "name": "Genetica Astartes",
           "entries": [
-            "Hai vantaggio ai tiri salvezza contro la condizione {@condition frightened}, contro gli effetti di veleno (incluso l'{@condition poisoned}) e contro le malattie."
+            "Hai vantaggio ai tiri salvezza contro la condizione {@condition frightened|XPHB|Paura}, contro gli effetti di veleno (incluso l'{@condition poisoned|XPHB|Avvelenamento}) e contro le malattie."
           ]
         },
         {
@@ -105,15 +105,14 @@
           "type": "entries",
           "name": "Sensi Avanzati",
           "entries": [
-            "Hai scurovisione con raggio di 18 metri (60 ft).",
-            "La tua Percezione Passiva aumenta di 2."
+            "Hai {@sense darkvision|XPHB|Scurovisione} con raggio di 18 metri (60 ft). La tua {@variantrule passive perception|XPHB|Percezione Passiva} aumenta di 2."
           ]
         },
         {
           "type": "entries",
           "name": "Disciplina da Guerra",
           "entries": [
-            "Ottieni competenza nelle abilità {@skill Athletics|Atletica} e {@skill Intimidation|Intimidire}."
+            "Ottieni competenza nelle abilità {@skill Athletics|XPHB|Atletica} e {@skill Intimidation|XPHB|Intimidire}."
           ]
         }
       ],
