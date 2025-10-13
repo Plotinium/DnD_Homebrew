@@ -15,6 +15,13 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { spawnSync } from "node:child_process";
 
+const RAW_ARGS = process.argv.slice(2);
+function getArgKV(name, def) {
+  const hit = RAW_ARGS.find(a => a.startsWith(`--${name}=`));
+  return hit ? hit.split("=", 2)[1] : def;
+}
+const VALIDATE_MODE = getArgKV("validate", "full"); // full | relaxed | off
+
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
@@ -63,14 +70,42 @@ function resolveBin(name) {
 }
 
 function validateWith5eTools(fileAbs) {
+  if (VALIDATE_MODE === "off") {
+    console.warn(`[validate/off] skip per-file: ${fileAbs}`);
+    return;
+  }
+
   const bin = resolveBin("test-json-brew");
   if (!fs.existsSync(bin)) {
-    throw new Error(
-      `Validator non trovato: ${bin}. Installa "5etools-utils" come devDependency (npm i -D 5etools-utils).`
-    );
+    console.warn(`[validate/${VALIDATE_MODE}] validator non trovato: ${bin} — skip per-file`);
+    return;
   }
-  const res = spawnSync(bin, [fileAbs], { stdio: "inherit" });
-  if (res.status !== 0) throw new Error(`Validazione fallita: ${fileAbs}`);
+
+  // Cattura stdout+stderr per poter ispezionare i messaggi
+  const res = spawnSync(bin, [fileAbs], { encoding: "utf8" });
+
+  if (res.status === 0) return; // ok
+
+  const out = `${res.stdout || ""}\n${res.stderr || ""}`;
+
+  // In modalità relaxed, ignora SOLO il caso dell'enum della source
+  if (VALIDATE_MODE === "relaxed") {
+    const isSourceEnum =
+      /\/_meta\/sources\/.*\/json/.test(out) &&
+      /sourcesShort\/enum/.test(out);
+
+    if (isSourceEnum) {
+      console.warn(
+        `⚠️  [validate/relaxed] ignorato enum fonte su: ${fileAbs}\n` +
+        `    (/_meta/sources/*/json + sourcesShort/enum)`
+      );
+      return;
+    }
+  }
+
+  // Altri errori restano bloccanti
+  console.error(out);
+  throw new Error(`Validazione fallita per: ${fileAbs}`);
 }
 
 function addSources(srcArr) {

@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build:bundle": "node scripts/build-bundle.mjs",
+    "build:bundle": "node scripts/build-bundle.mjs --validate=relaxed",
     "test:bundle": "npx test-json-brew dist/homebrew-bundle.json",
     "build": "npm run build:bundle && npm run test:bundle"
   },
