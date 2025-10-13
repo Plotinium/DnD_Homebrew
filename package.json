@@ -1,0 +1,12 @@
+{
+  "name": "dnd_homebrew",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node ./scripts/build-bundle.mjs",
+    "test:brew": "npx test-json-brew dist/homebrew-bundle.json"
+  },
+  "devDependencies": {
+    "5etools-utils": "^0.14.4"
+  }
+}
