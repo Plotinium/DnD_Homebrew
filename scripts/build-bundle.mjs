@@ -126,23 +126,37 @@ function validateWith5eTools(fileAbs) {
     return;
   }
 
-  // Cattura stdout+stderr per poter ispezionare i messaggi
-  const res = spawnSync(bin, [fileAbs], { encoding: "utf8" });
+  // Catturiamo stdout/stderr, non ereditiamo la console
+  const res = spawnSync(bin, [fileAbs], {
+    encoding: "utf8",
+    stdio: ["ignore", "pipe", "pipe"],
+  });
 
   if (res.status === 0) return; // ok
 
   const out = `${res.stdout || ""}\n${res.stderr || ""}`;
 
   if (VALIDATE_MODE === "relaxed" && isIgnorableInRelaxed(out)) {
-    console.warn(`⚠️  [validate/relaxed] ignorato errore noto su file: ${fileAbs}\n${out}`);
+    // Non loggare i dettagli in console; tienili solo su file per eventuale debug
+    try {
+      fs.appendFileSync(
+        "/tmp/bundle-validate.log",
+        `\n[IGNORED][file=${fileAbs}]\n${out}\n`,
+        "utf8"
+      );
+    } catch { }
+    const rel = path.relative(process.cwd(), fileAbs);
+    console.warn(
+      `⚠️  [validate/relaxed] ignorato errore noto su file: ${rel} (dettagli soppressi; `
+    );
     return;
   }
 
+  // Non ignorabile: fallisci, ma prima mostra i dettagli
   console.error(out);
   throw new Error(`Validazione fallita per: ${fileAbs}`);
 }
 
-// ---------- Nuovo: validazione anche del BUNDLE FINALE ----------
 function validateFinalBundle(bundleAbs) {
   if (VALIDATE_MODE === "off") {
     console.warn(`[validate/off] skip final bundle: ${bundleAbs}`);
@@ -155,17 +169,31 @@ function validateFinalBundle(bundleAbs) {
     return;
   }
 
-  const res = spawnSync(bin, [bundleAbs], { encoding: "utf8" });
+  const res = spawnSync(bin, [bundleAbs], {
+    encoding: "utf8",
+    stdio: ["ignore", "pipe", "pipe"],
+  });
+
   if (res.status === 0) return;
 
   const out = `${res.stdout || ""}\n${res.stderr || ""}`;
 
   if (VALIDATE_MODE === "relaxed" && isIgnorableInRelaxed(out)) {
-    console.warn(`⚠️  [validate/relaxed] ignorato errore noto su BUNDLE: ${bundleAbs}\n${out}`);
+    // Non stampare i dettagli in console; salvali solo su file
+    try {
+      fs.appendFileSync(
+        "/tmp/bundle-validate.log",
+        `\n[IGNORED][bundle=${bundleAbs}]\n${out}\n`,
+        "utf8"
+      );
+    } catch { }
+    console.warn(
+      `⚠️  [validate/relaxed] ignorato errore noto su BUNDLE: ${bundleAbs} `
+    );
     return;
   }
 
-  // Se non è ignorabile, fallisci
+  // Non ignorabile → fallisci
   console.error(out);
   throw new Error(`Validazione BUNDLE fallita: ${bundleAbs}`);
 }
