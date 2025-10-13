@@ -19,7 +19,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 // Adatta questi nomi alle cartelle effettive del repo
-const ROOTS = ["races", "feats", "classes", "subclasses", "items", "spells"];
+const ROOTS = ["race", "feat", "class", "subclass", "item", "spell"];
 
 const OUT_DIR = "dist";
 const OUT_FILE = path.join(OUT_DIR, "homebrew-bundle.json");
