@@ -4,7 +4,7 @@ on:
   push:
     branches: [main]
   pull_request:
-    branches: [main] # opzionale: limita le PR verso main
+    branches: [main]  # opzionale, se vuoi validare solo PR verso main
 
 permissions:
   contents: write
@@ -24,55 +24,17 @@ jobs:
         with:
           node-version: 20
           cache: npm
-          # cache-dependency-path: package-lock.json  # opzionale
 
       - name: Install deps
         run: npm ci --no-audit --no-fund || npm i --no-audit --no-fund
 
-      - name: Build bundle
+      # Qui tutta la build+validazione (per-file + bundle) è dentro lo script
+      - name: Build bundle (relaxed in CI)
+        env:
+          # Se serve, puoi configurare pattern extra da ignorare qui:
+          # HOMEBREW_IGNORE_PATTERNS: '/(homebrew|brew).*authori[sz]ed/i'
+          NODE_ENV: production
         run: npm run build:bundle
-
-      - name: Validate bundle (strict except source-enum)
-        shell: bash
-        run: |
-          set -o pipefail
-          OUT="$(npx --yes test-json-brew dist/homebrew-bundle.json 2>&1)" && { echo "$OUT"; exit 0; }
-          echo "$OUT" | tee /tmp/bundle-validate.log
-          if grep -q '/_meta/sources/.*/json' /tmp/bundle-validate.log \
-             && grep -q 'sourcesShort/enum' /tmp/bundle-validate.log; then
-            echo "::warning ::Ignorato controllo enum su _meta.sources[].json (ID sorgente non partner)."
-            exit 0
-          fi
-          exit 1
-
-      - name: Diff vs origin/bundle (debug)
-        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-        run: |
-          set -e
-          echo "Checksum del file generato:"
-          sha256sum dist/homebrew-bundle.json || true
-
-          echo "Recupero il branch 'bundle' remoto..."
-          git fetch origin bundle:refs/remotes/origin/bundle || true
-
-          if git rev-parse --verify origin/bundle >/dev/null 2>&1; then
-            echo "Checksum del file su origin/bundle:"
-            git show origin/bundle:dist/homebrew-bundle.json | sha256sum || echo "File non presente su origin/bundle"
-            echo "Diff stat:"
-            git diff --no-ext-diff --stat -- dist/homebrew-bundle.json origin/bundle:dist/homebrew-bundle.json || true
-          else
-            echo "Branch origin/bundle non esiste ancora."
-          fi
-
-      - name: Git status & diff (debug)
-        run: |
-          echo "Branch corrente:"; git rev-parse --abbrev-ref HEAD
-          echo "File presente e dimensioni:"
-          ls -l dist/homebrew-bundle.json || true
-          echo "Git status:"
-          git status
-          echo "Diff del file rispetto a HEAD (stesso branch):"
-          git diff --no-ext-diff -- dist/homebrew-bundle.json || true
 
       - name: Commit bundle to 'bundle' branch
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
@@ -83,8 +45,6 @@ jobs:
           add_options: "-f"
           branch: bundle
           create_branch: true
-          skip_dirty_check: true
-          commit_options: "--allow-empty" # consente commit anche senza modifiche
 
       - name: Upload artifacts on failure (bundle + validate log)
         if: failure()

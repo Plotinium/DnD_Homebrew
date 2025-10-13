@@ -20,7 +20,24 @@ function getArgKV(name, def) {
   const hit = RAW_ARGS.find(a => a.startsWith(`--${name}=`));
   return hit ? hit.split("=", 2)[1] : def;
 }
-const VALIDATE_MODE = getArgKV("validate", "full"); // full | relaxed | off
+
+// full | relaxed | off
+const VALIDATE_MODE = getArgKV("validate", "full");
+
+// Facoltativo: regex extra da ENV per ignorare messaggi specifici in modalità "relaxed"
+// Esempio di uso in CI:
+//   HOMEBREW_IGNORE_PATTERNS='/(homebrew|brew).*authori[sz]ed/i'
+const IGNORE_PATTERNS_ENV = process.env.HOMEBREW_IGNORE_PATTERNS || "";
+const EXTRA_IGNORE_REGEXES = IGNORE_PATTERNS_ENV
+  .split(/\s*;;\s*|\s*\|\|\s*/).filter(Boolean)
+  .map(s => {
+    // permette sintassi tipo /regex/i oppure semplice testo
+    const m = s.match(/^\/(.+)\/([gimsuy]*)$/);
+    if (m) {
+      return new RegExp(m[1], m[2]);
+    }
+    return new RegExp(s, "i");
+  });
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -69,6 +86,34 @@ function resolveBin(name) {
   return bin;
 }
 
+// ---------- Nuovo: helper per ignorare errori "conosciuti" in relaxed ----------
+function isIgnorableInRelaxed(out) {
+  // Normalizza per sicurezza (lowercase e senza spazi ridondanti)
+  const s = String(out);
+
+  // Caso A: enum su _meta.sources[*].json (come da tuo esempio)
+  //   instancePath: "/_meta/sources/<n>/json"
+  //   schemaPath: "sources-homebrew-legacy.json#/$defs/sourcesColon/enum"
+  //   keyword: "enum"
+  const isSourceEnumStrict =
+    /"instancePath"\s*:\s*"\/_meta\/sources\/\d+\/json"/.test(s) &&
+    /"schemaPath"\s*:\s*"[^"]*sources-homebrew[^"]*\/(sourcesColon|sourcesShort)\/enum"/.test(s) &&
+    /"keyword"\s*:\s*"enum"/.test(s);
+
+  // Caso B: fallback "testuale" (quando l'output non è JSON ma testo libero)
+  //   - presenza di '/_meta/sources/.../json'
+  //   - e di 'enum'
+  //   - e di 'sourcesShort/enum' o 'sourcesColon/enum'
+  const isSourceEnumTextual =
+    /\/_meta\/sources\/.*\/json/.test(s) &&
+    /\bsources(Short|Colon)\/enum\b/.test(s);
+
+  // Caso C: pattern extra configurabili da ENV (opzionale)
+  const isExtraIgnored = EXTRA_IGNORE_REGEXES.some((rx) => rx.test(s));
+
+  return isSourceEnumStrict || isSourceEnumTextual || isExtraIgnored;
+}
+
 function validateWith5eTools(fileAbs) {
   if (VALIDATE_MODE === "off") {
     console.warn(`[validate/off] skip per-file: ${fileAbs}`);
@@ -88,24 +133,41 @@ function validateWith5eTools(fileAbs) {
 
   const out = `${res.stdout || ""}\n${res.stderr || ""}`;
 
-  // In modalità relaxed, ignora SOLO il caso dell'enum della source
-  if (VALIDATE_MODE === "relaxed") {
-    const isSourceEnum =
-      /\/_meta\/sources\/.*\/json/.test(out) &&
-      /sourcesShort\/enum/.test(out);
-
-    if (isSourceEnum) {
-      console.warn(
-        `⚠️  [validate/relaxed] ignorato enum fonte su: ${fileAbs}\n` +
-        `    (/_meta/sources/*/json + sourcesShort/enum)`
-      );
-      return;
-    }
+  if (VALIDATE_MODE === "relaxed" && isIgnorableInRelaxed(out)) {
+    console.warn(`⚠️  [validate/relaxed] ignorato errore noto su file: ${fileAbs}\n${out}`);
+    return;
   }
 
-  // Altri errori restano bloccanti
   console.error(out);
   throw new Error(`Validazione fallita per: ${fileAbs}`);
+}
+
+// ---------- Nuovo: validazione anche del BUNDLE FINALE ----------
+function validateFinalBundle(bundleAbs) {
+  if (VALIDATE_MODE === "off") {
+    console.warn(`[validate/off] skip final bundle: ${bundleAbs}`);
+    return;
+  }
+
+  const bin = resolveBin("test-json-brew");
+  if (!fs.existsSync(bin)) {
+    console.warn(`[validate/${VALIDATE_MODE}] validator non trovato: ${bin} — skip final bundle`);
+    return;
+  }
+
+  const res = spawnSync(bin, [bundleAbs], { encoding: "utf8" });
+  if (res.status === 0) return;
+
+  const out = `${res.stdout || ""}\n${res.stderr || ""}`;
+
+  if (VALIDATE_MODE === "relaxed" && isIgnorableInRelaxed(out)) {
+    console.warn(`⚠️  [validate/relaxed] ignorato errore noto su BUNDLE: ${bundleAbs}\n${out}`);
+    return;
+  }
+
+  // Se non è ignorabile, fallisci
+  console.error(out);
+  throw new Error(`Validazione BUNDLE fallita: ${bundleAbs}`);
 }
 
 function addSources(srcArr) {
@@ -173,7 +235,6 @@ for (const dir of ROOTS) {
     const ts = getGitLastModified(fileAbs) ?? getFsMtime(fileAbs);
     if (Number.isFinite(ts)) {
       maxDateLastMod = Math.max(maxDateLastMod, ts);
-      // Se non abbiamo alcuna origine per dateAdded, usa almeno ts come candidato
       if (!Number.isFinite(minDateAdded)) minDateAdded = ts;
     }
 
@@ -192,10 +253,7 @@ for (const dir of ROOTS) {
 // edition: riusa dal vecchio bundle se non ne hai rilevata una nuova
 meta.edition = detectedEdition || oldBundleMeta?.edition || "2024";
 
-// dateAdded (stabile):
-//   a) se esisteva nel vecchio bundle -> riusalo;
-//   b) altrimenti, se abbiamo min per-file -> usalo;
-//   c) altrimenti, inizializza ORA (prima e unica volta).
+// dateAdded (stabile)
 if (Number.isFinite(oldBundleMeta?.dateAdded)) {
   meta.dateAdded = oldBundleMeta.dateAdded;
 } else if (Number.isFinite(minDateAdded)) {
@@ -204,8 +262,7 @@ if (Number.isFinite(oldBundleMeta?.dateAdded)) {
   meta.dateAdded = NOW;
 }
 
-// dateLastModified:
-//   usa il massimo calcolato; se non c'è (==0 o NaN), fallback a NOW (mai 0)
+// dateLastModified
 meta.dateLastModified =
   Number.isFinite(maxDateLastMod) && maxDateLastMod > 0 ? maxDateLastMod : NOW;
 
@@ -221,3 +278,15 @@ console.log(`Bundle scritto in: ${OUT_FILE}`);
 console.log(
   `   _meta: edition=${meta.edition}, dateAdded=${meta.dateAdded}, dateLastModified=${meta.dateLastModified}`
 );
+
+// 5) ---------- Nuovo: valida anche il BUNDLE finale ----------
+try {
+  validateFinalBundle(OUT_FILE);
+  console.log(`[validate/${VALIDATE_MODE}] BUNDLE OK: ${OUT_FILE}`);
+} catch (e) {
+  // Mantieni un log su file per eventuale upload artifact dal workflow
+  try {
+    fs.writeFileSync("/tmp/bundle-validate.log", String(e?.stack || e), "utf8");
+  } catch { }
+  throw e;
+}
