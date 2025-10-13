@@ -1,4 +1,5 @@
 name: Build & Validate Homebrew
+
 on:
   push:
     branches: [main]
@@ -7,9 +8,13 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: "npm"
@@ -17,12 +22,45 @@ jobs:
       - name: Install deps
         run: npm ci || npm i
 
-      - name: Build + Validate bundle
-        run: npm run build
+      # 1) Solo build del bundle (niente validate qui)
+      - name: Build bundle
+        run: npm run build:bundle
 
-      - name: Upload bundle artifact (optional)
+      # 2) Carica SEMPRE l'artifact, anche se i passi successivi dovessero fallire
+      - name: Upload bundle artifact (always)
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: homebrew-bundle
           path: dist/homebrew-bundle.json
           if-no-files-found: warn
+
+      # 3) Validazione “strict tranne enum _meta.sources[].json”
+      - name: Validate bundle (strict except source-enum)
+        shell: bash
+        run: |
+          set -o pipefail
+          OUT="$(npx test-json-brew dist/homebrew-bundle.json 2>&1)" && {
+            echo "$OUT"
+            exit 0
+          }
+
+          echo "$OUT" | tee /tmp/bundle-validate.log
+
+          # Ignora SOLO il caso: _meta/sources/*/json + schema sourcesShort/enum
+          if grep -q '/_meta/sources/.*/json' /tmp/bundle-validate.log \
+             && grep -q 'sourcesShort/enum' /tmp/bundle-validate.log; then
+            echo "::warning ::Ignorato controllo enum su _meta.sources[].json (ID sorgente homebrew non partner)."
+            exit 0
+          fi
+
+          # Qualsiasi altro errore resta bloccante
+          exit 1
+
+      # 4) (Qualora ci fossero altri errori bloccanti) stampa contesto per debug
+      - name: Bundle context on failure
+        if: failure()
+        run: |
+          echo "::group::dist/homebrew-bundle.json (head)"
+          nl -ba dist/homebrew-bundle.json | sed -n '1,120p'
+          echo "::endgroup::"

@@ -9,6 +9,6 @@
     "build": "npm run build:bundle && npm run test:bundle"
   },
   "devDependencies": {
-    "5etools-utils": "^0.14.6"
+    "5etools-utils": "^0.14.4"
   }
 }
