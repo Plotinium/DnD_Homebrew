@@ -1,7 +1,7 @@
 name: Build & Validate Homebrew
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
 
 jobs:
@@ -12,7 +12,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'npm'
+          cache: "npm"
 
       - name: Install deps
         run: npm ci || npm i
@@ -25,3 +25,4 @@ jobs:
         with:
           name: homebrew-bundle
           path: dist/homebrew-bundle.json
+          if-no-files-found: warn
