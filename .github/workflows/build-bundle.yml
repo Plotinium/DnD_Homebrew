@@ -21,7 +21,7 @@ jobs:
         run: npm ci || npm i
 
       - name: Build bundle
-        run: node scripts/build-bundle.mjs
+        run: node scripts/build-bundle.js
 
       - name: Validate bundle (5etools-utils)
         run: npx test-json-brew dist/homebrew-bundle.json

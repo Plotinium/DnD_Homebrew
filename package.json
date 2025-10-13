@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build:bundle": "node scripts/build-bundle.mjs",
+    "build:bundle": "node scripts/build-bundle.js",
     "test:bundle": "npx test-json-brew dist/homebrew-bundle.json"
   },
   "devDependencies": {
