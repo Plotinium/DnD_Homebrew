@@ -4,7 +4,7 @@ Homebrew creations compatible with 5etools JSONs.
 
 ## Import Repository
 
-To import my repository you just have to paste this after clicking `Load from URL` here [5etools Homebrew Manager](https://5e.tools/managebrew.html)
+To import my repository you just have to paste the following link after clicking `Load from URL` here [5etools Homebrew Manager](https://5e.tools/managebrew.html)
 
 ``` Text
 https://raw.githubusercontent.com/Plotinium/DnD_Homebrew/main/dist/homebrew-bundle.json

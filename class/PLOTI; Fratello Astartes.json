@@ -1,0 +1,557 @@
+{
+  "_meta": {
+    "sources": [
+      {
+        "json": "ploti",
+        "abbreviation": "PLOTI",
+        "full": "Plotinium",
+        "version": "1.0.0",
+        "authors": [
+          "MrSamael"
+        ],
+        "convertedBy": [
+          "Plotinium"
+        ],
+        "color": "9813C9"
+      }
+    ],
+    "dateAdded": 1760426616,
+    "dateLastModified": 1760426616,
+    "edition": "2024"
+  },
+  "class": [
+    {
+      "name": "Fratello Astartes",
+      "source": "PLOTI",
+      "hd": {
+        "number": 1,
+        "faces": 12
+      },
+      "proficiency": [
+        "str",
+        "con"
+      ],
+      "startingProficiencies": {
+        "armor": [
+          "light",
+          "medium",
+          "heavy",
+          "shields"
+        ],
+        "weapons": [
+          "all"
+        ],
+        "skills": [
+          {
+            "choose": {
+              "from": [
+                "athletics",
+                "intimidation",
+                "perception",
+                "religion",
+                "survival"
+              ],
+              "count": 2
+            }
+          }
+        ]
+      },
+      "startingEquipment": {
+        "default": [
+          "(a) any combination between a primary weapon {@item longsword|phb}, or (c) any {@filter martial weapon|items|source=phb|category=basic|type=martial weapon}",
+          "{@item power armor mk. IV|PLOTI}"
+        ],
+        "additionalFromBackground": true,
+        "defaultData": [
+          {
+            "a": [
+              "longsword|phb"
+            ],
+            "b": [
+              "dagger|PHB"
+            ],
+            "c": [
+              {
+                "equipmentType": "weaponMartial"
+              }
+            ]
+          },
+          {
+            "_": [
+              {
+                "equipmentType": "armor",
+                "quantity": 1
+              }
+            ]
+          }
+        ]
+      },
+      "classTableGroups": [
+        {
+          "colLabels": [
+            "Ire",
+            "Danno dell'Ira"
+          ],
+          "rows": [
+            [
+              2,
+              "+2"
+            ],
+            [
+              2,
+              "+2"
+            ],
+            [
+              3,
+              "+2"
+            ],
+            [
+              3,
+              "+2"
+            ],
+            [
+              3,
+              "+2"
+            ],
+            [
+              4,
+              "+2"
+            ],
+            [
+              4,
+              "+2"
+            ],
+            [
+              4,
+              "+2"
+            ],
+            [
+              4,
+              "+3"
+            ],
+            [
+              4,
+              "+3"
+            ],
+            [
+              4,
+              "+3"
+            ],
+            [
+              4,
+              "+3"
+            ],
+            [
+              5,
+              "+3"
+            ],
+            [
+              5,
+              "+3"
+            ],
+            [
+              5,
+              "+3"
+            ],
+            [
+              5,
+              "+3"
+            ],
+            [
+              5,
+              "+4"
+            ],
+            [
+              6,
+              "+4"
+            ],
+            [
+              6,
+              "+4"
+            ],
+            [
+              6,
+              "+4"
+            ]
+          ]
+        }
+      ],
+      "classFeatures": [
+        "Ira dell'Imperatore|Fratello Astartes|PLOTI|1|PLOTI",
+        "Servoarmatura|Fratello Astartes|PLOTI|2|PLOTI",
+        {
+          "classFeature": "Disciplina del Capitolo|Fratello Astartes|PLOTI|3|PLOTI",
+          "gainSubclassFeature": true
+        },
+        {
+          "classFeature": "Caratteristica del Capitolo|Fratello Astartes|PLOTI|6|PLOTI",
+          "gainSubclassFeature": true
+        },
+        "Fratello Inossidabile|Fratello Astartes|PLOTI|7|PLOTI",
+        {
+          "classFeature": "Caratteristica del Capitolo|Fratello Astartes|PLOTI|13|PLOTI",
+          "gainSubclassFeature": true
+        },
+        "Fede o Corruzione|Fratello Astartes|PLOTI|15|PLOTI",
+        {
+          "classFeature": "Caratteristica del Capitolo|Fratello Astartes|PLOTI|18|PLOTI",
+          "gainSubclassFeature": true
+        },
+        "Erede dell'Imperatore|Fratello Astartes|PLOTI|20|PLOTI"
+      ],
+      "hasFluff": true
+    }
+  ],
+  "classFeature": [
+    {
+      "name": "Ira dell'Imperatore",
+      "source": "PLOTI",
+      "className": "Fratello Astartes",
+      "classSource": "PLOTI",
+      "level": 1,
+      "entries": [
+        "La fede per l'Imperatore ti porta a trascendere il dolore e la resistenza fisica, garantendoti una forza ancora più sovrumana e una sopportazione del dolore elevata. Ogni colpo è un decreto, ogni passo un giuramento scolpito nel ferro.",
+        "Come azione bonus, entri nell'Ira dell'Imperatore per 1 minuto. Usi la stessa progressione dell'Ira indicata nella tabella del Fratello Astartes e le stesse caratteristiche dell'{@classFeature Rage|Barbarian|XPHB|1|XPHB|Ira del Barbaro}"
+      ]
+    },
+    {
+      "name": "Servoarmatura",
+      "source": "PLOTI",
+      "className": "Fratello Astartes",
+      "classSource": "PLOTI",
+      "level": 2,
+      "entries": [
+        "Indossi non solo un'armatura: indossi un voto. Ogni movimento è un inno alla resilienza dell'Imperium.",
+        "Mentre indossi un'armatura, la tua CA aumenta di +2. Questo bonus si somma all'armatura indossata e allo scudo, se presente.",
+        {
+          "type": "item",
+          "name": "Potenziamenti tecnici.",
+          "entry": "la servoarmatura può essere integrata con upgrade (da definire)."
+        }
+      ]
+    },
+    {
+      "name": "Disciplina del Capitolo",
+      "source": "PLOTI",
+      "className": "Fratello Astartes",
+      "classSource": "PLOTI",
+      "level": 3,
+      "gainSubclassFeature": true,
+      "entries": [
+        "Ogni Capitolo custodisce una dottrina; ogni fratello la incarna. Il tuo giuramento si fa via maestra.",
+        "Scegli uno dei riti suddivisi tra {@b Rito Lealista} e {@b Rito del Caos}. Questa scelta ti conferisce capacità aggiuntive ai livelli appropriati della classe."
+      ]
+    },
+    {
+      "name": "Caratteristica del Capitolo",
+      "source": "PLOTI",
+      "className": "Fratello Astartes",
+      "classSource": "PLOTI",
+      "level": 6,
+      "gainSubclassFeature": true,
+      "entries": [
+        "La tua disciplina si approfondisce, e i precetti del tuo Capitolo si radicano nel tuo essere.",
+        "Al 6° livello ottieni la seconda caratteristica del tuo Rito del Capitolo."
+      ]
+    },
+    {
+      "name": "Fratello Inossidabile",
+      "source": "PLOTI",
+      "className": "Fratello Astartes",
+      "classSource": "PLOTI",
+      "level": 7,
+      "entries": [
+        "Il ferro può piegarsi, il cuore no. La paura scivola come pioggia sulla ceramite, i veleni si spengono contro il tuo sangue benedetto.",
+        {
+          "type": "list",
+          "items": [
+            "Sei immune alla condizione {@condition frightened|XPHB|Spaventato}.",
+            "Sei immune alla condizione {@condition poisoned|XPHB|Avvelenato}.",
+            "Sei immune ai danni da veleno."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Caratteristica del Capitolo",
+      "source": "PLOTI",
+      "className": "Fratello Astartes",
+      "classSource": "PLOTI",
+      "level": 13,
+      "gainSubclassFeature": true,
+      "entries": [
+        "Il tuo comando diventa legge sul campo di battaglia. Ogni gesto è un segnale, ogni ordine un destino.",
+        "Ottieni la terza caratteristica del tuo Rito del Capitolo."
+      ]
+    },
+    {
+      "name": "Fede o Corruzione",
+      "source": "PLOTI",
+      "className": "Fratello Astartes",
+      "classSource": "PLOTI",
+      "level": 15,
+      "entries": [
+        "Nel cuore del turbine scegli il tuo faro: l'aura dorata della Fede che ordina il caos, o i sussurri del Warp che piegano la realtà al tuo volere."
+      ]
+    },
+    {
+      "name": "Caratteristica del Capitolo",
+      "source": "PLOTI",
+      "className": "Fratello Astartes",
+      "classSource": "PLOTI",
+      "level": 18,
+      "gainSubclassFeature": true,
+      "entries": [
+        "Hai raggiunto l’apice della dottrina del tuo Capitolo. La tua presenza è un faro di disciplina e potere assoluto.",
+        "Ottieni la quarta e ultima caratteristica del tuo Rito del Capitolo."
+      ]
+    },
+    {
+      "name": "Erede dell'Imperatore",
+      "source": "PLOTI",
+      "className": "Fratello Astartes",
+      "classSource": "PLOTI",
+      "level": 20,
+      "entries": [
+        "Sei il ruggito della Crociata. La tua ombra è una reliquia, il tuo passo un editto. La realtà ti riconosce come strumento dell'Ultimo e arretra.",
+        {
+          "type": "list",
+          "style": "list-hang",
+          "items": [
+            {
+              "type": "item",
+              "name": "Armatura della Provvidenza.",
+              "entry": "Ottieni un bonus di +3 alla CA."
+            },
+            {
+              "type": "item",
+              "name": "Mandato Infallibile.",
+              "entry": "I tuoi attacchi infliggono +5 danni aggiuntivi."
+            },
+            {
+              "type": "item",
+              "name": "Benedizione Imperiale.",
+              "entry": "Hai resistenza a tutti i danni inflitti da incantesimi e da altri effetti magici."
+            }
+          ]
+        },
+        "Una volta usata, questa feature non può essere riutilizzata finché non completi un riposo lungo."
+      ],
+      "activation": {
+        "type": "bonus",
+        "cost": 1
+      },
+      "duration": {
+        "type": "minute",
+        "amount": 1
+      },
+      "uses": {
+        "value": 1,
+        "type": "long rest"
+      }
+    }
+  ],
+  "subclass": [
+    {
+      "name": "Rito degli Ultramarine",
+      "source": "PLOTI",
+      "className": "Fratello Astartes",
+      "classSource": "PLOTI",
+      "shortName": "Ultramarine",
+      "subclassFeatures": [
+        "Rito degli Ultramarine|Fratello Astartes|PLOTI|Rito degli Ultramarine|PLOTI|3",
+        "Tattico del Codex|Fratello Astartes|PLOTI|Rito degli Ultramarine|PLOTI|3",
+        "Disciplina del Campo di Battaglia|Fratello Astartes|PLOTI|Rito degli Ultramarine|PLOTI|6",
+        "Comando Coordinato|Fratello Astartes|PLOTI|Rito degli Ultramarine|PLOTI|13",
+        "Maestro del Codex|Fratello Astartes|PLOTI|Rito degli Ultramarine|PLOTI|18"
+      ]
+    }
+  ],
+  "subclassFeature": [
+    {
+      "name": "Rito degli Ultramarine",
+      "source": "PLOTI",
+      "className": "Fratello Astartes",
+      "classSource": "PLOTI",
+      "subclassShortName": "Ultramarine",
+      "subclassSource": "PLOTI",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "Maestri della Strategia",
+        "«La disciplina è la lama con cui si scolpisce la vittoria.» Gli Ultramarine sono il simbolo della perfezione tattica e della disciplina. Prediligono il fuoco coordinato e il comando, trasformando il campo di battaglia in un teorema risolto."
+      ],
+      "activation": {
+        "type": "bonus",
+        "cost": 1
+      },
+      "range": {
+        "type": "feet",
+        "amount": 30
+      }
+    },
+    {
+      "name": "Tattico del Codex",
+      "source": "PLOTI",
+      "className": "Fratello Astartes",
+      "classSource": "PLOTI",
+      "subclassShortName": "Ultramarine",
+      "subclassSource": "PLOTI",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "Come azione bonus, impartisci un ordine perfetto nella sua semplicità.",
+        {
+          "type": "list",
+          "style": "list-hang",
+          "items": [
+            {
+              "type": "item",
+              "name": "Effetto.",
+              "entry": "Un alleato entro 9 m (30 ft) che puoi vedere o sentire ottiene vantaggio su un tiro per colpire oppure su un tiro salvezza a sua scelta, effettuato prima dell'inizio del tuo prossimo turno."
+            },
+            {
+              "type": "item",
+              "name": "Usi.",
+              "entry": "Puoi usare questa capacità un numero di volte pari al tuo modificatore di Saggezza (minimo 1). Recuperi tutti gli usi al termine di un riposo breve o lungo."
+            }
+          ]
+        },
+        {
+          "type": "inset",
+          "entries": [
+            "Link rapido: {@subclassFeature Tattico del Codex|Fratello Astartes|Rito degli Ultramarine|PLOTI|PLOTI}."
+          ]
+        }
+      ],
+      "activation": {
+        "type": "bonus",
+        "cost": 1
+      },
+      "range": {
+        "type": "feet",
+        "amount": 30
+      }
+    },
+    {
+      "name": "Disciplina del Campo di Battaglia",
+      "source": "PLOTI",
+      "level": 6,
+      "className": "Fratello Astartes",
+      "classSource": "PLOTI",
+      "subclassShortName": "Ultramarine",
+      "subclassSource": "PLOTI",
+      "entries": [
+        "La tua presenza incrollabile stabilizza la linea.",
+        {
+          "type": "list",
+          "style": "list-hang",
+          "items": [
+            {
+              "type": "item",
+              "name": "Reazione.",
+              "entry": "Quando tu o un alleato entro 9 m (30 ft) fallite un tiro salvezza, puoi spendere la reazione per aggiungere {@dice 1d4} al tiro (potendo trasformare un fallimento in un successo)."
+            },
+            {
+              "type": "item",
+              "name": "Usi.",
+              "entry": "Puoi usare questa capacità 2 volte. Recuperi tutti gli usi al termine di un riposo lungo."
+            }
+          ]
+        }
+      ],
+      "activation": {
+        "type": "reaction",
+        "cost": 1,
+        "condition": "Quando un alleato entro 9 m fallisce un TS"
+      },
+      "range": {
+        "type": "feet",
+        "amount": 30
+      },
+      "limitedUse": {
+        "count": 2,
+        "recharge": "long rest"
+      }
+    },
+    {
+      "name": "Comando Coordinato",
+      "source": "PLOTI",
+      "level": 13,
+      "className": "Fratello Astartes",
+      "classSource": "PLOTI",
+      "subclassShortName": "Ultramarine",
+      "subclassSource": "PLOTI",
+      "entries": [
+        "Ogni tua offensiva apre una finestra d'ingaggio per la squadra.",
+        {
+          "type": "list",
+          "style": "list-hang",
+          "items": [
+            {
+              "type": "item",
+              "name": "Effetto.",
+              "entry": "Quando effettui l'azione Attaccare, puoi usare la tua azione bonus per permettere a un alleato entro 9 m (30 ft) di effettuare 1 attacco come reazione."
+            },
+            {
+              "type": "item",
+              "name": "Usi.",
+              "entry": "Puoi usare questa capacità un numero di volte pari al tuo bonus di competenza. Recuperi tutti gli usi al termine di un riposo lungo."
+            }
+          ]
+        }
+      ],
+      "activation": {
+        "type": "bonus",
+        "cost": 1
+      },
+      "range": {
+        "type": "feet",
+        "amount": 30
+      }
+    },
+    {
+      "name": "Maestro del Codex",
+      "source": "PLOTI",
+      "page": 0,
+      "level": 18,
+      "className": "Fratello Astartes",
+      "classSource": "PLOTI",
+      "subclassShortName": "Ultramarine",
+      "subclassSource": "PLOTI",
+      "entries": [
+        "Il tuo comando plasma il fronte.",
+        {
+          "type": "list",
+          "style": "list-hang",
+          "items": [
+            {
+              "type": "item",
+              "name": "Aura di Comando.",
+              "entry": "Gli alleati entro 9 m (30 ft) ottengono +1 alla CA e +1 ai tiri salvezza finché permangono nell'aura."
+            },
+            {
+              "type": "item",
+              "name": "Ordine Imperativo.",
+              "entry": "Come azione, scegli un alleato entro 9 m (30 ft) che ha appena fallito un tiro per colpire o un tiro salvezza: quell'alleato ripete il tiro. Una volta usata questa parte della capacità, devi terminare un riposo lungo prima di poterla riutilizzare."
+            }
+          ]
+        }
+      ],
+      "range": {
+        "type": "feet",
+        "amount": 30
+      },
+      "activation": {
+        "type": "action",
+        "cost": 1,
+        "condition": "Ordine Imperativo su un alleato che ha fallito un tiro"
+      },
+      "limitedUse": {
+        "count": 1,
+        "recharge": "long rest"
+      }
+    }
+  ],
+  "classFluff": []
+}
