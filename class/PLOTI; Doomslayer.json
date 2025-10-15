@@ -2,7 +2,7 @@
   "_meta": {
     "sources": [
       {
-        "json": "ploti",
+        "json": "Plotinium",
         "abbreviation": "PLOTI",
         "full": "Plotinium",
         "version": "1.0.0",
@@ -18,7 +18,7 @@
     ],
     "dateAdded": 1749145255,
     "dateLastModified": 1760363260,
-    "edition": "2024"
+    "edition": "classic"
   },
   "class": [
     {
@@ -79,7 +79,7 @@
           "light",
           "medium",
           "heavy",
-          "shields",
+          "shield",
           "Praetor"
         ],
         "weapons": [
@@ -127,7 +127,7 @@
           {
             "_": [
               {
-                "equipmentType": "armor",
+                "equipmentType": "armorHeavy",
                 "quantity": 1
               }
             ]
@@ -441,6 +441,7 @@
         "Starting at first level you gain a pool of resources called Carnage Points. You regain all points at the end of a long rest.",
         "Anytime you take or deal 10 or more damage, you automatically gain 1 Carnage Point, additionally if you take 50 damage or more, you immediately gain 12 carnage points. You may not have more points than your total maximum as indicated on the table above, unless you gain more points while under the threshold. Any Carnage Points gained beyond your maximum last only until the end of your next turn, after which they are lost.",
         {
+          "type": "section",
           "name": "Carnage points Saving Throws",
           "entries": [
             "The save DC for any of your Carnage features that require one is calculated as follows:",
@@ -1028,7 +1029,6 @@
     {
       "name": "Serrat",
       "source": "PLOTI",
-      "summonedScaleByPlayerLevel": false,
       "size": [
         "H"
       ],
@@ -1060,8 +1060,8 @@
       "wis": 14,
       "cha": 12,
       "save": {
-        "dex": 2,
-        "wis": 4
+        "dex": "2",
+        "wis": "4"
       },
       "resist": [
         "lightning",
@@ -1173,12 +1173,14 @@
       "entries": [
         "A creature affected with bloodlust has worked itself into a frenzied state, most likely due to partaking too deep into an inner sadistic nature, the effects of a drug or curse, or high levels of stress. All that matters is that they wish to destroy a single target, and won't stop until they do.",
         {
+          "type": "section",
           "name": "Cause",
           "entries": [
             "There are many things that may lead a creature to becoming bloodlusted. This condition is generally caused by a feature that messes with the creature's mind, although always specified in said feature. However, differing from the berserk condition a player may choose to enter the bloodlust condition at will for roleplaying purposes. A creature cannot be bloodlusted towards more than one creature at once."
           ]
         },
         {
+          "type": "section",
           "name": "Effects",
           "entries": [
             "A creature's mind is completely maddened after going berserk, making them gain the following while under the condition:",
@@ -1194,6 +1196,7 @@
           ]
         },
         {
+          "type": "section",
           "name": "Removal",
           "entries": [
             "To remove the bloodlusted condition, it is quite simple but also quite complex in nature. The following methods are available to remove the condition:",
@@ -1208,6 +1211,7 @@
           ]
         },
         {
+          "type": "section",
           "name": "Resistances and Vulnerabilities",
           "entries": [
             "Being resistant to the bloodlusted condition is something only the strong of will can do.",

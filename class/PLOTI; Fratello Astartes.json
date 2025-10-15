@@ -2,7 +2,7 @@
   "_meta": {
     "sources": [
       {
-        "json": "ploti",
+        "json": "Plotinium",
         "abbreviation": "PLOTI",
         "full": "Plotinium",
         "version": "1.0.0",
@@ -17,7 +17,7 @@
     ],
     "dateAdded": 1760426616,
     "dateLastModified": 1760426616,
-    "edition": "2024"
+    "edition": "classic"
   },
   "class": [
     {
@@ -36,7 +36,7 @@
           "light",
           "medium",
           "heavy",
-          "shields"
+          "shield"
         ],
         "weapons": [
           "all"
@@ -58,8 +58,9 @@
       },
       "startingEquipment": {
         "default": [
-          "(a) any combination between a primary weapon {@item longsword|phb}, or (c) any {@filter martial weapon|items|source=phb|category=basic|type=martial weapon}",
-          "{@item power armor mk. IV|PLOTI}"
+          "(a) qualsiasi combinazione tra un'{@filter Arma Pesante|items|source=PLOTI|type=martial weapon} da mischia o gittata ed un'{@filter Arma Leggera|items|source=PLOTI|type=simple weapon}, più uno {@item Shield|XPHB|Scudo} o un {@item Jump Pack|PLOTI}",
+          "Una {@item Granata|PLOTI}",
+          "La {@item Servoarmatura|PLOTI}"
         ],
         "additionalFromBackground": true,
         "defaultData": [
@@ -79,7 +80,7 @@
           {
             "_": [
               {
-                "equipmentType": "armor",
+                "equipmentType": "armorHeavy",
                 "quantity": 1
               }
             ]
@@ -178,25 +179,37 @@
       ],
       "classFeatures": [
         "Ira dell'Imperatore|Fratello Astartes|PLOTI|1|PLOTI",
+        "Colpi Potenziati|Fratello Astartes|PLOTI|1|PLOTI",
         "Servoarmatura|Fratello Astartes|PLOTI|2|PLOTI",
         {
           "classFeature": "Disciplina del Capitolo|Fratello Astartes|PLOTI|3|PLOTI",
           "gainSubclassFeature": true
         },
+        "Aumento delle Caratteristiche|Fratello Astartes|PLOTI|4|PLOTI",
+        "Attacco Extra|Fratello Astartes|PLOTI|5|PLOTI",
         {
           "classFeature": "Caratteristica del Capitolo|Fratello Astartes|PLOTI|6|PLOTI",
           "gainSubclassFeature": true
         },
         "Fratello Inossidabile|Fratello Astartes|PLOTI|7|PLOTI",
+        "Aumento delle Caratteristiche|Fratello Astartes|PLOTI|8|PLOTI",
+        "Resistenza al Danno|Fratello Astartes|PLOTI|9|PLOTI",
+        "Aura del Capitolo|Fratello Astartes|PLOTI|10|PLOTI",
+        "Attacco Extra Doppio|Fratello Astartes|PLOTI|11|PLOTI",
+        "Aumento delle Caratteristiche|Fratello Astartes|PLOTI|12|PLOTI",
         {
           "classFeature": "Caratteristica del Capitolo|Fratello Astartes|PLOTI|13|PLOTI",
           "gainSubclassFeature": true
         },
+        "Resilienza da Battaglia|Fratello Astartes|PLOTI|14|PLOTI",
         "Fede o Corruzione|Fratello Astartes|PLOTI|15|PLOTI",
+        "Aumento delle Caratteristiche|Fratello Astartes|PLOTI|16|PLOTI",
+        "Attacco Extra Triplo|Fratello Astartes|PLOTI|17|PLOTI",
         {
           "classFeature": "Caratteristica del Capitolo|Fratello Astartes|PLOTI|18|PLOTI",
           "gainSubclassFeature": true
         },
+        "Aumento delle Caratteristiche|Fratello Astartes|PLOTI|19|PLOTI",
         "Erede dell'Imperatore|Fratello Astartes|PLOTI|20|PLOTI"
       ],
       "subclassTitle": "Disciplina del Capitolo",
@@ -217,6 +230,118 @@
         "Comando Coordinato|Fratello Astartes|PLOTI|Ultramarine|PLOTI|13",
         "Maestro del Codex|Fratello Astartes|PLOTI|Ultramarine|PLOTI|18"
       ]
+    },
+    {
+      "name": "Rito dei Blood Angels",
+      "shortName": "Blood Angels",
+      "source": "PLOTI",
+      "className": "Fratello Astartes",
+      "classSource": "PLOTI",
+      "subclassFeatures": [
+        "Rito dei Blood Angels|Fratello Astartes|PLOTI|Blood Angels|PLOTI|3",
+        "Sete Rossa|Fratello Astartes|PLOTI|Blood Angels|PLOTI|3",
+        "Ali di Baal|Fratello Astartes|PLOTI|Blood Angels|PLOTI|6",
+        "Furia Sanguinaria|Fratello Astartes|PLOTI|Blood Angels|PLOTI|13",
+        "Discendente Angelico|Fratello Astartes|PLOTI|Blood Angels|PLOTI|18"
+      ]
+    },
+    {
+      "name": "Rito degli Space Wolves",
+      "shortName": "Space Wolves",
+      "source": "PLOTI",
+      "className": "Fratello Astartes",
+      "classSource": "PLOTI",
+      "subclassFeatures": [
+        "Rito degli Space Wolves|Fratello Astartes|PLOTI|Space Wolves|PLOTI|3",
+        "Sensi del Lupo|Fratello Astartes|PLOTI|Space Wolves|PLOTI|3",
+        "Ira del Lupo|Fratello Astartes|PLOTI|Space Wolves|PLOTI|6",
+        "Caccia del Branco|Fratello Astartes|PLOTI|Space Wolves|PLOTI|13",
+        "Spirito di Fenris|Fratello Astartes|PLOTI|Space Wolves|PLOTI|18"
+      ]
+    },
+    {
+      "name": "Rito dei Dark Angels",
+      "shortName": "Dark Angels",
+      "source": "PLOTI",
+      "className": "Fratello Astartes",
+      "classSource": "PLOTI",
+      "subclassFeatures": [
+        "Rito dei Dark Angels|Fratello Astartes|PLOTI|Dark Angels|PLOTI|3",
+        "Fanatismo Silente|Fratello Astartes|PLOTI|Dark Angels|PLOTI|3",
+        "Aura di Penitenza|Fratello Astartes|PLOTI|Dark Angels|PLOTI|6",
+        "Giudizio dei Peccatori|Fratello Astartes|PLOTI|Dark Angels|PLOTI|13",
+        "Redenzione Finale|Fratello Astartes|PLOTI|Dark Angels|PLOTI|18"
+      ]
+    },
+    {
+      "name": "Rito dei Salamanders",
+      "shortName": "Salamanders",
+      "source": "PLOTI",
+      "className": "Fratello Astartes",
+      "classSource": "PLOTI",
+      "subclassFeatures": [
+        "Rito dei Salamanders|Fratello Astartes|PLOTI|Salamanders|PLOTI|3",
+        "Cuore di Vulkan|Fratello Astartes|PLOTI|Salamanders|PLOTI|3",
+        "Forgiato nel Fuoco|Fratello Astartes|PLOTI|Salamanders|PLOTI|6",
+        "Tempra di Vulkan|Fratello Astartes|PLOTI|Salamanders|PLOTI|13",
+        "Avatar della Forgia|Fratello Astartes|PLOTI|Salamanders|PLOTI|18"
+      ]
+    },
+    {
+      "name": "Rito dei Raven Guard",
+      "shortName": "Raven Guard",
+      "source": "PLOTI",
+      "className": "Fratello Astartes",
+      "classSource": "PLOTI",
+      "subclassFeatures": [
+        "Rito dei Raven Guard|Fratello Astartes|PLOTI|Raven Guard|PLOTI|3",
+        "Maestro dell'Ombra|Fratello Astartes|PLOTI|Raven Guard|PLOTI|3",
+        "Assalto Silenzioso|Fratello Astartes|PLOTI|Raven Guard|PLOTI|6",
+        "Ombra Vivente|Fratello Astartes|PLOTI|Raven Guard|PLOTI|13",
+        "Maestro dell'Assassinio|Fratello Astartes|PLOTI|Raven Guard|PLOTI|18"
+      ]
+    },
+    {
+      "name": "Rito degli Imperial Fists",
+      "shortName": "Imperial Fists",
+      "source": "PLOTI",
+      "className": "Fratello Astartes",
+      "classSource": "PLOTI",
+      "subclassFeatures": [
+        "Rito degli Imperial Fists|Fratello Astartes|PLOTI|Imperial Fists|PLOTI|3",
+        "Roccia Inamovibile|Fratello Astartes|PLOTI|Imperial Fists|PLOTI|3",
+        "Difesa Perfetta|Fratello Astartes|PLOTI|Imperial Fists|PLOTI|6",
+        "Muro dell'Imperatore|Fratello Astartes|PLOTI|Imperial Fists|PLOTI|13",
+        "Roccia Eterna|Fratello Astartes|PLOTI|Imperial Fists|PLOTI|18"
+      ]
+    },
+    {
+      "name": "Rito degli Iron Hands",
+      "shortName": "Iron Hands",
+      "source": "PLOTI",
+      "className": "Fratello Astartes",
+      "classSource": "PLOTI",
+      "subclassFeatures": [
+        "Rito degli Iron Hands|Fratello Astartes|PLOTI|Iron Hands|PLOTI|3",
+        "Bionica del Ferro|Fratello Astartes|PLOTI|Iron Hands|PLOTI|3",
+        "Servoarmatura Avanzata|Fratello Astartes|PLOTI|Iron Hands|PLOTI|6",
+        "Macchina di Guerra|Fratello Astartes|PLOTI|Iron Hands|PLOTI|13",
+        "Forma del Ferro|Fratello Astartes|PLOTI|Iron Hands|PLOTI|18"
+      ]
+    },
+    {
+      "name": "Rito del Caos",
+      "shortName": "Caos",
+      "source": "PLOTI",
+      "className": "Fratello Astartes",
+      "classSource": "PLOTI",
+      "subclassFeatures": [
+        "Rito del Caos|Fratello Astartes|PLOTI|Caos|PLOTI|3",
+        "Tocco del Warp|Fratello Astartes|PLOTI|Caos|PLOTI|3",
+        "Benedizione del Demone|Fratello Astartes|PLOTI|Caos|PLOTI|6",
+        "Rovina del Warp|Fratello Astartes|PLOTI|Caos|PLOTI|13",
+        "Campione del Caos|Fratello Astartes|PLOTI|Caos|PLOTI|18"
+      ]
     }
   ],
   "classFeature": [
@@ -229,6 +354,36 @@
       "entries": [
         "La fede per l'Imperatore ti porta a trascendere il dolore e la resistenza fisica, garantendoti una forza ancora più sovrumana e una sopportazione del dolore elevata. Ogni colpo è un decreto, ogni passo un giuramento scolpito nel ferro.",
         "Come azione bonus, entri nell'Ira dell'Imperatore per 1 minuto. Usi la stessa progressione dell'Ira indicata nella tabella del Fratello Astartes e le stesse caratteristiche dell'{@classFeature Rage|Barbarian|XPHB|1|XPHB|Ira del Barbaro}"
+      ]
+    },
+    {
+      "name": "Colpi Potenziati",
+      "source": "PLOTI",
+      "className": "Fratello Astartes",
+      "classSource": "PLOTI",
+      "level": 1,
+      "entries": [
+        "I servomotori della tua armatura trasformano ogni pugno in un ariete d'acciaio, capace di frantumare corazze e ossa. Anche senza armi, sei una macchina da guerra vivente.",
+        {
+          "type": "list",
+          "items": [
+            {
+              "type": "item",
+              "name": "Colpi senz'armi.",
+              "entry": "I tuoi attacchi senz'armi infliggono {@dice 1d6} + Forza danni contundenti invece del normale 1 + Forza."
+            },
+            {
+              "type": "item",
+              "name": "Progressione.",
+              "entry": "Il danno dei tuoi colpi senz'armi aumenta con la tua maestria marziale: diventa {@dice 1d8} al livello 11 (quando ottieni Attacco Extra Doppio) e {@dice 1d10} al livello 17 (quando ottieni Attacco Extra Triplo)."
+            },
+            {
+              "type": "item",
+              "name": "Stritolamento.",
+              "entry": "Quando afferri una creatura di taglia uguale o inferiore alla tua, puoi infliggere {@dice 1d4} danni contundenti all'inizio di ciascun tuo turno finché mantieni la presa. Questo rappresenta la pressione schiacciante della servoarmatura."
+            }
+          ]
+        }
       ]
     },
     {
@@ -253,10 +408,33 @@
       "className": "Fratello Astartes",
       "classSource": "PLOTI",
       "level": 3,
-      "gainSubclassFeature": true,
       "entries": [
         "Ogni Capitolo custodisce una dottrina; ogni fratello la incarna. Il tuo giuramento si fa via maestra.",
         "Scegli uno dei riti suddivisi tra {@b Rito Lealista} e {@b Rito del Caos}. Questa scelta ti conferisce capacità aggiuntive ai livelli appropriati della classe."
+      ]
+    },
+    {
+      "name": "Aumento delle Caratteristiche",
+      "source": "PLOTI",
+      "className": "Fratello Astartes",
+      "classSource": "PLOTI",
+      "level": 4,
+      "entries": [
+        "La tua disciplina e il tuo addestramento ti spingono oltre i limiti della carne e della mente. Ogni vittoria, ogni cicatrice, ogni battaglia ti rende più vicino all'ideale del guerriero perfetto.",
+        "Ottieni un Aumento dei Punteggi di Caratteristica: puoi aumentare un punteggio di 2 o due punteggi di 1 ciascuno. In alternativa, puoi scegliere un talento per il quale soddisfi i prerequisiti.",
+        "Ottieni nuovamente questa capacità ai livelli 8, 12, 16 e 19 da Fratello Astartes."
+      ]
+    },
+    {
+      "name": "Attacco Extra",
+      "source": "PLOTI",
+      "className": "Fratello Astartes",
+      "classSource": "PLOTI",
+      "level": 5,
+      "entries": [
+        "Il tuo addestramento incessante e la tua furia disciplinata ti permettono di colpire con una rapidità e una precisione sovrumane. Ogni movimento è una raffica, ogni colpo un martello dell'Imperatore.",
+        "A partire dal 5° livello, quando usi l'azione Attaccare nel tuo turno, puoi attaccare due volte invece di una.",
+        "Il numero di attacchi aumenta a tre quando raggiungi l'11° livello e a quattro quando raggiungi il 17° livello da Fratello Astartes."
       ]
     },
     {
@@ -265,7 +443,6 @@
       "className": "Fratello Astartes",
       "classSource": "PLOTI",
       "level": 6,
-      "gainSubclassFeature": true,
       "entries": [
         "La tua disciplina si approfondisce, e i precetti del tuo Capitolo si radicano nel tuo essere.",
         "Al 6° livello ottieni la seconda caratteristica del tuo Rito del Capitolo."
@@ -290,15 +467,80 @@
       ]
     },
     {
+      "name": "Aumento delle Caratteristiche",
+      "source": "PLOTI",
+      "className": "Fratello Astartes",
+      "classSource": "PLOTI",
+      "level": 8,
+      "entries": [
+        "Il fuoco della guerra ti ha temprato come acciaio nella fucina. Ogni colpo parato, ogni nemico abbattuto, ha scolpito in te una forza che trascende la semplice mortalità.",
+        "Ottieni un Aumento dei Punteggi di Caratteristica: puoi aumentare un punteggio di 2 o due punteggi di 1 ciascuno. In alternativa, puoi scegliere un talento per il quale soddisfi i prerequisiti."
+      ]
+    },
+    {
+      "name": "Resistenza al Danno",
+      "source": "PLOTI",
+      "className": "Fratello Astartes",
+      "classSource": "PLOTI",
+      "level": 9,
+      "entries": [
+        "La tua carne e la tua armatura si fondono in un baluardo impenetrabile. Ogni colpo che ti raggiunge è smorzato dalla tua tempra sovrumana.",
+        "A partire dal 9° livello, riduci di 5 tutti i danni contundenti, perforanti e taglienti provenienti da attacchi non magici."
+      ]
+    },
+    {
+      "name": "Aura del Capitolo",
+      "source": "PLOTI",
+      "className": "Fratello Astartes",
+      "classSource": "PLOTI",
+      "level": 10,
+      "entries": [
+        "La tua sola presenza incarna la disciplina del tuo Capitolo o la corruzione del Warp. I tuoi fratelli traggono forza dal tuo esempio, e i tuoi nemici tremano di fronte alla tua aura.",
+        "A partire dal 10° livello, gli alleati entro 3 m (10 ft) ottengono un bonus di +1 ai tiri salvezza e ai tiri per colpire. La natura di quest'aura riflette il tuo Capitolo: sacra e disciplinata per i lealisti, oscura e corruttrice per i traditori."
+      ]
+    },
+    {
+      "name": "Attacco Extra Doppio",
+      "source": "PLOTI",
+      "className": "Fratello Astartes",
+      "classSource": "PLOTI",
+      "level": 11,
+      "entries": [
+        "Il tuo addestramento incessante e la tua furia disciplinata ti permettono di colpire con una rapidità e una precisione sovrumane. Ogni movimento è una raffica, ogni colpo un martello dell'Imperatore.",
+        "A partire dall'11° livello, quando usi l'azione Attaccare nel tuo turno, puoi attaccare tre volte invece di due."
+      ]
+    },
+    {
+      "name": "Aumento delle Caratteristiche",
+      "source": "PLOTI",
+      "className": "Fratello Astartes",
+      "classSource": "PLOTI",
+      "level": 12,
+      "entries": [
+        "Il tuo corpo è ormai un'arma perfetta, la tua mente una fortezza inespugnabile. Sei il martello dell'Imperatore, e la tua volontà piega il destino stesso.",
+        "Ottieni un Aumento dei Punteggi di Caratteristica: puoi aumentare un punteggio di 2 o due punteggi di 1 ciascuno. In alternativa, puoi scegliere un talento per il quale soddisfi i prerequisiti."
+      ]
+    },
+    {
       "name": "Caratteristica del Capitolo",
       "source": "PLOTI",
       "className": "Fratello Astartes",
       "classSource": "PLOTI",
       "level": 13,
-      "gainSubclassFeature": true,
       "entries": [
         "Il tuo comando diventa legge sul campo di battaglia. Ogni gesto è un segnale, ogni ordine un destino.",
         "Ottieni la terza caratteristica del tuo Rito del Capitolo."
+      ]
+    },
+    {
+      "name": "Resilienza da Battaglia",
+      "source": "PLOTI",
+      "className": "Fratello Astartes",
+      "classSource": "PLOTI",
+      "level": 14,
+      "entries": [
+        "Ogni colpo subito, ogni cicatrice incisa sull'acciaio della tua servoarmatura, ha temprato la tua resistenza. Sei un bastione vivente, un muro di adamantio che nessuna tempesta può abbattere.",
+        "A partire dal 14° livello, ottieni un bonus di +2 alla CA quando indossi un'armatura."
       ]
     },
     {
@@ -312,15 +554,47 @@
       ]
     },
     {
+      "name": "Aumento delle Caratteristiche",
+      "source": "PLOTI",
+      "className": "Fratello Astartes",
+      "classSource": "PLOTI",
+      "level": 16,
+      "entries": [
+        "La tua essenza è fusa con la guerra: carne, acciaio e fede si intrecciano in un'unica entità. Ogni battito del tuo cuore è un inno di vittoria, ogni respiro un giuramento di sterminio contro i nemici dell'Imperium.",
+        "Ottieni un Aumento dei Punteggi di Caratteristica: puoi aumentare un punteggio di 2 o due punteggi di 1 ciascuno. In alternativa, puoi scegliere un talento per il quale soddisfi i prerequisiti."
+      ]
+    },
+    {
+      "name": "Attacco Extra Triplo",
+      "source": "PLOTI",
+      "className": "Fratello Astartes",
+      "classSource": "PLOTI",
+      "level": 17,
+      "entries": [
+        "La tua furia disciplinata e il tuo addestramento sovrumano ti trasformano in una tempesta di colpi. Ogni movimento è calcolato, ogni attacco è un martello che abbatte i nemici dell'Imperatore.",
+        "A partire dal 17° livello, quando usi l'azione Attaccare nel tuo turno, puoi attaccare quattro volte invece di tre."
+      ]
+    },
+    {
       "name": "Caratteristica del Capitolo",
       "source": "PLOTI",
       "className": "Fratello Astartes",
       "classSource": "PLOTI",
       "level": 18,
-      "gainSubclassFeature": true,
       "entries": [
         "Hai raggiunto l'apice della dottrina del tuo Capitolo. La tua presenza è un faro di disciplina e potere assoluto.",
         "Ottieni la quarta e ultima caratteristica del tuo Rito del Capitolo."
+      ]
+    },
+    {
+      "name": "Aumento delle Caratteristiche",
+      "source": "PLOTI",
+      "className": "Fratello Astartes",
+      "classSource": "PLOTI",
+      "level": 19,
+      "entries": [
+        "Sei divenuto leggenda vivente: un semidio della guerra, la cui sola presenza incute timore e riverenza. La tua forza non è più solo tua, ma dell'Imperatore stesso che agisce attraverso di te.",
+        "Ottieni un Aumento dei Punteggi di Caratteristica: puoi aumentare un punteggio di 2 o due punteggi di 1 ciascuno. In alternativa, puoi scegliere un talento per il quale soddisfi i prerequisiti."
       ]
     },
     {
@@ -331,6 +605,7 @@
       "level": 20,
       "entries": [
         "Sei il ruggito della Crociata. La tua ombra è una reliquia, il tuo passo un editto. La realtà ti riconosce come strumento dell'Ultimo e arretra.",
+        "Per 1 minuto ottieni i seguenti benefici:",
         {
           "type": "list",
           "style": "list-hang",
@@ -353,19 +628,7 @@
           ]
         },
         "Una volta usata, questa feature non può essere riutilizzata finché non completi un riposo lungo."
-      ],
-      "activation": {
-        "type": "bonus",
-        "cost": 1
-      },
-      "duration": {
-        "type": "minute",
-        "amount": 1
-      },
-      "uses": {
-        "value": 1,
-        "type": "long rest"
-      }
+      ]
     }
   ],
   "subclassFeature": [
@@ -409,15 +672,7 @@
             }
           ]
         }
-      ],
-      "activation": {
-        "type": "bonus",
-        "cost": 1
-      },
-      "range": {
-        "type": "feet",
-        "amount": 30
-      }
+      ]
     },
     {
       "name": "Disciplina del Campo di Battaglia",
@@ -445,20 +700,7 @@
             }
           ]
         }
-      ],
-      "activation": {
-        "type": "reaction",
-        "cost": 1,
-        "condition": "Quando un alleato entro 9 m fallisce un TS"
-      },
-      "range": {
-        "type": "feet",
-        "amount": 30
-      },
-      "limitedUse": {
-        "count": 2,
-        "recharge": "long rest"
-      }
+      ]
     },
     {
       "name": "Comando Coordinato",
@@ -486,15 +728,7 @@
             }
           ]
         }
-      ],
-      "activation": {
-        "type": "bonus",
-        "cost": 1
-      },
-      "range": {
-        "type": "feet",
-        "amount": 30
-      }
+      ]
     },
     {
       "name": "Maestro del Codex",
@@ -523,21 +757,1121 @@
             }
           ]
         }
-      ],
-      "range": {
-        "type": "feet",
-        "amount": 30
-      },
-      "activation": {
-        "type": "action",
-        "cost": 1,
-        "condition": "Ordine Imperativo su un alleato che ha fallito un tiro"
-      },
-      "limitedUse": {
-        "count": 1,
-        "recharge": "long rest"
-      }
+      ]
+    },
+    {
+      "name": "Rito dei Blood Angels",
+      "source": "PLOTI",
+      "className": "Fratello Astartes",
+      "classSource": "PLOTI",
+      "subclassShortName": "Blood Angels",
+      "subclassSource": "PLOTI",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "I Figli di Sanguinius. {@b «La furia è la nostra benedizione e la nostra maledizione.»} Guerrieri artistici e letali, i Blood Angels combattono sospesi tra grazia angelica e sete di sangue, trasformando il campo di battaglia in un macabro palcoscenico."
+      ]
+    },
+    {
+      "name": "Sete Rossa",
+      "source": "PLOTI",
+      "level": 3,
+      "className": "Fratello Astartes",
+      "classSource": "PLOTI",
+      "subclassShortName": "Blood Angels",
+      "subclassSource": "PLOTI",
+      "entries": [
+        "Il sangue versato diventa la tua linfa vitale.",
+        {
+          "type": "list",
+          "items": [
+            {
+              "type": "item",
+              "name": "Effetto.",
+              "entry": "Quando riduci un nemico a 0 PF, recuperi {@dice 1d10} + metà del tuo livello da Fratello Astartes. Ottieni inoltre vantaggio ai tiri per colpire contro creature già ferite (meno della metà dei PF)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Ali di Baal",
+      "source": "PLOTI",
+      "level": 6,
+      "className": "Fratello Astartes",
+      "classSource": "PLOTI",
+      "subclassShortName": "Blood Angels",
+      "subclassSource": "PLOTI",
+      "entries": [
+        "Dalle tue spalle si sprigionano ali di energia cremisi, simbolo della discendenza angelica.",
+        {
+          "type": "list",
+          "items": [
+            {
+              "type": "item",
+              "name": "Effetto.",
+              "entry": "Come azione bonus, manifesti un jump pack di energia per 1 minuto, ottenendo velocità di volo pari al doppio della tua velocità. Durante questo effetto, i tuoi attacchi in mischia infliggono {@dice 1d8} danni radiosi aggiuntivi."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Furia Sanguinaria",
+      "source": "PLOTI",
+      "level": 13,
+      "className": "Fratello Astartes",
+      "classSource": "PLOTI",
+      "subclassShortName": "Blood Angels",
+      "subclassSource": "PLOTI",
+      "entries": [
+        "La Furia Nera ti avvolge, trasformandoti in un turbine di distruzione.",
+        {
+          "type": "list",
+          "items": [
+            {
+              "type": "item",
+              "name": "Effetto.",
+              "entry": "Una volta per riposo lungo, puoi entrare in Furia Astartes Potenziata per 1 minuto: ottieni vantaggio a tutti gli attacchi in mischia, +3 m alla velocità e recuperi 10 PF ogni volta che uccidi un nemico."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Discendente Angelico",
+      "source": "PLOTI",
+      "level": 18,
+      "className": "Fratello Astartes",
+      "classSource": "PLOTI",
+      "subclassShortName": "Blood Angels",
+      "subclassSource": "PLOTI",
+      "entries": [
+        "La tua forma si sublima in leggenda, incarnazione vivente di Sanguinius.",
+        {
+          "type": "list",
+          "items": [
+            {
+              "type": "item",
+              "name": "Effetto.",
+              "entry": "Ottieni volo permanente. I tuoi attacchi in mischia infliggono danni radiosi aggiuntivi pari al tuo bonus di competenza. Gli alleati entro 3 m ottengono vantaggio ai tiri salvezza contro paura."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Rito degli Space Wolves",
+      "source": "PLOTI",
+      "className": "Fratello Astartes",
+      "classSource": "PLOTI",
+      "subclassShortName": "Space Wolves",
+      "subclassSource": "PLOTI",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "I Figli di Fenris. {@b «L'istinto è la lama più affilata del guerriero.»} Selvaggi e orgogliosi, gli Space Wolves incarnano la furia primordiale e il legame indissolubile del branco."
+      ]
+    },
+    {
+      "name": "Sensi del Lupo",
+      "source": "PLOTI",
+      "level": 3,
+      "className": "Fratello Astartes",
+      "classSource": "PLOTI",
+      "subclassShortName": "Space Wolves",
+      "subclassSource": "PLOTI",
+      "entries": [
+        "I tuoi sensi si affinano come quelli di un predatore di Fenris.",
+        {
+          "type": "list",
+          "items": [
+            {
+              "type": "item",
+              "name": "Effetto.",
+              "entry": "Ottieni vantaggio alle prove di Percezione basate su udito e olfatto, e alle prove di Sopravvivenza. Inoltre, puoi individuare creature invisibili entro 6 m (20 ft) se producono odore o rumore."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Ira del Lupo",
+      "source": "PLOTI",
+      "level": 6,
+      "className": "Fratello Astartes",
+      "classSource": "PLOTI",
+      "subclassShortName": "Space Wolves",
+      "subclassSource": "PLOTI",
+      "entries": [
+        "La furia di Fenris scorre nelle tue vene, trasformandoti in una bestia da guerra.",
+        {
+          "type": "list",
+          "items": [
+            {
+              "type": "item",
+              "name": "Effetto.",
+              "entry": "Una volta per riposo lungo, puoi entrare in Ira del Lupo per 1 minuto: ottieni vantaggio ai tiri di Forza, ai TS su Forza e Costituzione, +2 ai danni in mischia e resistenza a danni contundenti, perforanti e taglienti."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Caccia del Branco",
+      "source": "PLOTI",
+      "level": 13,
+      "className": "Fratello Astartes",
+      "classSource": "PLOTI",
+      "subclassShortName": "Space Wolves",
+      "subclassSource": "PLOTI",
+      "entries": [
+        "Il branco si muove come un unico organismo, colpendo con precisione letale.",
+        {
+          "type": "list",
+          "items": [
+            {
+              "type": "item",
+              "name": "Effetto.",
+              "entry": "Quando colpisci un nemico, un alleato entro 3 m (10 ft) da lui può effettuare un attacco come reazione. Inoltre, se due alleati colpiscono lo stesso bersaglio nello stesso turno, infliggono complessivamente {@dice 2d8} danni aggiuntivi."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Spirito di Fenris",
+      "source": "PLOTI",
+      "level": 18,
+      "className": "Fratello Astartes",
+      "classSource": "PLOTI",
+      "subclassShortName": "Space Wolves",
+      "subclassSource": "PLOTI",
+      "entries": [
+        "La bestia interiore si manifesta: diventi un ibrido lupo-umanoide, incarnazione vivente di Fenris.",
+        {
+          "type": "list",
+          "items": [
+            {
+              "type": "item",
+              "name": "Effetto.",
+              "entry": "Per 1 minuto ottieni +2 Forza e +2 Costituzione, i tuoi attacchi in mischia infliggono {@dice 1d10} danni aggiuntivi, e diventi immune a paura e charme."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Rito dei Dark Angels",
+      "source": "PLOTI",
+      "className": "Fratello Astartes",
+      "classSource": "PLOTI",
+      "subclassShortName": "Dark Angels",
+      "subclassSource": "PLOTI",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "I Custodi dei Segreti. {@b «La redenzione si ottiene solo nel fuoco purificatore.»} Guerrieri stoici e inflessibili, i Dark Angels combattono con silenziosa determinazione, portando il peso di un'antica colpa e la missione di estirpare ogni traditore."
+      ]
+    },
+    {
+      "name": "Fanatismo Silente",
+      "source": "PLOTI",
+      "level": 3,
+      "className": "Fratello Astartes",
+      "classSource": "PLOTI",
+      "subclassShortName": "Dark Angels",
+      "subclassSource": "PLOTI",
+      "entries": [
+        "La tua fede incrollabile ti rende impenetrabile alle tentazioni e saldo come una roccia.",
+        {
+          "type": "list",
+          "items": [
+            {
+              "type": "item",
+              "name": "Effetto.",
+              "entry": "Ottieni vantaggio ai tiri salvezza contro charme e paura. Inoltre, se non ti muovi durante il tuo turno, ottieni +1 ai tiri per colpire fino all'inizio del turno successivo."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Aura di Penitenza",
+      "source": "PLOTI",
+      "level": 6,
+      "className": "Fratello Astartes",
+      "classSource": "PLOTI",
+      "subclassShortName": "Dark Angels",
+      "subclassSource": "PLOTI",
+      "entries": [
+        "La tua sola presenza è un monito di colpa e redenzione.",
+        {
+          "type": "list",
+          "items": [
+            {
+              "type": "item",
+              "name": "Effetto.",
+              "entry": "Gli alleati entro 3 m (10 ft) ottengono +1 ai tiri salvezza. I nemici che iniziano il turno nell'aura devono superare un TS Saggezza CD 15 o subire svantaggio ai tiri per colpire fino alla fine del loro turno successivo."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Giudizio dei Peccatori",
+      "source": "PLOTI",
+      "level": 13,
+      "className": "Fratello Astartes",
+      "classSource": "PLOTI",
+      "subclassShortName": "Dark Angels",
+      "subclassSource": "PLOTI",
+      "entries": [
+        "Il tuo verdetto cala come una lama di luce purificatrice.",
+        {
+          "type": "list",
+          "items": [
+            {
+              "type": "item",
+              "name": "Effetto.",
+              "entry": "Una volta per riposo lungo, puoi usare la tua azione per evocare un'aura di luce verde (raggio 9 m) per 1 minuto. I nemici all'interno subiscono {@dice 2d8} danni radiosi all'inizio del loro turno. Inoltre, i tuoi attacchi ignorano resistenze ai danni."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Redenzione Finale",
+      "source": "PLOTI",
+      "level": 18,
+      "className": "Fratello Astartes",
+      "classSource": "PLOTI",
+      "subclassShortName": "Dark Angels",
+      "subclassSource": "PLOTI",
+      "entries": [
+        "Al confine tra vita e morte, la tua anima esplode in un ultimo atto di redenzione.",
+        {
+          "type": "list",
+          "items": [
+            {
+              "type": "item",
+              "name": "Effetto.",
+              "entry": "Quando scendi a 0 PF, puoi scegliere di emettere un'esplosione sacra con raggio 6 m (20 ft): ogni nemico subisce {@dice 6d10} danni radiosi (TS Des CD 17 dimezza). Dopo l'esplosione, torni immediatamente a 1 PF. Puoi usare questa capacità una volta al giorno."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Rito dei Salamanders",
+      "source": "PLOTI",
+      "className": "Fratello Astartes",
+      "classSource": "PLOTI",
+      "subclassShortName": "Salamanders",
+      "subclassSource": "PLOTI",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "Forgiatori del Fuoco. {@b «Attraverso le fiamme, siamo temprati.»} I Salamanders incarnano la resistenza, la compassione e la distruzione purificatrice delle fiamme. Artigiani e difensori, resistono dove altri cadono."
+      ]
+    },
+    {
+      "name": "Cuore di Vulkan",
+      "source": "PLOTI",
+      "level": 3,
+      "className": "Fratello Astartes",
+      "classSource": "PLOTI",
+      "subclassShortName": "Salamanders",
+      "subclassSource": "PLOTI",
+      "entries": [
+        "Il fuoco non ti consuma: ti rafforza.",
+        {
+          "type": "list",
+          "items": [
+            {
+              "type": "item",
+              "name": "Resistenza.",
+              "entry": "Ottieni resistenza ai danni da fuoco."
+            },
+            {
+              "type": "item",
+              "name": "Fiamme della Vendetta.",
+              "entry": "I tuoi attacchi in mischia infliggono {@dice 1d6} danni da fuoco aggiuntivi."
+            },
+            {
+              "type": "item",
+              "name": "Artigiano.",
+              "entry": "Ottieni competenza negli strumenti da fabbro e da artigiano."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Forgiato nel Fuoco",
+      "source": "PLOTI",
+      "level": 6,
+      "className": "Fratello Astartes",
+      "classSource": "PLOTI",
+      "subclassShortName": "Salamanders",
+      "subclassSource": "PLOTI",
+      "entries": [
+        "Il calore delle fiamme diventa la tua armatura.",
+        {
+          "type": "list",
+          "items": [
+            {
+              "type": "item",
+              "name": "Reazione.",
+              "entry": "Quando subisci danni da fuoco o energia, puoi usare la tua reazione per ridurli di {@dice 1d10} + metà del tuo livello da Fratello Astartes."
+            },
+            {
+              "type": "item",
+              "name": "Soffio di Vulkan.",
+              "entry": "Una volta per riposo lungo, puoi emettere un cono di fiamme di 4,5 m (15 ft). Ogni creatura nell'area deve superare un TS Des CD 15 o subire {@dice 4d6} danni da fuoco (metà con successo)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Tempra di Vulkan",
+      "source": "PLOTI",
+      "level": 13,
+      "className": "Fratello Astartes",
+      "classSource": "PLOTI",
+      "subclassShortName": "Salamanders",
+      "subclassSource": "PLOTI",
+      "entries": [
+        "Il fuoco diventa parte del tuo stesso spirito.",
+        {
+          "type": "list",
+          "items": [
+            {
+              "type": "item",
+              "name": "Resistenza Magica.",
+              "entry": "Puoi lanciare Resistenza agli Elementi (solo Fuoco) su te stesso una volta per riposo lungo."
+            },
+            {
+              "type": "item",
+              "name": "Fiamme Inesorabili.",
+              "entry": "I tuoi attacchi ignorano resistenze ai danni da fuoco."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Avatar della Forgia",
+      "source": "PLOTI",
+      "level": 18,
+      "className": "Fratello Astartes",
+      "classSource": "PLOTI",
+      "subclassShortName": "Salamanders",
+      "subclassSource": "PLOTI",
+      "entries": [
+        "Diventi incarnazione vivente della fiamma purificatrice di Vulkan.",
+        {
+          "type": "list",
+          "items": [
+            {
+              "type": "item",
+              "name": "Immunità.",
+              "entry": "Ottieni immunità ai danni da fuoco."
+            },
+            {
+              "type": "item",
+              "name": "Terrore delle Fiamme.",
+              "entry": "Quando infliggi danni da fuoco, il bersaglio deve superare un TS Saggezza CD 16 o essere spaventato fino alla fine del tuo prossimo turno."
+            },
+            {
+              "type": "item",
+              "name": "Luce della Forgia.",
+              "entry": "Le tue armi emanano luce come l'incantesimo Luce Diurna."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Rito dei Raven Guard",
+      "source": "PLOTI",
+      "className": "Fratello Astartes",
+      "classSource": "PLOTI",
+      "subclassShortName": "Raven Guard",
+      "subclassSource": "PLOTI",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "Ombre della Morte. {@b «Colpisci dall'ombra, svanisci nel silenzio.»} Maestri della furtività e degli attacchi chirurgici, i Raven Guard incarnano la precisione letale e la pazienza predatoria."
+      ]
+    },
+    {
+      "name": "Maestro dell'Ombra",
+      "source": "PLOTI",
+      "level": 3,
+      "className": "Fratello Astartes",
+      "classSource": "PLOTI",
+      "subclassShortName": "Raven Guard",
+      "subclassSource": "PLOTI",
+      "entries": [
+        "Ti muovi come un fantasma, invisibile e letale.",
+        {
+          "type": "list",
+          "items": [
+            {
+              "type": "item",
+              "name": "Furtività.",
+              "entry": "Ottieni competenza in Furtività e puoi usare l'azione Nascondersi come azione bonus."
+            },
+            {
+              "type": "item",
+              "name": "Attacco dall'Ombra.",
+              "entry": "Quando ti trovi in luce fioca o oscurità, ottieni vantaggio al primo tiro per colpire di ogni turno."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Assalto Silenzioso",
+      "source": "PLOTI",
+      "level": 6,
+      "className": "Fratello Astartes",
+      "classSource": "PLOTI",
+      "subclassShortName": "Raven Guard",
+      "subclassSource": "PLOTI",
+      "entries": [
+        "Colpisci prima che il nemico possa reagire, lasciando solo silenzio dietro di te.",
+        {
+          "type": "list",
+          "items": [
+            {
+              "type": "item",
+              "name": "Effetto.",
+              "entry": "Dopo aver colpito una creatura che non ti aveva ancora visto, infliggi {@dice 2d8} danni extra. Inoltre, puoi scalare superfici verticali senza penalità."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Ombra Vivente",
+      "source": "PLOTI",
+      "level": 13,
+      "className": "Fratello Astartes",
+      "classSource": "PLOTI",
+      "subclassShortName": "Raven Guard",
+      "subclassSource": "PLOTI",
+      "entries": [
+        "Diventi un tutt'uno con le tenebre, un assassino invisibile.",
+        {
+          "type": "list",
+          "items": [
+            {
+              "type": "item",
+              "name": "Invisibilità.",
+              "entry": "Una volta per riposo lungo, puoi diventare invisibile per 1 minuto."
+            },
+            {
+              "type": "item",
+              "name": "Colpo Mortale.",
+              "entry": "Mentre sei invisibile, il primo attacco che colpisci infligge {@dice 4d8} danni extra."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Maestro dell'Assassinio",
+      "source": "PLOTI",
+      "level": 18,
+      "className": "Fratello Astartes",
+      "classSource": "PLOTI",
+      "subclassShortName": "Raven Guard",
+      "subclassSource": "PLOTI",
+      "entries": [
+        "Diventi l'incarnazione stessa della morte silenziosa.",
+        {
+          "type": "list",
+          "items": [
+            {
+              "type": "item",
+              "name": "Colpo Perfetto.",
+              "entry": "Quando attacchi una creatura sorpresa, ogni colpo che infliggi è automaticamente un colpo critico."
+            },
+            {
+              "type": "item",
+              "name": "Passo tra le Fessure.",
+              "entry": "Una volta per riposo lungo, puoi passare attraverso spazi ristretti fino a 1,5 cm come se fossi incorporeo."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Rito degli Imperial Fists",
+      "source": "PLOTI",
+      "className": "Fratello Astartes",
+      "classSource": "PLOTI",
+      "subclassShortName": "Imperial Fists",
+      "subclassSource": "PLOTI",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "Difensori della Fortezza. {@b «Noi siamo il muro contro cui si infrange il caos.»} Gli Imperial Fists sono maestri della resistenza e della difesa tattica, implacabili nel fuoco disciplinato e nella protezione dei loro fratelli."
+      ]
+    },
+    {
+      "name": "Roccia Inamovibile",
+      "source": "PLOTI",
+      "level": 3,
+      "className": "Fratello Astartes",
+      "classSource": "PLOTI",
+      "subclassShortName": "Imperial Fists",
+      "subclassSource": "PLOTI",
+      "entries": [
+        "Il tuo corpo diventa un bastione, saldo come la pietra.",
+        {
+          "type": "list",
+          "items": [
+            {
+              "type": "item",
+              "name": "Difesa.",
+              "entry": "+1 alla CA quando indossi armatura pesante."
+            },
+            {
+              "type": "item",
+              "name": "Stabilità.",
+              "entry": "Ottieni vantaggio ai tiri salvezza contro spinte o tentativi di buttarti a terra."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Difesa Perfetta",
+      "source": "PLOTI",
+      "level": 6,
+      "className": "Fratello Astartes",
+      "classSource": "PLOTI",
+      "subclassShortName": "Imperial Fists",
+      "subclassSource": "PLOTI",
+      "entries": [
+        "Ogni colpo che ti raggiunge trova la tua guardia impenetrabile.",
+        {
+          "type": "list",
+          "items": [
+            {
+              "type": "item",
+              "name": "Reazione.",
+              "entry": "Quando subisci un colpo, puoi usare la tua reazione per ridurre il danno di {@dice 1d12} + il tuo modificatore di Costituzione."
+            },
+            {
+              "type": "item",
+              "name": "Contrattacco.",
+              "entry": "Una volta per turno, quando riduci il danno in questo modo, puoi contrattaccare immediatamente con un colpo in mischia."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Muro dell'Imperatore",
+      "source": "PLOTI",
+      "level": 13,
+      "className": "Fratello Astartes",
+      "classSource": "PLOTI",
+      "subclassShortName": "Imperial Fists",
+      "subclassSource": "PLOTI",
+      "entries": [
+        "Tu e i tuoi fratelli diventate un muro vivente, invalicabile.",
+        {
+          "type": "list",
+          "items": [
+            {
+              "type": "item",
+              "name": "Aura Difensiva.",
+              "entry": "Gli alleati entro 3 m (10 ft) ottengono +2 alla CA se rimangono nell'area per tutto il turno."
+            },
+            {
+              "type": "item",
+              "name": "Resistenza.",
+              "entry": "Ottieni resistenza ai danni contundenti, perforanti e taglienti non magici."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Roccia Eterna",
+      "source": "PLOTI",
+      "level": 18,
+      "className": "Fratello Astartes",
+      "classSource": "PLOTI",
+      "subclassShortName": "Imperial Fists",
+      "subclassSource": "PLOTI",
+      "entries": [
+        "Diventi l'incarnazione stessa della fortezza, un baluardo che non crolla mai.",
+        {
+          "type": "list",
+          "items": [
+            {
+              "type": "item",
+              "name": "Immunità.",
+              "entry": "Ottieni immunità alla paura e allo stordimento."
+            },
+            {
+              "type": "item",
+              "name": "Ultima Resistenza.",
+              "entry": "Quando scendi a 0 PF, puoi scegliere di rimanere a 1 PF invece. Puoi usare questa capacità una volta per riposo lungo."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Rito degli Iron Hands",
+      "source": "PLOTI",
+      "className": "Fratello Astartes",
+      "classSource": "PLOTI",
+      "subclassShortName": "Iron Hands",
+      "subclassSource": "PLOTI",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "Carne e Acciaio. {@b «La carne è debole. L'acciaio è eterno.»} Gli Iron Hands rifiutano la fragilità della carne, sostituendola con servoimpianti e macchine, fino a divenire guerrieri metà uomo e metà macchina."
+      ]
+    },
+    {
+      "name": "Bionica del Ferro",
+      "source": "PLOTI",
+      "level": 3,
+      "className": "Fratello Astartes",
+      "classSource": "PLOTI",
+      "subclassShortName": "Iron Hands",
+      "subclassSource": "PLOTI",
+      "entries": [
+        "Il tuo corpo si fonde con l'acciaio, rendendoti più resistente e implacabile.",
+        {
+          "type": "list",
+          "items": [
+            {
+              "type": "item",
+              "name": "Difesa.",
+              "entry": "+1 alla CA."
+            },
+            {
+              "type": "item",
+              "name": "Resistenza.",
+              "entry": "Vantaggio ai tiri salvezza contro veleno e malattie."
+            },
+            {
+              "type": "item",
+              "name": "Adattamento.",
+              "entry": "Puoi respirare sott'acqua e ignorare la fatica dovuta a fame o sonno."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Servoarmatura Avanzata",
+      "source": "PLOTI",
+      "level": 6,
+      "className": "Fratello Astartes",
+      "classSource": "PLOTI",
+      "subclassShortName": "Iron Hands",
+      "subclassSource": "PLOTI",
+      "entries": [
+        "La tua armatura e i tuoi impianti ti rendono una macchina da guerra vivente.",
+        {
+          "type": "list",
+          "items": [
+            {
+              "type": "item",
+              "name": "Riduzione Danni.",
+              "entry": "Ogni volta che subisci danni, riduci il totale di {@dice 1d8}."
+            },
+            {
+              "type": "item",
+              "name": "Rigenerazione.",
+              "entry": "Una volta per riposo lungo, puoi rigenerare {@dice 2d10} PF come azione bonus."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Macchina di Guerra",
+      "source": "PLOTI",
+      "level": 13,
+      "className": "Fratello Astartes",
+      "classSource": "PLOTI",
+      "subclassShortName": "Iron Hands",
+      "subclassSource": "PLOTI",
+      "entries": [
+        "La tua umanità svanisce, lasciando spazio a una macchina di distruzione perfetta.",
+        {
+          "type": "list",
+          "items": [
+            {
+              "type": "item",
+              "name": "Immunità.",
+              "entry": "Ottieni immunità a charme, paura e paralisi."
+            },
+            {
+              "type": "item",
+              "name": "Colpi Devastanti.",
+              "entry": "I tuoi colpi critici infliggono {@dice 2d12} danni aggiuntivi."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Forma del Ferro",
+      "source": "PLOTI",
+      "level": 18,
+      "className": "Fratello Astartes",
+      "classSource": "PLOTI",
+      "subclassShortName": "Iron Hands",
+      "subclassSource": "PLOTI",
+      "entries": [
+        "Diventi una macchina vivente, incarnazione della volontà di ferro del Capitolo.",
+        {
+          "type": "list",
+          "items": [
+            {
+              "type": "item",
+              "name": "Macchina Vivente.",
+              "entry": "Sei considerato una creatura macchina vivente: ottieni immunità a veleno, malattie, charme e paralisi."
+            },
+            {
+              "type": "item",
+              "name": "Armi Inesorabili.",
+              "entry": "I tuoi colpi ignorano resistenze ai danni non magici."
+            },
+            {
+              "type": "item",
+              "name": "Potenza Aumentata.",
+              "entry": "Ottieni permanentemente +2 Forza e +2 Costituzione."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Rito del Caos",
+      "source": "PLOTI",
+      "className": "Fratello Astartes",
+      "classSource": "PLOTI",
+      "subclassShortName": "Caos",
+      "subclassSource": "PLOTI",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "I Traditori del Warp. {@b «Nel caos vi è libertà, e nel sangue, conoscenza.»} I Chaos Space Marine hanno abbracciato i poteri oscuri del Warp, ottenendo abilità psioniche e mutazioni blasfeme che li rendono araldi della rovina."
+      ]
+    },
+    {
+      "name": "Tocco del Warp",
+      "source": "PLOTI",
+      "level": 3,
+      "className": "Fratello Astartes",
+      "classSource": "PLOTI",
+      "subclassShortName": "Caos",
+      "subclassSource": "PLOTI",
+      "entries": [
+        "Il potere del Warp scorre nelle tue vene, corrompendo la tua essenza.",
+        {
+          "type": "list",
+          "items": [
+            {
+              "type": "item",
+              "name": "Incantesimi Oscuri.",
+              "entry": "Ottieni accesso a incantesimi come un Warlock di 1° livello. Conosci Blast del Warp (come Eldritch Blast ma infligge danni necrotici). Puoi inoltre lanciare Oscurità e Armatura di Agathys una volta al giorno ciascuno."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Benedizione del Demone",
+      "source": "PLOTI",
+      "level": 6,
+      "className": "Fratello Astartes",
+      "classSource": "PLOTI",
+      "subclassShortName": "Caos",
+      "subclassSource": "PLOTI",
+      "entries": [
+        "Il Warp ti ricompensa con mutazioni temporanee e resistenze innaturali.",
+        {
+          "type": "list",
+          "items": [
+            {
+              "type": "item",
+              "name": "Resistenze.",
+              "entry": "Ottieni resistenza ai danni necrotici e da fuoco."
+            },
+            {
+              "type": "item",
+              "name": "Mutazioni.",
+              "entry": "Come azione bonus, puoi manifestare tentacoli o artigli per 1 minuto. I tuoi attacchi in mischia infliggono {@dice 1d6} danni necrotici aggiuntivi."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Rovina del Warp",
+      "source": "PLOTI",
+      "level": 13,
+      "className": "Fratello Astartes",
+      "classSource": "PLOTI",
+      "subclassShortName": "Caos",
+      "subclassSource": "PLOTI",
+      "entries": [
+        "Il Warp ti concede poteri arcani devastanti.",
+        {
+          "type": "list",
+          "items": [
+            {
+              "type": "item",
+              "name": "Slot Magici.",
+              "entry": "Ottieni 2 slot di incantesimi di 3° livello, usabili come un Warlock."
+            },
+            {
+              "type": "item",
+              "name": "Incantesimi Oscuri.",
+              "entry": "Puoi lanciare Paura e Controllare Persone una volta al giorno ciascuno."
+            },
+            {
+              "type": "item",
+              "name": "Corruzione delle Armi.",
+              "entry": "I tuoi attacchi in mischia infliggono {@dice 1d8} danni necrotici aggiuntivi."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Campione del Caos",
+      "source": "PLOTI",
+      "level": 18,
+      "className": "Fratello Astartes",
+      "classSource": "PLOTI",
+      "subclassShortName": "Caos",
+      "subclassSource": "PLOTI",
+      "entries": [
+        "Diventi un campione demoniaco, incarnazione della follia del Warp.",
+        {
+          "type": "list",
+          "items": [
+            {
+              "type": "item",
+              "name": "Immunità.",
+              "entry": "Ottieni immunità ai danni necrotici e alla condizione charme."
+            },
+            {
+              "type": "item",
+              "name": "Evocazione.",
+              "entry": "Puoi evocare un Demone del Warp di GS 7 o inferiore come azione, una volta per giorno."
+            },
+            {
+              "type": "item",
+              "name": "Resurrezione Demoniaca.",
+              "entry": "Una volta per riposo lungo, se muori, ritorni in vita dopo {@dice 1d4} turni con metà dei tuoi PF, in una forma demoniaca: ottieni +2 Forza, +2 Costituzione e un'aura di 3 m che infligge {@dice 2d10} danni necrotici ai nemici all'inizio del loro turno."
+            }
+          ]
+        }
+      ]
     }
   ],
-  "classFluff": []
+  "item": [
+    {
+      "name": "Bolter",
+      "source": "PLOTI",
+      "type": "R",
+      "rarity": "uncommon",
+      "range": "100/300",
+      "dmg1": "2d10",
+      "dmgType": "P",
+      "weaponCategory": "martial",
+      "property": [
+        "H",
+        "2H",
+        "AF"
+      ],
+      "entries": [
+        "Il Bolter è un cannone portatile che spara proiettili esplosivi a massa reattiva."
+      ]
+    },
+    {
+      "name": "Spada a Catena",
+      "source": "PLOTI",
+      "type": "M",
+      "rarity": "uncommon",
+      "dmg1": "2d8",
+      "dmgType": "S",
+      "weaponCategory": "simple",
+      "property": [
+        "L"
+      ],
+      "entries": [
+        "Una lama dentata che ruggisce come un predatore meccanico. Ogni colpo infligge 1d4 danni da sanguinamento aggiuntivi, squarciando carne e metallo."
+      ]
+    },
+    {
+      "name": "Granata",
+      "source": "PLOTI",
+      "type": "EXP",
+      "rarity": "common",
+      "range": "60",
+      "dmg1": "4d6",
+      "dmgType": "P",
+      "entries": [
+        "Un ordigno devastante che esplode in un raggio di 6 m. TS Des CD 15 dimezza i danni."
+      ]
+    },
+    {
+      "name": "Jump Pack",
+      "source": "PLOTI",
+      "type": "OTH",
+      "rarity": "rare",
+      "entries": [
+        "Propulsori dorsali che permettono di muoversi di 9 m come azione bonus, ignorando terreno difficile. Ricarica su 5-6. Trasforma l'Astartes in un angelo della morte che piomba dall'alto."
+      ]
+    },
+    {
+      "name": "Ascia Runica",
+      "source": "PLOTI",
+      "type": "M",
+      "rarity": "rare",
+      "dmg1": "2d8",
+      "dmgType": "S",
+      "weaponCategory": "simple",
+      "property": [
+        "L"
+      ],
+      "entries": [
+        "Forgiata con rune ancestrali, vibra di potere arcano. Ignora resistenze fisiche, spezzando difese e scudi come se fossero carta."
+      ]
+    },
+    {
+      "name": "Plasma Gun",
+      "source": "PLOTI",
+      "type": "M",
+      "rarity": "rare",
+      "range": "60/180",
+      "dmg1": "3d10+5",
+      "dmgType": "R",
+      "charges": 2,
+      "weaponCategory": "martial",
+      "property": [
+        "H",
+        "2H"
+      ],
+      "entries": [
+        "Un'arma instabile che incanala il sole stesso. Ha 2 ricariche e rischia di esplodere con un tiro percentuale fallito."
+      ]
+    },
+    {
+      "name": "Spada Potenziata",
+      "source": "PLOTI",
+      "type": "M",
+      "rarity": "rare",
+      "dmg1": "2d10",
+      "dmgType": "S",
+      "weaponCategory": "martial",
+      "property": [
+        "H",
+        "2H"
+      ],
+      "entries": [
+        "Una lama che vibra di energia pura, capace di tagliare anche l'acciaio ceramite. Ignora resistenze fisiche."
+      ]
+    },
+    {
+      "name": "Bolter Leggero",
+      "source": "PLOTI",
+      "type": "R",
+      "rarity": "common",
+      "range": "120/360",
+      "dmg1": "1d10",
+      "dmgType": "P",
+      "weaponCategory": "simple",
+      "property": [
+        "L",
+        "AF"
+      ],
+      "entries": [
+        "Versione più maneggevole del Bolter, comunque letale. Usa la Forza per determinare il tiro per colpire e i Danni."
+      ]
+    },
+    {
+      "name": "Bolter Corrotto",
+      "source": "PLOTI",
+      "type": "R",
+      "rarity": "rare",
+      "dmg1": "2d10",
+      "dmgType": "N",
+      "entries": [
+        "Un'arma blasfema, intrisa di Warp. Ogni colpo lacera corpo e anima, diffondendo corruzione con ogni detonazione."
+      ]
+    },
+    {
+      "name": "Artiglio Demoniaco",
+      "source": "PLOTI",
+      "type": "M",
+      "rarity": "rare",
+      "dmg1": "2d8",
+      "dmgType": "S",
+      "entries": [
+        "Una mutazione vivente che cresce dalla carne corrotta. Infligge anche 1d6 danni necrotici aggiuntivi."
+      ]
+    },
+    {
+      "name": "Servoarmatura",
+      "source": "PLOTI",
+      "type": "HA",
+      "rarity": "rare",
+      "ac": 2,
+      "stealth": true,
+      "entries": [
+        "Iconica corazza potenziata, un tempio di acciaio che amplifica forza e resistenza. Conferisce +2 CA e resistenza ai danni contundenti."
+      ]
+    },
+    {
+      "name": "Terminator Armor",
+      "source": "PLOTI",
+      "type": "HA",
+      "rarity": "very rare",
+      "ac": 3,
+      "stealth": true,
+      "entries": [
+        "Una reliquia di guerra, più simile a un carro armato che a un'armatura. Conferisce +3 CA, immunità ai colpi critici e svantaggio a Furtività."
+      ]
+    },
+    {
+      "name": "Martello Potenziato",
+      "source": "PLOTI",
+      "type": "M",
+      "rarity": "very rare",
+      "dmg1": "2d12",
+      "dmgType": "B",
+      "entries": [
+        "Ogni colpo è un terremoto. Richiede Forza 18+ per essere brandito."
+      ]
+    },
+    {
+      "name": "Reliquia del Capitolo",
+      "source": "PLOTI",
+      "type": "M",
+      "rarity": "artifact",
+      "entries": [
+        "Ogni reliquia è un frammento di leggenda, tramandata da generazioni di guerrieri. Può assumere forme diverse (Lanciafiamme di Vulkan, Artiglio del Lupo, Spada dei Mille Figli) e conferisce poteri unici."
+      ]
+    }
+  ]
 }

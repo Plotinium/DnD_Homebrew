@@ -2,7 +2,7 @@
   "_meta": {
     "sources": [
       {
-        "json": "ploti",
+        "json": "Plotinium",
         "abbreviation": "PLOTI",
         "full": "Plotinium",
         "version": "1.0.0",
@@ -17,7 +17,7 @@
     ],
     "dateAdded": 1760351369,
     "dateLastModified": 1760363260,
-    "edition": "2024"
+    "edition": "classic"
   },
   "race": [
     {
@@ -37,13 +37,7 @@
       ],
       "darkvision": 60,
       "traitTags": [
-        "Advantage on Saving Throws",
-        "Frightened",
-        "Poison",
-        "Disease",
-        "Darkvision",
-        "Skill Proficiency",
-        "Damage Reduction"
+        "Skill Proficiency"
       ],
       "skillProficiencies": [
         {
