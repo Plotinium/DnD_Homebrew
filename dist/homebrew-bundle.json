@@ -17,7 +17,7 @@
     ],
     "edition": "2024",
     "dateAdded": 1749145255,
-    "dateLastModified": 1760458205
+    "dateLastModified": 1760519142
   },
   "race": [
     {
@@ -695,6 +695,7 @@
         },
         "Erede dell'Imperatore|Fratello Astartes|PLOTI|20|PLOTI"
       ],
+      "subclassTitle": "Disciplina del Capitolo",
       "hasFluff": true
     }
   ],
@@ -1378,7 +1379,7 @@
       "level": 18,
       "gainSubclassFeature": true,
       "entries": [
-        "Hai raggiunto l’apice della dottrina del tuo Capitolo. La tua presenza è un faro di disciplina e potere assoluto.",
+        "Hai raggiunto l'apice della dottrina del tuo Capitolo. La tua presenza è un faro di disciplina e potere assoluto.",
         "Ottieni la quarta e ultima caratteristica del tuo Rito del Capitolo."
       ]
     },
@@ -1663,16 +1664,16 @@
   "subclass": [
     {
       "name": "Rito degli Ultramarine",
+      "shortName": "Ultramarine",
       "source": "PLOTI",
       "className": "Fratello Astartes",
       "classSource": "PLOTI",
-      "shortName": "Ultramarine",
       "subclassFeatures": [
-        "Rito degli Ultramarine|Fratello Astartes|PLOTI|Rito degli Ultramarine|PLOTI|3",
-        "Tattico del Codex|Fratello Astartes|PLOTI|Rito degli Ultramarine|PLOTI|3",
-        "Disciplina del Campo di Battaglia|Fratello Astartes|PLOTI|Rito degli Ultramarine|PLOTI|6",
-        "Comando Coordinato|Fratello Astartes|PLOTI|Rito degli Ultramarine|PLOTI|13",
-        "Maestro del Codex|Fratello Astartes|PLOTI|Rito degli Ultramarine|PLOTI|18"
+        "Rito degli Ultramarine|Fratello Astartes|PLOTI|Ultramarine|PLOTI|3",
+        "Tattico del Codex|Fratello Astartes|PLOTI|Ultramarine|PLOTI|3",
+        "Disciplina del Campo di Battaglia|Fratello Astartes|PLOTI|Ultramarine|PLOTI|6",
+        "Comando Coordinato|Fratello Astartes|PLOTI|Ultramarine|PLOTI|13",
+        "Maestro del Codex|Fratello Astartes|PLOTI|Ultramarine|PLOTI|18"
       ]
     }
   ],
@@ -1687,17 +1688,8 @@
       "level": 3,
       "header": 1,
       "entries": [
-        "Maestri della Strategia",
-        "«La disciplina è la lama con cui si scolpisce la vittoria.» Gli Ultramarine sono il simbolo della perfezione tattica e della disciplina. Prediligono il fuoco coordinato e il comando, trasformando il campo di battaglia in un teorema risolto."
-      ],
-      "activation": {
-        "type": "bonus",
-        "cost": 1
-      },
-      "range": {
-        "type": "feet",
-        "amount": 30
-      }
+        "Maestri della Strategia. {@b «La disciplina è la lama con cui si scolpisce la vittoria.»} Gli Ultramarine sono il simbolo della perfezione tattica e della disciplina. Prediligono il fuoco coordinato e il comando, trasformando il campo di battaglia in un teorema risolto."
+      ]
     },
     {
       "name": "Tattico del Codex",
@@ -1724,12 +1716,6 @@
               "name": "Usi.",
               "entry": "Puoi usare questa capacità un numero di volte pari al tuo modificatore di Saggezza (minimo 1). Recuperi tutti gli usi al termine di un riposo breve o lungo."
             }
-          ]
-        },
-        {
-          "type": "inset",
-          "entries": [
-            "Link rapido: {@subclassFeature Tattico del Codex|Fratello Astartes|Rito degli Ultramarine|PLOTI|PLOTI}."
           ]
         }
       ],
@@ -1758,7 +1744,7 @@
           "items": [
             {
               "type": "item",
-              "name": "Reazione.",
+              "name": "Reazione",
               "entry": "Quando tu o un alleato entro 9 m (30 ft) fallite un tiro salvezza, puoi spendere la reazione per aggiungere {@dice 1d4} al tiro (potendo trasformare un fallimento in un successo)."
             },
             {
