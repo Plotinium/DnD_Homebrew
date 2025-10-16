@@ -23,48 +23,48 @@
   "class": [
     {
       "name": "Doom Slayer",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "classFeatures": [
-        "Path of Torment|Doom Slayer|PLOTI|1|PLOTI",
-        "Carnage Points|Doom Slayer|PLOTI|1|PLOTI",
-        "Will Forged In Hell|Doom Slayer|PLOTI|1|PLOTI",
-        "Praetor Armor|Doom Slayer|PLOTI|1|PLOTI",
-        "Action Surge|Doom Slayer|PLOTI|2|PLOTI",
-        "The Crucible|Doom Slayer|PLOTI|2|PLOTI",
-        "Shieldsaw|Doom Slayer|PLOTI|2|PLOTI",
-        "Improved Critical|Doom Slayer|PLOTI|3|PLOTI",
-        "The Doom Slayer|Doom Slayer|PLOTI|3|PLOTI",
-        "Ability Score Increase|Doom Slayer|PLOTI|4|PLOTI",
-        "Dash|Doom Slayer|PLOTI|5|PLOTI",
-        "Vengeance Has a Name|Doom Slayer|PLOTI|5|PLOTI",
-        "Extra Attack|Doom Slayer|PLOTI|5|PLOTI",
-        "Serrat|Doom Slayer|PLOTI|5|PLOTI",
-        "Rip and Tear|Doom Slayer|PLOTI|6|PLOTI",
-        "Slayer Fury|Doom Slayer|PLOTI|6|PLOTI",
-        "The Only Thing They Fear is You|Doom Slayer|PLOTI|7|PLOTI",
-        "Maximum Efficiency|Doom Slayer|PLOTI|7|PLOTI",
-        "Heavy Metal|Doom Slayer|PLOTI|7|PLOTI",
-        "No Bounds|Doom Slayer|PLOTI|8|PLOTI",
-        "Mass Control|Doom Slayer|PLOTI|8|PLOTI",
-        "Blood Punch|Doom Slayer|PLOTI|8|PLOTI",
-        "Crucible Awakened|Doom Slayer|PLOTI|8|PLOTI",
-        "Awakened Praetor Armor|Doom Slayer|PLOTI|9|PLOTI",
-        "Unwavering, Incorruptible and Unalterable|Doom Slayer|PLOTI|9|PLOTI",
-        "Aura of Hatred|Doom Slayer|PLOTI|10|PLOTI",
-        "Hellwalker|Doom Slayer|PLOTI|11|PLOTI",
-        "Sentinel Hammer|Doom Slayer|PLOTI|11|PLOTI",
-        "Harder to Kill|Doom Slayer|PLOTI|12|PLOTI",
-        "Heaven's Blessings|Doom Slayer|PLOTI|13|PLOTI",
-        "Immunity to the Concept of Destiny|Doom Slayer|PLOTI|14|PLOTI",
-        "Berserker|Doom Slayer|PLOTI|14|PLOTI",
-        "Double the Carnage|Doom Slayer|PLOTI|15|PLOTI",
-        "Titans Killer|Doom Slayer|PLOTI|16|PLOTI",
-        "Eternal|Doom Slayer|PLOTI|17|PLOTI",
-        "Bladed Arm Attachment|Doom Slayer|PLOTI|17|PLOTI",
-        "Pull of the Void|Doom Slayer|PLOTI|18|PLOTI",
-        "Aura of Justice|Doom Slayer|PLOTI|19|PLOTI",
-        "Maximum Awakening|Doom Slayer|PLOTI|19|PLOTI",
-        "Beginning of the End|Doom Slayer|PLOTI|20|PLOTI"
+        "Path of Torment|Doom Slayer|Plotinium|1|Plotinium",
+        "Carnage Points|Doom Slayer|Plotinium|1|Plotinium",
+        "Will Forged In Hell|Doom Slayer|Plotinium|1|Plotinium",
+        "Praetor Armor|Doom Slayer|Plotinium|1|Plotinium",
+        "Action Surge|Doom Slayer|Plotinium|2|Plotinium",
+        "The Crucible|Doom Slayer|Plotinium|2|Plotinium",
+        "Shieldsaw|Doom Slayer|Plotinium|2|Plotinium",
+        "Improved Critical|Doom Slayer|Plotinium|3|Plotinium",
+        "The Doom Slayer|Doom Slayer|Plotinium|3|Plotinium",
+        "Ability Score Increase|Doom Slayer|Plotinium|4|Plotinium",
+        "Dash|Doom Slayer|Plotinium|5|Plotinium",
+        "Vengeance Has a Name|Doom Slayer|Plotinium|5|Plotinium",
+        "Extra Attack|Doom Slayer|Plotinium|5|Plotinium",
+        "Serrat|Doom Slayer|Plotinium|5|Plotinium",
+        "Rip and Tear|Doom Slayer|Plotinium|6|Plotinium",
+        "Slayer Fury|Doom Slayer|Plotinium|6|Plotinium",
+        "The Only Thing They Fear is You|Doom Slayer|Plotinium|7|Plotinium",
+        "Maximum Efficiency|Doom Slayer|Plotinium|7|Plotinium",
+        "Heavy Metal|Doom Slayer|Plotinium|7|Plotinium",
+        "No Bounds|Doom Slayer|Plotinium|8|Plotinium",
+        "Mass Control|Doom Slayer|Plotinium|8|Plotinium",
+        "Blood Punch|Doom Slayer|Plotinium|8|Plotinium",
+        "Crucible Awakened|Doom Slayer|Plotinium|8|Plotinium",
+        "Awakened Praetor Armor|Doom Slayer|Plotinium|9|Plotinium",
+        "Unwavering, Incorruptible and Unalterable|Doom Slayer|Plotinium|9|Plotinium",
+        "Aura of Hatred|Doom Slayer|Plotinium|10|Plotinium",
+        "Hellwalker|Doom Slayer|Plotinium|11|Plotinium",
+        "Sentinel Hammer|Doom Slayer|Plotinium|11|Plotinium",
+        "Harder to Kill|Doom Slayer|Plotinium|12|Plotinium",
+        "Heaven's Blessings|Doom Slayer|Plotinium|13|Plotinium",
+        "Immunity to the Concept of Destiny|Doom Slayer|Plotinium|14|Plotinium",
+        "Berserker|Doom Slayer|Plotinium|14|Plotinium",
+        "Double the Carnage|Doom Slayer|Plotinium|15|Plotinium",
+        "Titans Killer|Doom Slayer|Plotinium|16|Plotinium",
+        "Eternal|Doom Slayer|Plotinium|17|Plotinium",
+        "Bladed Arm Attachment|Doom Slayer|Plotinium|17|Plotinium",
+        "Pull of the Void|Doom Slayer|Plotinium|18|Plotinium",
+        "Aura of Justice|Doom Slayer|Plotinium|19|Plotinium",
+        "Maximum Awakening|Doom Slayer|Plotinium|19|Plotinium",
+        "Beginning of the End|Doom Slayer|Plotinium|20|Plotinium"
       ],
       "hd": {
         "number": 1,
@@ -410,9 +410,9 @@
   "classFeature": [
     {
       "name": "Path of Torment",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "className": "Doom Slayer",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "level": 1,
       "entries": [
         "You have put aside your mortal weaknesses in order to pursue your path of bloodshed and slaughter. At 1st level, you gain the following benefits:",
@@ -432,9 +432,9 @@
     },
     {
       "name": "Carnage Points",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "className": "Doom Slayer",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "level": 1,
       "entries": [
         "Starting at first level you gain a pool of resources called Carnage Points. You regain all points at the end of a long rest.",
@@ -451,21 +451,21 @@
     },
     {
       "name": "Will Forged In Hell",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "className": "Doom Slayer",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "level": 1,
       "entries": [
         "You instinctively throw up defenses around your body upon detecting an attack. Starting from 1st level you have resistance to fire damage as well as being immune to the charmed condition.",
-        "Additionally, if a creature tries to frighten you and succeeds, instead of receiving the frightened condition, you gain the {@condition Bloodlusted|PLOTI} condition towards the creature that tried to provoke fear in you.",
+        "Additionally, if a creature tries to frighten you and succeeds, instead of receiving the frightened condition, you gain the {@condition Bloodlusted|Plotinium} condition towards the creature that tried to provoke fear in you.",
         "At level 12th you become immune to fire damage you are immune to exhaustion in Extreme Heat environments."
       ]
     },
     {
       "name": "Praetor Armor",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "className": "Doom Slayer",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "level": 1,
       "entries": [
         "The armor of the Doom Slayer is tempered by the fires of Damnation. Starting at 1st level you get Preator Armor giving it the following features while worn by the Doom Slayer.",
@@ -485,9 +485,9 @@
     },
     {
       "name": "Action Surge",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "className": "Doom Slayer",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "level": 2,
       "entries": [
         "Starting at 2nd level, your hatred can push yourself beyond your normal limits for a moment. On your turn, you can take one additional action on top of your regular action and a possible bonus action.",
@@ -497,9 +497,9 @@
     },
     {
       "name": "The Crucible",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "className": "Doom Slayer",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "level": 2,
       "entries": [
         "At 2nd level you now have a favored weapon named: The Crucible, a dual-hand sword forged in the flames of Hell in which you use to unleash your fury. This weapons grows in power as you level up.",
@@ -509,9 +509,9 @@
     },
     {
       "name": "Shieldsaw",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "className": "Doom Slayer",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "level": 2,
       "entries": [
         "You have available from 2nd level, a shield equipped with a rotating blade, usable for both defense and offense",
@@ -554,9 +554,9 @@
     },
     {
       "name": "Improved Critical",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "className": "Doom Slayer",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "level": 3,
       "entries": [
         "Starting on level 3 your weapon attacks score a critical hit on a roll of 19 or 20. You can use 5 carnage points to automatically make your attack a critical hit.",
@@ -566,9 +566,9 @@
     },
     {
       "name": "The Doom Slayer",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "className": "Doom Slayer",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "level": 3,
       "entries": [
         "At 3rd level The doom slayer gains this feature. Each time you gain this feature you may choose one of the following options, you may choose each one only once. You can only have 3 feature at a time but you can switch out the ones you chosen on short rest:",
@@ -636,9 +636,9 @@
     },
     {
       "name": "Ability Score Increase",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "className": "Doom Slayer",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "level": 4,
       "entries": [
         "When you reach 4th level, and again at 6th, 8th, 12th, 14th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
@@ -646,9 +646,9 @@
     },
     {
       "name": "Dash",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "className": "Doom Slayer",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "level": 5,
       "entries": [
         "At 5th level your speed and reaction increase considerably. Whenever someone makes an attack against you, as a reaction you spend 2 Carnage Points to move at half your movement speed at high speed into an unoccupied space, causing the attack to miss. You can also spend 2 Carnage Points to use the dash action as a bonus action, when using this feature, if a creature is directly in your path, it is pushed 5 feet away from you due to the force of your impulse suffering damage equal to your Strength modifier.",
@@ -657,9 +657,9 @@
     },
     {
       "name": "Vengeance Has a Name",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "className": "Doom Slayer",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "level": 5,
       "entries": [
         "At 5th level, you can use a reaction to absorb fragments of souls that fall off a creature you kill. When you kill a creature the target takes a Constitution saving throw against your carnage DC. On failure You absorb their soul fragments - if the creature critically fails you absorb their entire soul (the creature cannot be properly resurrected and can only return as an undead, also if a creature returns to life they lose all connection with any higher power since you own their soul).",
@@ -668,9 +668,9 @@
     },
     {
       "name": "Extra Attack",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "className": "Doom Slayer",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "level": 5,
       "entries": [
         "Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn. The number of attacks increases to three when you reach level 11."
@@ -678,19 +678,19 @@
     },
     {
       "name": "Serrat",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "className": "Doom Slayer",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "level": 5,
       "entries": [
-        "Available from 5th level, you can summon a Cybernetic Dragon {@creature Serrat|PLOTI}, a massive creature enhanced with advanced technology."
+        "Available from 5th level, you can summon a Cybernetic Dragon {@creature Serrat|Plotinium}, a massive creature enhanced with advanced technology."
       ]
     },
     {
       "name": "Rip and Tear",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "className": "Doom Slayer",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "level": 6,
       "entries": [
         "At 6th level, your Doom Slayer gains the ability to Rip and Tear apart those who are weak. All enemies in combat with you take double damage if they are either grappled, prone or incapacitated and any time you complete a grapple you can make that the grappled opponent complete a Strength saving throw and if they fail they become incapacitated for one turn. You can spend 4 Carnage Points to have an enemy become disadvantaged while you also have advantage in a grapple check.",
@@ -699,9 +699,9 @@
     },
     {
       "name": "Slayer Fury",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "className": "Doom Slayer",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "level": 6,
       "entries": [
         "At 6th level, your relentless rage unleashes your muscles and imbues each of your weapons, transforming everything your hands touch into a deadly tool. Your Strength increases by 2, and your damage counts as magical to overcome resistances and immunities to nonmagical attacks and damage."
@@ -709,9 +709,9 @@
     },
     {
       "name": "The Only Thing They Fear is You",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "className": "Doom Slayer",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "level": 7,
       "entries": [
         "The Doom Slayer incites fear in those who walk the dark path. At 7th level, all Charisma (intimidation) rolls against demons, undead and aberrations can be made with advantage, even against creatures otherwise immune to intimidation. Additionally, once per round you can use a bonus action to incite fear in a single chosen enemy. This must succeed on a Wisdom saving throw using your carnage DC, on failure they take 4d6 psychic damage and are frightened for 1 minute, if they want to be freed from this effect they must repeat the saving throw on each of their turns until they succeed, if the creatures pass the save they only take half damage and are not frightened.",
@@ -720,9 +720,9 @@
     },
     {
       "name": "Maximum Efficiency",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "className": "Doom Slayer",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "level": 7,
       "entries": [
         "At level 7 your Praetor Armor demonstrates a strength equivalent to your fury. Every time you are going to receive more than 50 damage, you can reduce that damage to 50 as force damage, this does not cost your reaction and you can also make a Constitution check against the spell or attack, if you succeed, you will redirect that 50 damage as force damage to the attacker. You can use this function a number of times equal to your Constitution modifier, you regain all uses after a long rest."
@@ -730,9 +730,9 @@
     },
     {
       "name": "Heavy Metal",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "className": "Doom Slayer",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "level": 7,
       "entries": [
         "Starting at 7th level, all forms of defense feel the effect of your onslaught. Whenever you successfully make two melee weapon attacks against the same creature on the same turn, the target receives a -1 penalty to their Armor Class. This only applies if the target possesses a form of armor whether it be natural or otherwise. This penalty can stack, to a maximum penalty equal to your Strenght modifier. A creature with natural armor is no longer under the effect of this feature when they are healed to their hit point maximum. If the enemy hears as if a heavy metal band was playing with every Slayer hit, it must be because he has already been hit too hard."
@@ -740,9 +740,9 @@
     },
     {
       "name": "No Bounds",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "className": "Doom Slayer",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "level": 8,
       "entries": [
         "At level 8, your limitations are broken, you are a walking mass of rage that can hardly be stopped. You are permanently able to move without restrictions, ignoring difficult terrain and no longer take fall damage.",
@@ -752,9 +752,9 @@
     },
     {
       "name": "Mass Control",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "className": "Doom Slayer",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "level": 8,
       "entries": [
         "At level 8, your fight in hell has made you an expert in fighting multiple opponents. When you are attacked by More than one creature they get a penalty to their attack and damage rolls equal to your Strength modifier, plus you get a reaction for each creature and after enemy creatures fail at least once during your turn, you get a damage roll increased by 1 for each failure. This stops accumulating once you attack."
@@ -762,9 +762,9 @@
     },
     {
       "name": "Blood Punch",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "className": "Doom Slayer",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "level": 8,
       "entries": [
         "You perform a devastating attack action with your punch for each creature in a cone of 18 feet starting from the enemy that you hit. You inflict x4 of your unarmed hits + your Strength modifier + x2 of your proficiency bonus. The creatures that received the hit must make a Constitution saving throw, on a failure they are pushed 15 feet and are stunned ultil your next turn, on a success they are not pushed and do not suffer the condition stunned."
@@ -772,9 +772,9 @@
     },
     {
       "name": "Crucible Awakened",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "className": "Doom Slayer",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "level": 8,
       "entries": [
         "At level 8, the crucible has awakened, perhaps not completely, but it is now a weapon to be feared. You may now use your reaction and spend 4 Carnage points to absorb a spell that is targeting you. The absorbed spell's effect is canceled, and the spell's is stored in the Crucible. The spell has the same level as the spell when it was cast, once the Crucible absorbs the spell you can cast that spell as part of your attack action."
@@ -782,9 +782,9 @@
     },
     {
       "name": "Awakened Praetor Armor",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "className": "Doom Slayer",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "level": 9,
       "entries": [
         "At Level 9, your armor becomes stronger and even more formidable. Whenever you are in combat and you spend a Carnage Points on an ability you gain 1d12 hit points for each point spent. You cannot use this ability if you are already at full health. In addition your defense becomes completely impenetrable, thanks to this you cannot be pierced by any means or form and also gives immunity to piercing damage magical and no magical. Your Praetor Armor armor cannot be destroyed either, only a wish spell or similar power would be capable of it."
@@ -792,9 +792,9 @@
     },
     {
       "name": "Unwavering, Incorruptible and Unalterable",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "className": "Doom Slayer",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "level": 9,
       "entries": [
         "Starting at 9th level, your Strength score, your Constitution score, and your hit point maximum cannot be reduced. In addition, are completely immune to the exhaustion. Additionally, your current hit points maximum increases by an amount equal 3 times your level. Whenever you gain a level thereafter, your hit point maximum increases by an additional 3 hit points.",
@@ -804,9 +804,9 @@
     },
     {
       "name": "Aura of Hatred",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "className": "Doom Slayer",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "level": 10,
       "entries": [
         "At 10th level, you emanate hatred to the point where it gives you a glowing red hue and catch the attention of those opposing you, at the beginning of your turn you may use a bonus action to taunt all enemies you see within 60 feet of you, each enemy must pass a Charisma saving throw, if they succeed they are not taunted and they may attempt the saving throw again at the end of their turn, for every enemy taunted you gain temporary hit points for one hour equal to amount of your Constitution modifier.",
@@ -815,9 +815,9 @@
     },
     {
       "name": "Hellwalker",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "className": "Doom Slayer",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "level": 11,
       "entries": [
         "At level 11 you retaliate against all enemies that attack you, as an bonus action your fury makes you literally burn for one minute whenever you are attacked by an enemy with a ranged or melee attack, they take 1d8 fire damage for each attack successfully performed against you, this fire overcomes resistance and immunities. You can use this skill a number of times equal to your proficiency modifier, you recover all uses after a long rest.",
@@ -830,9 +830,9 @@
     },
     {
       "name": "Sentinel Hammer",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "className": "Doom Slayer",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "level": 11,
       "entries": [
         "At 11th level, as an bonus action your crucible undergoes a metamorphosis changing its form and granting you access to the sentry hammer, its damage changes to blunt and if you hit a critical hit, you do triple damage on a critical hit using this weapon. You can switch between your crucible and sentry hammer as an bonus action.",
@@ -850,9 +850,9 @@
     },
     {
       "name": "Harder to Kill",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "className": "Doom Slayer",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "level": 12,
       "entries": [
         "At level 12 your Hatred is so intense it literally protects you. You can now add your Strength modifier to your AC, You increase two skill points in Strength and Constitution, In addition, choose two of the following ability scores:",
@@ -871,9 +871,9 @@
     },
     {
       "name": "Heaven's Blessings",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "className": "Doom Slayer",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "level": 13,
       "entries": [
         "At level 13 you gain the blessings from the heavens for all the righteous fury you have unleashed. You gain resistance to any type of damage of your choosing. You may expend 6 Carnage Points to gain temporary 2 resistance and 1 immunity to a type of damage for 1 hour."
@@ -881,9 +881,9 @@
     },
     {
       "name": "Immunity to the Concept of Destiny",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "className": "Doom Slayer",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "level": 14,
       "entries": [
         "Your hatred and anger have reached beyond comprehension, defying universal laws, because when you say nothing will stand in your way, nothing will. At 14th level, each time you make a saving throw and fail, you can spend 2 Carnage Points to reroll and choose the outcome; You can use this function once per round. Additionally, when faced with an effect that forces you to automatically fail a save, you can use this function to negate that effect.",
@@ -892,9 +892,9 @@
     },
     {
       "name": "Berserker",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "className": "Doom Slayer",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "level": 14,
       "entries": [
         "At level 14, as a bonus action by spending 20 Carnage Points, you allow yourself to be consumed by immeasurable rage for one minute, directing it towards the enemies in front of you, while in this state your only weapons are your fists and yet the damage you can causing with them is amazing. Any enemy you punch takes 4d12 + your Strength modifier bludgeoning damage regardless of AC. Any enemy that succeeds Constitution saving throw throw against your DC takes half that damage.",
@@ -903,9 +903,9 @@
     },
     {
       "name": "Double the Carnage",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "className": "Doom Slayer",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "level": 15,
       "entries": [
         "At level 15 your weapon can be duplicated. Your Crucible is now considered dual wield (retaining the dual-hand property) and you double all your attacks, you can also spend 4 Carnage Points to move 10 feet without provoking attacks of opportunity. In addition, you ignore all types of resistances, immunities and absorptions of fiends, undead and aberrations."
@@ -913,9 +913,9 @@
     },
     {
       "name": "Titans Killer",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "className": "Doom Slayer",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "level": 16,
       "entries": [
         "At 16th level, It doesn't matter how big your enemy is the bigger they are more harder will be the fall. If a creature It has a larger size category than yours, you gain a +2 bonus to attack and damage rolls against that creature and also all your damage dice increase by 1. For each size category the creature is larger, you add this benefit again (Large = +2 to attack and damage rolls , Huge = +4 attack and damage and so on). Now your weight and thrust capacity counts as a giant creature."
@@ -923,9 +923,9 @@
     },
     {
       "name": "Eternal",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "className": "Doom Slayer",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "level": 17,
       "entries": [
         "You need to stand and fight. You have a duty to fulfill. Your will and resolve are so potent, that even death itself cannot stop you now. At 17th level, if you fail 3 death saving throw your body becomes cloaked in an indestructible field of Hell Fire and you will get back up as if you had finished a long rest after 5 full rounds of combat. Should you die outside of battle, it will take a full day for your body to recover. You can do this once a week."
@@ -933,9 +933,9 @@
     },
     {
       "name": "Bladed Arm Attachment",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "className": "Doom Slayer",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "level": 17,
       "entries": [
         "At level 17, thanks to the blade attached to the arm of your armor you deliver doom to your opponents. You add a extra damage dice to your damage rolls and each time you score a critical hit against a creature, by spending 6 Carnage Points you can force the creature affected by your attack to make a Constitution saving throw, on a fail you roll a d6.",
@@ -951,9 +951,9 @@
     },
     {
       "name": "Pull of the Void",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "className": "Doom Slayer",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "level": 18,
       "entries": [
         "At level 18 you may summon a magical chain that reaches 60 feet and attempts to latch onto a target. You have the chain grapple an enemy and if successful you pull the enemy 5 feet in front of you. They then attempt a Constitution saving throw and if they fail they are stunned for one round. You can expend 8 Carnage Points to double the range on this ability, you can only increase the range to a maximum of 120 feet."
@@ -961,9 +961,9 @@
     },
     {
       "name": "Aura of Justice",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "className": "Doom Slayer",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "level": 19,
       "entries": [
         "At level 19 you emit an almost blinding aura that contains the essence of justice. At the beginning of your turn, you can use a bonus action to have all enemies attempt a Constitution saving throw, if they fail all enemies are considered taunted and in difficult terrain until the end of your aura. This ability lasts one minute and increases by one minute for each enemy you kill; for each enemy who has failed a saving throw, you gain temporary hit points equal to your Constitution modifier. You can only use this skill for a short rest and you can use 4 Carnage Points to increase the duration of this skill by one minute."
@@ -971,9 +971,9 @@
     },
     {
       "name": "Maximum Awakening",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "className": "Doom Slayer",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "level": 19,
       "entries": [
         "At level 19, your crucible reaches its maximum potential, now the crucible denies immortalities, when you defeat them you nail the crucible in the chest and break its blade separating it from the handle, the blade will be stuck releasing its energy throughout the body of the creature, stopping all types of regeneration or energy to bring it back to life. Also, now the crucible and sentry hammer can store any spell of any level, so you can put it into practice, no one is safe from your wrath."
@@ -981,9 +981,9 @@
     },
     {
       "name": "Beginning of the End",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "className": "Doom Slayer",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "level": 20,
       "entries": [
         "At level 20 you unleash your Hatred in a singular explosion. At the beginning of your turn you can activate this ability as a actions. When you activate this ability, all enemies are taunted by you and you gain resistance to all damage. At the beginning of your next turn, you release a singular explosion that affects all enemies within 180 feet of you. All enemies in this area must make a Wisdom saving throw, on a fail they take radiant damage equal to your Constitution modifier + your Doom Slayer level, on a success they take half the damage, this damage overcomes all resistance and immunity. Your allies do not take any damage from this ability. You can only use this ability once per day."
@@ -993,12 +993,12 @@
   "classFluff": [
     {
       "name": "Doom Slayer",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "entries": [
         {
           "type": "section",
           "name": "Doom Slayer",
-          "source": "PLOTI",
+          "source": "Plotinium",
           "entries": [
             "Doom Slayers are a warrior race from a plane that had once had been free from all grasps of the Hells, in fact they were feared by those creatures due to their powerful combat regenerative abilities magical resistances, and fearsome fury in combat.",
             "However, through catastrophic betrayal their plane has been destroyed and their numbers and 'customs' are nearing extinction. Now they dwell in all planes seeking revenge onto those who wronged them and their ire is recognized by all demons in an almost instinctual nature based survival mechanism.",
@@ -1027,7 +1027,7 @@
   "monster": [
     {
       "name": "Serrat",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "size": [
         "H"
       ],
@@ -1168,7 +1168,7 @@
   "condition": [
     {
       "name": "Bloodlusted",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "entries": [
         "A creature affected with bloodlust has worked itself into a frenzied state, most likely due to partaking too deep into an inner sadistic nature, the effects of a drug or curse, or high levels of stress. All that matters is that they wish to destroy a single target, and won't stop until they do.",
         {

@@ -22,7 +22,7 @@
   "class": [
     {
       "name": "Fratello Astartes",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "hd": {
         "number": 1,
         "faces": 12
@@ -58,9 +58,9 @@
       },
       "startingEquipment": {
         "default": [
-          "(a) qualsiasi combinazione tra un'{@filter Arma Pesante|items|source=PLOTI|type=martial weapon} da mischia o gittata ed un'{@filter Arma Leggera|items|source=PLOTI|type=simple weapon}, più uno {@item Shield|XPHB|Scudo} o un {@item Jump Pack|PLOTI}",
-          "Una {@item Granata|PLOTI}",
-          "La {@item Servoarmatura|PLOTI}"
+          "(a) qualsiasi combinazione tra un'{@filter Arma Pesante|items|source=Plotinium|type=martial weapon} da mischia o gittata ed un'{@filter Arma Leggera|items|source=Plotinium|type=simple weapon}, più uno {@item Shield|XPHB|Scudo} o un {@item Jump Pack|Plotinium}",
+          "Una {@item Granata|Plotinium}",
+          "La {@item Servoarmatura|Plotinium}"
         ],
         "additionalFromBackground": true,
         "defaultData": [
@@ -178,39 +178,39 @@
         }
       ],
       "classFeatures": [
-        "Ira dell'Imperatore|Fratello Astartes|PLOTI|1|PLOTI",
-        "Colpi Potenziati|Fratello Astartes|PLOTI|1|PLOTI",
-        "Servoarmatura|Fratello Astartes|PLOTI|2|PLOTI",
+        "Ira dell'Imperatore|Fratello Astartes|Plotinium|1|Plotinium",
+        "Colpi Potenziati|Fratello Astartes|Plotinium|1|Plotinium",
+        "Servoarmatura|Fratello Astartes|Plotinium|2|Plotinium",
         {
-          "classFeature": "Disciplina del Capitolo|Fratello Astartes|PLOTI|3|PLOTI",
+          "classFeature": "Disciplina del Capitolo|Fratello Astartes|Plotinium|3|Plotinium",
           "gainSubclassFeature": true
         },
-        "Aumento delle Caratteristiche|Fratello Astartes|PLOTI|4|PLOTI",
-        "Attacco Extra|Fratello Astartes|PLOTI|5|PLOTI",
+        "Aumento delle Caratteristiche|Fratello Astartes|Plotinium|4|Plotinium",
+        "Attacco Extra|Fratello Astartes|Plotinium|5|Plotinium",
         {
-          "classFeature": "Caratteristica del Capitolo|Fratello Astartes|PLOTI|6|PLOTI",
+          "classFeature": "Caratteristica del Capitolo|Fratello Astartes|Plotinium|6|Plotinium",
           "gainSubclassFeature": true
         },
-        "Fratello Inossidabile|Fratello Astartes|PLOTI|7|PLOTI",
-        "Aumento delle Caratteristiche|Fratello Astartes|PLOTI|8|PLOTI",
-        "Resistenza al Danno|Fratello Astartes|PLOTI|9|PLOTI",
-        "Aura del Capitolo|Fratello Astartes|PLOTI|10|PLOTI",
-        "Attacco Extra Doppio|Fratello Astartes|PLOTI|11|PLOTI",
-        "Aumento delle Caratteristiche|Fratello Astartes|PLOTI|12|PLOTI",
+        "Fratello Inossidabile|Fratello Astartes|Plotinium|7|Plotinium",
+        "Aumento delle Caratteristiche|Fratello Astartes|Plotinium|8|Plotinium",
+        "Resistenza al Danno|Fratello Astartes|Plotinium|9|Plotinium",
+        "Aura del Capitolo|Fratello Astartes|Plotinium|10|Plotinium",
+        "Attacco Extra Doppio|Fratello Astartes|Plotinium|11|Plotinium",
+        "Aumento delle Caratteristiche|Fratello Astartes|Plotinium|12|Plotinium",
         {
-          "classFeature": "Caratteristica del Capitolo|Fratello Astartes|PLOTI|13|PLOTI",
+          "classFeature": "Caratteristica del Capitolo|Fratello Astartes|Plotinium|13|Plotinium",
           "gainSubclassFeature": true
         },
-        "Resilienza da Battaglia|Fratello Astartes|PLOTI|14|PLOTI",
-        "Fede o Corruzione|Fratello Astartes|PLOTI|15|PLOTI",
-        "Aumento delle Caratteristiche|Fratello Astartes|PLOTI|16|PLOTI",
-        "Attacco Extra Triplo|Fratello Astartes|PLOTI|17|PLOTI",
+        "Resilienza da Battaglia|Fratello Astartes|Plotinium|14|Plotinium",
+        "Fede o Corruzione|Fratello Astartes|Plotinium|15|Plotinium",
+        "Aumento delle Caratteristiche|Fratello Astartes|Plotinium|16|Plotinium",
+        "Attacco Extra Triplo|Fratello Astartes|Plotinium|17|Plotinium",
         {
-          "classFeature": "Caratteristica del Capitolo|Fratello Astartes|PLOTI|18|PLOTI",
+          "classFeature": "Caratteristica del Capitolo|Fratello Astartes|Plotinium|18|Plotinium",
           "gainSubclassFeature": true
         },
-        "Aumento delle Caratteristiche|Fratello Astartes|PLOTI|19|PLOTI",
-        "Erede dell'Imperatore|Fratello Astartes|PLOTI|20|PLOTI"
+        "Aumento delle Caratteristiche|Fratello Astartes|Plotinium|19|Plotinium",
+        "Erede dell'Imperatore|Fratello Astartes|Plotinium|20|Plotinium"
       ],
       "subclassTitle": "Disciplina del Capitolo",
       "hasFluff": true
@@ -220,136 +220,136 @@
     {
       "name": "Rito degli Ultramarine",
       "shortName": "Ultramarine",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "className": "Fratello Astartes",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "subclassFeatures": [
-        "Rito degli Ultramarine|Fratello Astartes|PLOTI|Ultramarine|PLOTI|3",
-        "Tattico del Codex|Fratello Astartes|PLOTI|Ultramarine|PLOTI|3",
-        "Disciplina del Campo di Battaglia|Fratello Astartes|PLOTI|Ultramarine|PLOTI|6",
-        "Comando Coordinato|Fratello Astartes|PLOTI|Ultramarine|PLOTI|13",
-        "Maestro del Codex|Fratello Astartes|PLOTI|Ultramarine|PLOTI|18"
+        "Rito degli Ultramarine|Fratello Astartes|Plotinium|Ultramarine|Plotinium|3",
+        "Tattico del Codex|Fratello Astartes|Plotinium|Ultramarine|Plotinium|3",
+        "Disciplina del Campo di Battaglia|Fratello Astartes|Plotinium|Ultramarine|Plotinium|6",
+        "Comando Coordinato|Fratello Astartes|Plotinium|Ultramarine|Plotinium|13",
+        "Maestro del Codex|Fratello Astartes|Plotinium|Ultramarine|Plotinium|18"
       ]
     },
     {
       "name": "Rito dei Blood Angels",
       "shortName": "Blood Angels",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "className": "Fratello Astartes",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "subclassFeatures": [
-        "Rito dei Blood Angels|Fratello Astartes|PLOTI|Blood Angels|PLOTI|3",
-        "Sete Rossa|Fratello Astartes|PLOTI|Blood Angels|PLOTI|3",
-        "Ali di Baal|Fratello Astartes|PLOTI|Blood Angels|PLOTI|6",
-        "Furia Sanguinaria|Fratello Astartes|PLOTI|Blood Angels|PLOTI|13",
-        "Discendente Angelico|Fratello Astartes|PLOTI|Blood Angels|PLOTI|18"
+        "Rito dei Blood Angels|Fratello Astartes|Plotinium|Blood Angels|Plotinium|3",
+        "Sete Rossa|Fratello Astartes|Plotinium|Blood Angels|Plotinium|3",
+        "Ali di Baal|Fratello Astartes|Plotinium|Blood Angels|Plotinium|6",
+        "Furia Sanguinaria|Fratello Astartes|Plotinium|Blood Angels|Plotinium|13",
+        "Discendente Angelico|Fratello Astartes|Plotinium|Blood Angels|Plotinium|18"
       ]
     },
     {
       "name": "Rito degli Space Wolves",
       "shortName": "Space Wolves",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "className": "Fratello Astartes",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "subclassFeatures": [
-        "Rito degli Space Wolves|Fratello Astartes|PLOTI|Space Wolves|PLOTI|3",
-        "Sensi del Lupo|Fratello Astartes|PLOTI|Space Wolves|PLOTI|3",
-        "Ira del Lupo|Fratello Astartes|PLOTI|Space Wolves|PLOTI|6",
-        "Caccia del Branco|Fratello Astartes|PLOTI|Space Wolves|PLOTI|13",
-        "Spirito di Fenris|Fratello Astartes|PLOTI|Space Wolves|PLOTI|18"
+        "Rito degli Space Wolves|Fratello Astartes|Plotinium|Space Wolves|Plotinium|3",
+        "Sensi del Lupo|Fratello Astartes|Plotinium|Space Wolves|Plotinium|3",
+        "Ira del Lupo|Fratello Astartes|Plotinium|Space Wolves|Plotinium|6",
+        "Caccia del Branco|Fratello Astartes|Plotinium|Space Wolves|Plotinium|13",
+        "Spirito di Fenris|Fratello Astartes|Plotinium|Space Wolves|Plotinium|18"
       ]
     },
     {
       "name": "Rito dei Dark Angels",
       "shortName": "Dark Angels",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "className": "Fratello Astartes",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "subclassFeatures": [
-        "Rito dei Dark Angels|Fratello Astartes|PLOTI|Dark Angels|PLOTI|3",
-        "Fanatismo Silente|Fratello Astartes|PLOTI|Dark Angels|PLOTI|3",
-        "Aura di Penitenza|Fratello Astartes|PLOTI|Dark Angels|PLOTI|6",
-        "Giudizio dei Peccatori|Fratello Astartes|PLOTI|Dark Angels|PLOTI|13",
-        "Redenzione Finale|Fratello Astartes|PLOTI|Dark Angels|PLOTI|18"
+        "Rito dei Dark Angels|Fratello Astartes|Plotinium|Dark Angels|Plotinium|3",
+        "Fanatismo Silente|Fratello Astartes|Plotinium|Dark Angels|Plotinium|3",
+        "Aura di Penitenza|Fratello Astartes|Plotinium|Dark Angels|Plotinium|6",
+        "Giudizio dei Peccatori|Fratello Astartes|Plotinium|Dark Angels|Plotinium|13",
+        "Redenzione Finale|Fratello Astartes|Plotinium|Dark Angels|Plotinium|18"
       ]
     },
     {
       "name": "Rito dei Salamanders",
       "shortName": "Salamanders",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "className": "Fratello Astartes",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "subclassFeatures": [
-        "Rito dei Salamanders|Fratello Astartes|PLOTI|Salamanders|PLOTI|3",
-        "Cuore di Vulkan|Fratello Astartes|PLOTI|Salamanders|PLOTI|3",
-        "Forgiato nel Fuoco|Fratello Astartes|PLOTI|Salamanders|PLOTI|6",
-        "Tempra di Vulkan|Fratello Astartes|PLOTI|Salamanders|PLOTI|13",
-        "Avatar della Forgia|Fratello Astartes|PLOTI|Salamanders|PLOTI|18"
+        "Rito dei Salamanders|Fratello Astartes|Plotinium|Salamanders|Plotinium|3",
+        "Cuore di Vulkan|Fratello Astartes|Plotinium|Salamanders|Plotinium|3",
+        "Forgiato nel Fuoco|Fratello Astartes|Plotinium|Salamanders|Plotinium|6",
+        "Tempra di Vulkan|Fratello Astartes|Plotinium|Salamanders|Plotinium|13",
+        "Avatar della Forgia|Fratello Astartes|Plotinium|Salamanders|Plotinium|18"
       ]
     },
     {
       "name": "Rito dei Raven Guard",
       "shortName": "Raven Guard",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "className": "Fratello Astartes",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "subclassFeatures": [
-        "Rito dei Raven Guard|Fratello Astartes|PLOTI|Raven Guard|PLOTI|3",
-        "Maestro dell'Ombra|Fratello Astartes|PLOTI|Raven Guard|PLOTI|3",
-        "Assalto Silenzioso|Fratello Astartes|PLOTI|Raven Guard|PLOTI|6",
-        "Ombra Vivente|Fratello Astartes|PLOTI|Raven Guard|PLOTI|13",
-        "Maestro dell'Assassinio|Fratello Astartes|PLOTI|Raven Guard|PLOTI|18"
+        "Rito dei Raven Guard|Fratello Astartes|Plotinium|Raven Guard|Plotinium|3",
+        "Maestro dell'Ombra|Fratello Astartes|Plotinium|Raven Guard|Plotinium|3",
+        "Assalto Silenzioso|Fratello Astartes|Plotinium|Raven Guard|Plotinium|6",
+        "Ombra Vivente|Fratello Astartes|Plotinium|Raven Guard|Plotinium|13",
+        "Maestro dell'Assassinio|Fratello Astartes|Plotinium|Raven Guard|Plotinium|18"
       ]
     },
     {
       "name": "Rito degli Imperial Fists",
       "shortName": "Imperial Fists",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "className": "Fratello Astartes",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "subclassFeatures": [
-        "Rito degli Imperial Fists|Fratello Astartes|PLOTI|Imperial Fists|PLOTI|3",
-        "Roccia Inamovibile|Fratello Astartes|PLOTI|Imperial Fists|PLOTI|3",
-        "Difesa Perfetta|Fratello Astartes|PLOTI|Imperial Fists|PLOTI|6",
-        "Muro dell'Imperatore|Fratello Astartes|PLOTI|Imperial Fists|PLOTI|13",
-        "Roccia Eterna|Fratello Astartes|PLOTI|Imperial Fists|PLOTI|18"
+        "Rito degli Imperial Fists|Fratello Astartes|Plotinium|Imperial Fists|Plotinium|3",
+        "Roccia Inamovibile|Fratello Astartes|Plotinium|Imperial Fists|Plotinium|3",
+        "Difesa Perfetta|Fratello Astartes|Plotinium|Imperial Fists|Plotinium|6",
+        "Muro dell'Imperatore|Fratello Astartes|Plotinium|Imperial Fists|Plotinium|13",
+        "Roccia Eterna|Fratello Astartes|Plotinium|Imperial Fists|Plotinium|18"
       ]
     },
     {
       "name": "Rito degli Iron Hands",
       "shortName": "Iron Hands",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "className": "Fratello Astartes",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "subclassFeatures": [
-        "Rito degli Iron Hands|Fratello Astartes|PLOTI|Iron Hands|PLOTI|3",
-        "Bionica del Ferro|Fratello Astartes|PLOTI|Iron Hands|PLOTI|3",
-        "Servoarmatura Avanzata|Fratello Astartes|PLOTI|Iron Hands|PLOTI|6",
-        "Macchina di Guerra|Fratello Astartes|PLOTI|Iron Hands|PLOTI|13",
-        "Forma del Ferro|Fratello Astartes|PLOTI|Iron Hands|PLOTI|18"
+        "Rito degli Iron Hands|Fratello Astartes|Plotinium|Iron Hands|Plotinium|3",
+        "Bionica del Ferro|Fratello Astartes|Plotinium|Iron Hands|Plotinium|3",
+        "Servoarmatura Avanzata|Fratello Astartes|Plotinium|Iron Hands|Plotinium|6",
+        "Macchina di Guerra|Fratello Astartes|Plotinium|Iron Hands|Plotinium|13",
+        "Forma del Ferro|Fratello Astartes|Plotinium|Iron Hands|Plotinium|18"
       ]
     },
     {
       "name": "Rito del Caos",
       "shortName": "Caos",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "className": "Fratello Astartes",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "subclassFeatures": [
-        "Rito del Caos|Fratello Astartes|PLOTI|Caos|PLOTI|3",
-        "Tocco del Warp|Fratello Astartes|PLOTI|Caos|PLOTI|3",
-        "Benedizione del Demone|Fratello Astartes|PLOTI|Caos|PLOTI|6",
-        "Rovina del Warp|Fratello Astartes|PLOTI|Caos|PLOTI|13",
-        "Campione del Caos|Fratello Astartes|PLOTI|Caos|PLOTI|18"
+        "Rito del Caos|Fratello Astartes|Plotinium|Caos|Plotinium|3",
+        "Tocco del Warp|Fratello Astartes|Plotinium|Caos|Plotinium|3",
+        "Benedizione del Demone|Fratello Astartes|Plotinium|Caos|Plotinium|6",
+        "Rovina del Warp|Fratello Astartes|Plotinium|Caos|Plotinium|13",
+        "Campione del Caos|Fratello Astartes|Plotinium|Caos|Plotinium|18"
       ]
     }
   ],
   "classFeature": [
     {
       "name": "Ira dell'Imperatore",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "className": "Fratello Astartes",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "level": 1,
       "entries": [
         "La fede per l'Imperatore ti porta a trascendere il dolore e la resistenza fisica, garantendoti una forza ancora più sovrumana e una sopportazione del dolore elevata. Ogni colpo è un decreto, ogni passo un giuramento scolpito nel ferro.",
@@ -358,9 +358,9 @@
     },
     {
       "name": "Colpi Potenziati",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "className": "Fratello Astartes",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "level": 1,
       "entries": [
         "I servomotori della tua armatura trasformano ogni pugno in un ariete d'acciaio, capace di frantumare corazze e ossa. Anche senza armi, sei una macchina da guerra vivente.",
@@ -388,9 +388,9 @@
     },
     {
       "name": "Servoarmatura",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "className": "Fratello Astartes",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "level": 2,
       "entries": [
         "Indossi non solo un'armatura: indossi un voto. Ogni movimento è un inno alla resilienza dell'Imperium.",
@@ -404,9 +404,9 @@
     },
     {
       "name": "Disciplina del Capitolo",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "className": "Fratello Astartes",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "level": 3,
       "entries": [
         "Ogni Capitolo custodisce una dottrina; ogni fratello la incarna. Il tuo giuramento si fa via maestra.",
@@ -415,9 +415,9 @@
     },
     {
       "name": "Aumento delle Caratteristiche",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "className": "Fratello Astartes",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "level": 4,
       "entries": [
         "La tua disciplina e il tuo addestramento ti spingono oltre i limiti della carne e della mente. Ogni vittoria, ogni cicatrice, ogni battaglia ti rende più vicino all'ideale del guerriero perfetto.",
@@ -427,9 +427,9 @@
     },
     {
       "name": "Attacco Extra",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "className": "Fratello Astartes",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "level": 5,
       "entries": [
         "Il tuo addestramento incessante e la tua furia disciplinata ti permettono di colpire con una rapidità e una precisione sovrumane. Ogni movimento è una raffica, ogni colpo un martello dell'Imperatore.",
@@ -439,9 +439,9 @@
     },
     {
       "name": "Caratteristica del Capitolo",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "className": "Fratello Astartes",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "level": 6,
       "entries": [
         "La tua disciplina si approfondisce, e i precetti del tuo Capitolo si radicano nel tuo essere.",
@@ -450,9 +450,9 @@
     },
     {
       "name": "Fratello Inossidabile",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "className": "Fratello Astartes",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "level": 7,
       "entries": [
         "Il ferro può piegarsi, il cuore no. La paura scivola come pioggia sulla ceramite, i veleni si spengono contro il tuo sangue benedetto.",
@@ -468,9 +468,9 @@
     },
     {
       "name": "Aumento delle Caratteristiche",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "className": "Fratello Astartes",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "level": 8,
       "entries": [
         "Il fuoco della guerra ti ha temprato come acciaio nella fucina. Ogni colpo parato, ogni nemico abbattuto, ha scolpito in te una forza che trascende la semplice mortalità.",
@@ -479,9 +479,9 @@
     },
     {
       "name": "Resistenza al Danno",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "className": "Fratello Astartes",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "level": 9,
       "entries": [
         "La tua carne e la tua armatura si fondono in un baluardo impenetrabile. Ogni colpo che ti raggiunge è smorzato dalla tua tempra sovrumana.",
@@ -490,9 +490,9 @@
     },
     {
       "name": "Aura del Capitolo",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "className": "Fratello Astartes",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "level": 10,
       "entries": [
         "La tua sola presenza incarna la disciplina del tuo Capitolo o la corruzione del Warp. I tuoi fratelli traggono forza dal tuo esempio, e i tuoi nemici tremano di fronte alla tua aura.",
@@ -501,9 +501,9 @@
     },
     {
       "name": "Attacco Extra Doppio",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "className": "Fratello Astartes",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "level": 11,
       "entries": [
         "Il tuo addestramento incessante e la tua furia disciplinata ti permettono di colpire con una rapidità e una precisione sovrumane. Ogni movimento è una raffica, ogni colpo un martello dell'Imperatore.",
@@ -512,9 +512,9 @@
     },
     {
       "name": "Aumento delle Caratteristiche",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "className": "Fratello Astartes",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "level": 12,
       "entries": [
         "Il tuo corpo è ormai un'arma perfetta, la tua mente una fortezza inespugnabile. Sei il martello dell'Imperatore, e la tua volontà piega il destino stesso.",
@@ -523,9 +523,9 @@
     },
     {
       "name": "Caratteristica del Capitolo",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "className": "Fratello Astartes",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "level": 13,
       "entries": [
         "Il tuo comando diventa legge sul campo di battaglia. Ogni gesto è un segnale, ogni ordine un destino.",
@@ -534,9 +534,9 @@
     },
     {
       "name": "Resilienza da Battaglia",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "className": "Fratello Astartes",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "level": 14,
       "entries": [
         "Ogni colpo subito, ogni cicatrice incisa sull'acciaio della tua servoarmatura, ha temprato la tua resistenza. Sei un bastione vivente, un muro di adamantio che nessuna tempesta può abbattere.",
@@ -545,9 +545,9 @@
     },
     {
       "name": "Fede o Corruzione",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "className": "Fratello Astartes",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "level": 15,
       "entries": [
         "Nel cuore del turbine scegli il tuo faro: l'aura dorata della Fede che ordina il caos, o i sussurri del Warp che piegano la realtà al tuo volere."
@@ -555,9 +555,9 @@
     },
     {
       "name": "Aumento delle Caratteristiche",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "className": "Fratello Astartes",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "level": 16,
       "entries": [
         "La tua essenza è fusa con la guerra: carne, acciaio e fede si intrecciano in un'unica entità. Ogni battito del tuo cuore è un inno di vittoria, ogni respiro un giuramento di sterminio contro i nemici dell'Imperium.",
@@ -566,9 +566,9 @@
     },
     {
       "name": "Attacco Extra Triplo",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "className": "Fratello Astartes",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "level": 17,
       "entries": [
         "La tua furia disciplinata e il tuo addestramento sovrumano ti trasformano in una tempesta di colpi. Ogni movimento è calcolato, ogni attacco è un martello che abbatte i nemici dell'Imperatore.",
@@ -577,9 +577,9 @@
     },
     {
       "name": "Caratteristica del Capitolo",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "className": "Fratello Astartes",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "level": 18,
       "entries": [
         "Hai raggiunto l'apice della dottrina del tuo Capitolo. La tua presenza è un faro di disciplina e potere assoluto.",
@@ -588,9 +588,9 @@
     },
     {
       "name": "Aumento delle Caratteristiche",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "className": "Fratello Astartes",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "level": 19,
       "entries": [
         "Sei divenuto leggenda vivente: un semidio della guerra, la cui sola presenza incute timore e riverenza. La tua forza non è più solo tua, ma dell'Imperatore stesso che agisce attraverso di te.",
@@ -599,9 +599,9 @@
     },
     {
       "name": "Erede dell'Imperatore",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "className": "Fratello Astartes",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "level": 20,
       "entries": [
         "Sei il ruggito della Crociata. La tua ombra è una reliquia, il tuo passo un editto. La realtà ti riconosce come strumento dell'Ultimo e arretra.",
@@ -634,11 +634,11 @@
   "subclassFeature": [
     {
       "name": "Rito degli Ultramarine",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "className": "Fratello Astartes",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "subclassShortName": "Ultramarine",
-      "subclassSource": "PLOTI",
+      "subclassSource": "Plotinium",
       "level": 3,
       "header": 1,
       "entries": [
@@ -647,11 +647,11 @@
     },
     {
       "name": "Tattico del Codex",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "className": "Fratello Astartes",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "subclassShortName": "Ultramarine",
-      "subclassSource": "PLOTI",
+      "subclassSource": "Plotinium",
       "level": 3,
       "header": 1,
       "entries": [
@@ -676,12 +676,12 @@
     },
     {
       "name": "Disciplina del Campo di Battaglia",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "level": 6,
       "className": "Fratello Astartes",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "subclassShortName": "Ultramarine",
-      "subclassSource": "PLOTI",
+      "subclassSource": "Plotinium",
       "entries": [
         "La tua presenza incrollabile stabilizza la linea.",
         {
@@ -704,12 +704,12 @@
     },
     {
       "name": "Comando Coordinato",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "level": 13,
       "className": "Fratello Astartes",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "subclassShortName": "Ultramarine",
-      "subclassSource": "PLOTI",
+      "subclassSource": "Plotinium",
       "entries": [
         "Ogni tua offensiva apre una finestra d'ingaggio per la squadra.",
         {
@@ -732,13 +732,13 @@
     },
     {
       "name": "Maestro del Codex",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "page": 0,
       "level": 18,
       "className": "Fratello Astartes",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "subclassShortName": "Ultramarine",
-      "subclassSource": "PLOTI",
+      "subclassSource": "Plotinium",
       "entries": [
         "Il tuo comando plasma il fronte.",
         {
@@ -761,11 +761,11 @@
     },
     {
       "name": "Rito dei Blood Angels",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "className": "Fratello Astartes",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "subclassShortName": "Blood Angels",
-      "subclassSource": "PLOTI",
+      "subclassSource": "Plotinium",
       "level": 3,
       "header": 1,
       "entries": [
@@ -774,12 +774,12 @@
     },
     {
       "name": "Sete Rossa",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "level": 3,
       "className": "Fratello Astartes",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "subclassShortName": "Blood Angels",
-      "subclassSource": "PLOTI",
+      "subclassSource": "Plotinium",
       "entries": [
         "Il sangue versato diventa la tua linfa vitale.",
         {
@@ -796,12 +796,12 @@
     },
     {
       "name": "Ali di Baal",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "level": 6,
       "className": "Fratello Astartes",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "subclassShortName": "Blood Angels",
-      "subclassSource": "PLOTI",
+      "subclassSource": "Plotinium",
       "entries": [
         "Dalle tue spalle si sprigionano ali di energia cremisi, simbolo della discendenza angelica.",
         {
@@ -818,12 +818,12 @@
     },
     {
       "name": "Furia Sanguinaria",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "level": 13,
       "className": "Fratello Astartes",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "subclassShortName": "Blood Angels",
-      "subclassSource": "PLOTI",
+      "subclassSource": "Plotinium",
       "entries": [
         "La Furia Nera ti avvolge, trasformandoti in un turbine di distruzione.",
         {
@@ -840,12 +840,12 @@
     },
     {
       "name": "Discendente Angelico",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "level": 18,
       "className": "Fratello Astartes",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "subclassShortName": "Blood Angels",
-      "subclassSource": "PLOTI",
+      "subclassSource": "Plotinium",
       "entries": [
         "La tua forma si sublima in leggenda, incarnazione vivente di Sanguinius.",
         {
@@ -862,11 +862,11 @@
     },
     {
       "name": "Rito degli Space Wolves",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "className": "Fratello Astartes",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "subclassShortName": "Space Wolves",
-      "subclassSource": "PLOTI",
+      "subclassSource": "Plotinium",
       "level": 3,
       "header": 1,
       "entries": [
@@ -875,12 +875,12 @@
     },
     {
       "name": "Sensi del Lupo",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "level": 3,
       "className": "Fratello Astartes",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "subclassShortName": "Space Wolves",
-      "subclassSource": "PLOTI",
+      "subclassSource": "Plotinium",
       "entries": [
         "I tuoi sensi si affinano come quelli di un predatore di Fenris.",
         {
@@ -897,12 +897,12 @@
     },
     {
       "name": "Ira del Lupo",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "level": 6,
       "className": "Fratello Astartes",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "subclassShortName": "Space Wolves",
-      "subclassSource": "PLOTI",
+      "subclassSource": "Plotinium",
       "entries": [
         "La furia di Fenris scorre nelle tue vene, trasformandoti in una bestia da guerra.",
         {
@@ -919,12 +919,12 @@
     },
     {
       "name": "Caccia del Branco",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "level": 13,
       "className": "Fratello Astartes",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "subclassShortName": "Space Wolves",
-      "subclassSource": "PLOTI",
+      "subclassSource": "Plotinium",
       "entries": [
         "Il branco si muove come un unico organismo, colpendo con precisione letale.",
         {
@@ -941,12 +941,12 @@
     },
     {
       "name": "Spirito di Fenris",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "level": 18,
       "className": "Fratello Astartes",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "subclassShortName": "Space Wolves",
-      "subclassSource": "PLOTI",
+      "subclassSource": "Plotinium",
       "entries": [
         "La bestia interiore si manifesta: diventi un ibrido lupo-umanoide, incarnazione vivente di Fenris.",
         {
@@ -963,11 +963,11 @@
     },
     {
       "name": "Rito dei Dark Angels",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "className": "Fratello Astartes",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "subclassShortName": "Dark Angels",
-      "subclassSource": "PLOTI",
+      "subclassSource": "Plotinium",
       "level": 3,
       "header": 1,
       "entries": [
@@ -976,12 +976,12 @@
     },
     {
       "name": "Fanatismo Silente",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "level": 3,
       "className": "Fratello Astartes",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "subclassShortName": "Dark Angels",
-      "subclassSource": "PLOTI",
+      "subclassSource": "Plotinium",
       "entries": [
         "La tua fede incrollabile ti rende impenetrabile alle tentazioni e saldo come una roccia.",
         {
@@ -998,12 +998,12 @@
     },
     {
       "name": "Aura di Penitenza",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "level": 6,
       "className": "Fratello Astartes",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "subclassShortName": "Dark Angels",
-      "subclassSource": "PLOTI",
+      "subclassSource": "Plotinium",
       "entries": [
         "La tua sola presenza è un monito di colpa e redenzione.",
         {
@@ -1020,12 +1020,12 @@
     },
     {
       "name": "Giudizio dei Peccatori",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "level": 13,
       "className": "Fratello Astartes",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "subclassShortName": "Dark Angels",
-      "subclassSource": "PLOTI",
+      "subclassSource": "Plotinium",
       "entries": [
         "Il tuo verdetto cala come una lama di luce purificatrice.",
         {
@@ -1042,12 +1042,12 @@
     },
     {
       "name": "Redenzione Finale",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "level": 18,
       "className": "Fratello Astartes",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "subclassShortName": "Dark Angels",
-      "subclassSource": "PLOTI",
+      "subclassSource": "Plotinium",
       "entries": [
         "Al confine tra vita e morte, la tua anima esplode in un ultimo atto di redenzione.",
         {
@@ -1064,11 +1064,11 @@
     },
     {
       "name": "Rito dei Salamanders",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "className": "Fratello Astartes",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "subclassShortName": "Salamanders",
-      "subclassSource": "PLOTI",
+      "subclassSource": "Plotinium",
       "level": 3,
       "header": 1,
       "entries": [
@@ -1077,12 +1077,12 @@
     },
     {
       "name": "Cuore di Vulkan",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "level": 3,
       "className": "Fratello Astartes",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "subclassShortName": "Salamanders",
-      "subclassSource": "PLOTI",
+      "subclassSource": "Plotinium",
       "entries": [
         "Il fuoco non ti consuma: ti rafforza.",
         {
@@ -1109,12 +1109,12 @@
     },
     {
       "name": "Forgiato nel Fuoco",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "level": 6,
       "className": "Fratello Astartes",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "subclassShortName": "Salamanders",
-      "subclassSource": "PLOTI",
+      "subclassSource": "Plotinium",
       "entries": [
         "Il calore delle fiamme diventa la tua armatura.",
         {
@@ -1136,12 +1136,12 @@
     },
     {
       "name": "Tempra di Vulkan",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "level": 13,
       "className": "Fratello Astartes",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "subclassShortName": "Salamanders",
-      "subclassSource": "PLOTI",
+      "subclassSource": "Plotinium",
       "entries": [
         "Il fuoco diventa parte del tuo stesso spirito.",
         {
@@ -1163,12 +1163,12 @@
     },
     {
       "name": "Avatar della Forgia",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "level": 18,
       "className": "Fratello Astartes",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "subclassShortName": "Salamanders",
-      "subclassSource": "PLOTI",
+      "subclassSource": "Plotinium",
       "entries": [
         "Diventi incarnazione vivente della fiamma purificatrice di Vulkan.",
         {
@@ -1195,11 +1195,11 @@
     },
     {
       "name": "Rito dei Raven Guard",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "className": "Fratello Astartes",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "subclassShortName": "Raven Guard",
-      "subclassSource": "PLOTI",
+      "subclassSource": "Plotinium",
       "level": 3,
       "header": 1,
       "entries": [
@@ -1208,12 +1208,12 @@
     },
     {
       "name": "Maestro dell'Ombra",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "level": 3,
       "className": "Fratello Astartes",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "subclassShortName": "Raven Guard",
-      "subclassSource": "PLOTI",
+      "subclassSource": "Plotinium",
       "entries": [
         "Ti muovi come un fantasma, invisibile e letale.",
         {
@@ -1235,12 +1235,12 @@
     },
     {
       "name": "Assalto Silenzioso",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "level": 6,
       "className": "Fratello Astartes",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "subclassShortName": "Raven Guard",
-      "subclassSource": "PLOTI",
+      "subclassSource": "Plotinium",
       "entries": [
         "Colpisci prima che il nemico possa reagire, lasciando solo silenzio dietro di te.",
         {
@@ -1257,12 +1257,12 @@
     },
     {
       "name": "Ombra Vivente",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "level": 13,
       "className": "Fratello Astartes",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "subclassShortName": "Raven Guard",
-      "subclassSource": "PLOTI",
+      "subclassSource": "Plotinium",
       "entries": [
         "Diventi un tutt'uno con le tenebre, un assassino invisibile.",
         {
@@ -1284,12 +1284,12 @@
     },
     {
       "name": "Maestro dell'Assassinio",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "level": 18,
       "className": "Fratello Astartes",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "subclassShortName": "Raven Guard",
-      "subclassSource": "PLOTI",
+      "subclassSource": "Plotinium",
       "entries": [
         "Diventi l'incarnazione stessa della morte silenziosa.",
         {
@@ -1311,11 +1311,11 @@
     },
     {
       "name": "Rito degli Imperial Fists",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "className": "Fratello Astartes",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "subclassShortName": "Imperial Fists",
-      "subclassSource": "PLOTI",
+      "subclassSource": "Plotinium",
       "level": 3,
       "header": 1,
       "entries": [
@@ -1324,12 +1324,12 @@
     },
     {
       "name": "Roccia Inamovibile",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "level": 3,
       "className": "Fratello Astartes",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "subclassShortName": "Imperial Fists",
-      "subclassSource": "PLOTI",
+      "subclassSource": "Plotinium",
       "entries": [
         "Il tuo corpo diventa un bastione, saldo come la pietra.",
         {
@@ -1351,12 +1351,12 @@
     },
     {
       "name": "Difesa Perfetta",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "level": 6,
       "className": "Fratello Astartes",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "subclassShortName": "Imperial Fists",
-      "subclassSource": "PLOTI",
+      "subclassSource": "Plotinium",
       "entries": [
         "Ogni colpo che ti raggiunge trova la tua guardia impenetrabile.",
         {
@@ -1378,12 +1378,12 @@
     },
     {
       "name": "Muro dell'Imperatore",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "level": 13,
       "className": "Fratello Astartes",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "subclassShortName": "Imperial Fists",
-      "subclassSource": "PLOTI",
+      "subclassSource": "Plotinium",
       "entries": [
         "Tu e i tuoi fratelli diventate un muro vivente, invalicabile.",
         {
@@ -1405,12 +1405,12 @@
     },
     {
       "name": "Roccia Eterna",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "level": 18,
       "className": "Fratello Astartes",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "subclassShortName": "Imperial Fists",
-      "subclassSource": "PLOTI",
+      "subclassSource": "Plotinium",
       "entries": [
         "Diventi l'incarnazione stessa della fortezza, un baluardo che non crolla mai.",
         {
@@ -1432,11 +1432,11 @@
     },
     {
       "name": "Rito degli Iron Hands",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "className": "Fratello Astartes",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "subclassShortName": "Iron Hands",
-      "subclassSource": "PLOTI",
+      "subclassSource": "Plotinium",
       "level": 3,
       "header": 1,
       "entries": [
@@ -1445,12 +1445,12 @@
     },
     {
       "name": "Bionica del Ferro",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "level": 3,
       "className": "Fratello Astartes",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "subclassShortName": "Iron Hands",
-      "subclassSource": "PLOTI",
+      "subclassSource": "Plotinium",
       "entries": [
         "Il tuo corpo si fonde con l'acciaio, rendendoti più resistente e implacabile.",
         {
@@ -1477,12 +1477,12 @@
     },
     {
       "name": "Servoarmatura Avanzata",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "level": 6,
       "className": "Fratello Astartes",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "subclassShortName": "Iron Hands",
-      "subclassSource": "PLOTI",
+      "subclassSource": "Plotinium",
       "entries": [
         "La tua armatura e i tuoi impianti ti rendono una macchina da guerra vivente.",
         {
@@ -1504,12 +1504,12 @@
     },
     {
       "name": "Macchina di Guerra",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "level": 13,
       "className": "Fratello Astartes",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "subclassShortName": "Iron Hands",
-      "subclassSource": "PLOTI",
+      "subclassSource": "Plotinium",
       "entries": [
         "La tua umanità svanisce, lasciando spazio a una macchina di distruzione perfetta.",
         {
@@ -1531,12 +1531,12 @@
     },
     {
       "name": "Forma del Ferro",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "level": 18,
       "className": "Fratello Astartes",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "subclassShortName": "Iron Hands",
-      "subclassSource": "PLOTI",
+      "subclassSource": "Plotinium",
       "entries": [
         "Diventi una macchina vivente, incarnazione della volontà di ferro del Capitolo.",
         {
@@ -1563,11 +1563,11 @@
     },
     {
       "name": "Rito del Caos",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "className": "Fratello Astartes",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "subclassShortName": "Caos",
-      "subclassSource": "PLOTI",
+      "subclassSource": "Plotinium",
       "level": 3,
       "header": 1,
       "entries": [
@@ -1576,12 +1576,12 @@
     },
     {
       "name": "Tocco del Warp",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "level": 3,
       "className": "Fratello Astartes",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "subclassShortName": "Caos",
-      "subclassSource": "PLOTI",
+      "subclassSource": "Plotinium",
       "entries": [
         "Il potere del Warp scorre nelle tue vene, corrompendo la tua essenza.",
         {
@@ -1598,12 +1598,12 @@
     },
     {
       "name": "Benedizione del Demone",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "level": 6,
       "className": "Fratello Astartes",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "subclassShortName": "Caos",
-      "subclassSource": "PLOTI",
+      "subclassSource": "Plotinium",
       "entries": [
         "Il Warp ti ricompensa con mutazioni temporanee e resistenze innaturali.",
         {
@@ -1625,12 +1625,12 @@
     },
     {
       "name": "Rovina del Warp",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "level": 13,
       "className": "Fratello Astartes",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "subclassShortName": "Caos",
-      "subclassSource": "PLOTI",
+      "subclassSource": "Plotinium",
       "entries": [
         "Il Warp ti concede poteri arcani devastanti.",
         {
@@ -1657,12 +1657,12 @@
     },
     {
       "name": "Campione del Caos",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "level": 18,
       "className": "Fratello Astartes",
-      "classSource": "PLOTI",
+      "classSource": "Plotinium",
       "subclassShortName": "Caos",
-      "subclassSource": "PLOTI",
+      "subclassSource": "Plotinium",
       "entries": [
         "Diventi un campione demoniaco, incarnazione della follia del Warp.",
         {
@@ -1691,7 +1691,7 @@
   "item": [
     {
       "name": "Bolter",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "type": "R",
       "rarity": "uncommon",
       "range": "100/300",
@@ -1709,7 +1709,7 @@
     },
     {
       "name": "Spada a Catena",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "type": "M",
       "rarity": "uncommon",
       "dmg1": "2d8",
@@ -1724,7 +1724,7 @@
     },
     {
       "name": "Granata",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "type": "EXP",
       "rarity": "common",
       "range": "60",
@@ -1736,7 +1736,7 @@
     },
     {
       "name": "Jump Pack",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "type": "OTH",
       "rarity": "rare",
       "entries": [
@@ -1745,7 +1745,7 @@
     },
     {
       "name": "Ascia Runica",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "type": "M",
       "rarity": "rare",
       "dmg1": "2d8",
@@ -1760,7 +1760,7 @@
     },
     {
       "name": "Plasma Gun",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "type": "M",
       "rarity": "rare",
       "range": "60/180",
@@ -1778,7 +1778,7 @@
     },
     {
       "name": "Spada Potenziata",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "type": "M",
       "rarity": "rare",
       "dmg1": "2d10",
@@ -1794,7 +1794,7 @@
     },
     {
       "name": "Bolter Leggero",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "type": "R",
       "rarity": "common",
       "range": "120/360",
@@ -1811,7 +1811,7 @@
     },
     {
       "name": "Bolter Corrotto",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "type": "R",
       "rarity": "rare",
       "dmg1": "2d10",
@@ -1822,7 +1822,7 @@
     },
     {
       "name": "Artiglio Demoniaco",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "type": "M",
       "rarity": "rare",
       "dmg1": "2d8",
@@ -1833,7 +1833,7 @@
     },
     {
       "name": "Servoarmatura",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "type": "HA",
       "rarity": "rare",
       "ac": 2,
@@ -1844,7 +1844,7 @@
     },
     {
       "name": "Terminator Armor",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "type": "HA",
       "rarity": "very rare",
       "ac": 3,
@@ -1855,7 +1855,7 @@
     },
     {
       "name": "Martello Potenziato",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "type": "M",
       "rarity": "very rare",
       "dmg1": "2d12",
@@ -1866,7 +1866,7 @@
     },
     {
       "name": "Reliquia del Capitolo",
-      "source": "PLOTI",
+      "source": "Plotinium",
       "type": "M",
       "rarity": "artifact",
       "entries": [
