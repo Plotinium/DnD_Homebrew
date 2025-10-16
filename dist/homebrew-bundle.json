@@ -17,7 +17,7 @@
     ],
     "edition": "classic",
     "dateAdded": 1749145255,
-    "dateLastModified": 1760635001
+    "dateLastModified": 1760635216
   },
   "race": [
     {
@@ -3128,7 +3128,7 @@
     {
       "name": "Benedizione della Putrefazione",
       "source": "Plotinium",
-      "level": 2,
+      "level": 3,
       "className": "Fratello Astartes",
       "classSource": "Plotinium",
       "subclassShortName": "Nurgle",
