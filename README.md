@@ -10,6 +10,8 @@ To import my repository you just have to paste the following link after clicking
 https://raw.githubusercontent.com/Plotinium/DnD_Homebrew/main/dist/homebrew-bundle.json
 ```
 
+If you have already linked the bundle but there is an update you can just click on the double arrow on your right, besides `Export` button.
+
 ## Useful Links
 
 - If you need to know how to build custom json with 5etools schema, [this wiki](https://wiki.tercept.net/en/home) can solve all your problems.
