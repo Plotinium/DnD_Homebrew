@@ -342,6 +342,48 @@
         "Rovina del Warp|Fratello Astartes|Plotinium|Caos|Plotinium|13",
         "Campione del Caos|Fratello Astartes|Plotinium|Caos|Plotinium|18"
       ]
+    },
+    {
+      "name": "Rito di Khorne",
+      "shortName": "Khorne",
+      "source": "Plotinium",
+      "className": "Fratello Astartes",
+      "classSource": "Plotinium",
+      "subclassFeatures": [
+        "Rito di Khorne|Fratello Astartes|Plotinium|Khorne|Plotinium|3",
+        "Berserker del Sangue|Fratello Astartes|Plotinium|Khorne|Plotinium|3",
+        "Ira Infinita|Fratello Astartes|Plotinium|Khorne|Plotinium|6",
+        "Sete di Carneficina|Fratello Astartes|Plotinium|Khorne|Plotinium|13",
+        "Avatar di Khorne|Fratello Astartes|Plotinium|Khorne|Plotinium|18"
+      ]
+    },
+    {
+      "name": "Rito di Nurgle",
+      "shortName": "Nurgle",
+      "source": "Plotinium",
+      "className": "Fratello Astartes",
+      "classSource": "Plotinium",
+      "subclassFeatures": [
+        "Rito di Nurgle|Fratello Astartes|Plotinium|Nurgle|Plotinium|3",
+        "Benedizione della Putrefazione|Fratello Astartes|Plotinium|Nurgle|Plotinium|3",
+        "Aura Pestilenziale|Fratello Astartes|Plotinium|Nurgle|Plotinium|6",
+        "Corpo di Pus e Ruggine|Fratello Astartes|Plotinium|Nurgle|Plotinium|13",
+        "Avatar della Pestilenza|Fratello Astartes|Plotinium|Nurgle|Plotinium|18"
+      ]
+    },
+    {
+      "name": "Rito di Tzeentch",
+      "shortName": "Tzeentch",
+      "source": "Plotinium",
+      "className": "Fratello Astartes",
+      "classSource": "Plotinium",
+      "subclassFeatures": [
+        "Rito di Tzeentch|Fratello Astartes|Plotinium|Tzeentch|Plotinium|3",
+        "Iniziazione Psionica|Fratello Astartes|Plotinium|Tzeentch|Plotinium|3",
+        "Maestro del Warp|Fratello Astartes|Plotinium|Tzeentch|Plotinium|6",
+        "Mago del Caos|Fratello Astartes|Plotinium|Tzeentch|Plotinium|13",
+        "Figlio di Tzeentch|Fratello Astartes|Plotinium|Tzeentch|Plotinium|18"
+      ]
     }
   ],
   "classFeature": [
@@ -642,7 +684,8 @@
       "level": 3,
       "header": 1,
       "entries": [
-        "Maestri della Strategia. {@b «La disciplina è la lama con cui si scolpisce la vittoria.»} Gli Ultramarine sono il simbolo della perfezione tattica e della disciplina. Prediligono il fuoco coordinato e il comando, trasformando il campo di battaglia in un teorema risolto."
+        "Maestri della Strategia. {@b «La disciplina è la lama con cui si scolpisce la vittoria.»}.",
+        "Gli Ultramarine sono il simbolo della perfezione tattica e della disciplina. Prediligono il fuoco coordinato e il comando, trasformando il campo di battaglia in un teorema risolto."
       ]
     },
     {
@@ -769,7 +812,8 @@
       "level": 3,
       "header": 1,
       "entries": [
-        "I Figli di Sanguinius. {@b «La furia è la nostra benedizione e la nostra maledizione.»} Guerrieri artistici e letali, i Blood Angels combattono sospesi tra grazia angelica e sete di sangue, trasformando il campo di battaglia in un macabro palcoscenico."
+        "I Figli di Sanguinius. {@b «La furia è la nostra benedizione e la nostra maledizione.»}.",
+        "Guerrieri artistici e letali, i Blood Angels combattono sospesi tra grazia angelica e sete di sangue, trasformando il campo di battaglia in un macabro palcoscenico."
       ]
     },
     {
@@ -870,7 +914,8 @@
       "level": 3,
       "header": 1,
       "entries": [
-        "I Figli di Fenris. {@b «L'istinto è la lama più affilata del guerriero.»} Selvaggi e orgogliosi, gli Space Wolves incarnano la furia primordiale e il legame indissolubile del branco."
+        "I Figli di Fenris. {@b «L'istinto è la lama più affilata del guerriero.»}.",
+        "Selvaggi e orgogliosi, gli Space Wolves incarnano la furia primordiale e il legame indissolubile del branco."
       ]
     },
     {
@@ -971,7 +1016,8 @@
       "level": 3,
       "header": 1,
       "entries": [
-        "I Custodi dei Segreti. {@b «La redenzione si ottiene solo nel fuoco purificatore.»} Guerrieri stoici e inflessibili, i Dark Angels combattono con silenziosa determinazione, portando il peso di un'antica colpa e la missione di estirpare ogni traditore."
+        "I Custodi dei Segreti. {@b «La redenzione si ottiene solo nel fuoco purificatore.»}.",
+        "Guerrieri stoici e inflessibili, i Dark Angels combattono con silenziosa determinazione, portando il peso di un'antica colpa e la missione di estirpare ogni traditore."
       ]
     },
     {
@@ -1072,7 +1118,8 @@
       "level": 3,
       "header": 1,
       "entries": [
-        "Forgiatori del Fuoco. {@b «Attraverso le fiamme, siamo temprati.»} I Salamanders incarnano la resistenza, la compassione e la distruzione purificatrice delle fiamme. Artigiani e difensori, resistono dove altri cadono."
+        "Forgiatori del Fuoco. {@b «Attraverso le fiamme, siamo temprati.»}.",
+        "I Salamanders incarnano la resistenza, la compassione e la distruzione purificatrice delle fiamme. Artigiani e difensori, resistono dove altri cadono."
       ]
     },
     {
@@ -1203,7 +1250,8 @@
       "level": 3,
       "header": 1,
       "entries": [
-        "Ombre della Morte. {@b «Colpisci dall'ombra, svanisci nel silenzio.»} Maestri della furtività e degli attacchi chirurgici, i Raven Guard incarnano la precisione letale e la pazienza predatoria."
+        "Ombre della Morte. {@b «Colpisci dall'ombra, svanisci nel silenzio.»}.",
+        "Maestri della furtività e degli attacchi chirurgici, i Raven Guard incarnano la precisione letale e la pazienza predatoria."
       ]
     },
     {
@@ -1319,7 +1367,8 @@
       "level": 3,
       "header": 1,
       "entries": [
-        "Difensori della Fortezza. {@b «Noi siamo il muro contro cui si infrange il caos.»} Gli Imperial Fists sono maestri della resistenza e della difesa tattica, implacabili nel fuoco disciplinato e nella protezione dei loro fratelli."
+        "Difensori della Fortezza. {@b «Noi siamo il muro contro cui si infrange il caos.»}.",
+        "Gli Imperial Fists sono maestri della resistenza e della difesa tattica, implacabili nel fuoco disciplinato e nella protezione dei loro fratelli."
       ]
     },
     {
@@ -1440,7 +1489,8 @@
       "level": 3,
       "header": 1,
       "entries": [
-        "Carne e Acciaio. {@b «La carne è debole. L'acciaio è eterno.»} Gli Iron Hands rifiutano la fragilità della carne, sostituendola con servoimpianti e macchine, fino a divenire guerrieri metà uomo e metà macchina."
+        "Carne e Acciaio. {@b «La carne è debole. L'acciaio è eterno.»}.",
+        "Gli Iron Hands rifiutano la fragilità della carne, sostituendola con servoimpianti e macchine, fino a divenire guerrieri metà uomo e metà macchina."
       ]
     },
     {
@@ -1571,7 +1621,8 @@
       "level": 3,
       "header": 1,
       "entries": [
-        "I Traditori del Warp. {@b «Nel caos vi è libertà, e nel sangue, conoscenza.»} I Chaos Space Marine hanno abbracciato i poteri oscuri del Warp, ottenendo abilità psioniche e mutazioni blasfeme che li rendono araldi della rovina."
+        "I Traditori del Warp. {@b «Nel caos vi è libertà, e nel sangue, conoscenza.»}.",
+        "I Chaos Space Marine hanno abbracciato i poteri oscuri del Warp, ottenendo abilità psioniche e mutazioni blasfeme che li rendono araldi della rovina."
       ]
     },
     {
@@ -1685,6 +1736,206 @@
             }
           ]
         }
+      ]
+    },
+    {
+      "name": "Rito di Khorne",
+      "source": "Plotinium",
+      "className": "Fratello Astartes",
+      "classSource": "Plotinium",
+      "subclassShortName": "Khorne",
+      "subclassSource": "Plotinium",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "I Berserker di Khorne, {@b «Sangue per il Dio del Sangue!»}",
+        "I seguaci di Khorne incarnano la furia cieca e il massacro perpetuo. Non conoscono paura né pietà, solo la sete di sangue."
+      ]
+    },
+    {
+      "name": "Berserker del Sangue",
+      "source": "Plotinium",
+      "level": 3,
+      "className": "Fratello Astartes",
+      "classSource": "Plotinium",
+      "subclassShortName": "Khorne",
+      "subclassSource": "Plotinium",
+      "entries": [
+        "Quando colpisci in mischia, infliggi {@dice 1d6} danni aggiuntivi.",
+        "Quando riduci a 0 PF un nemico, puoi attaccare di nuovo come azione bonus."
+      ]
+    },
+    {
+      "name": "Ira Infinita",
+      "source": "Plotinium",
+      "level": 6,
+      "className": "Fratello Astartes",
+      "classSource": "Plotinium",
+      "subclassShortName": "Khorne",
+      "subclassSource": "Plotinium",
+      "entries": [
+        "Quando sei in ira, ottieni +2 ai danni e +2 alla CA.",
+        "Sei obbligato ad attaccare ogni turno."
+      ]
+    },
+    {
+      "name": "Sete di Carneficina",
+      "source": "Plotinium",
+      "level": 13,
+      "className": "Fratello Astartes",
+      "classSource": "Plotinium",
+      "subclassShortName": "Khorne",
+      "subclassSource": "Plotinium",
+      "entries": [
+        "Ogni volta che riduci un nemico a 0 PF, guarisci 10 PF.",
+        "I tuoi attacchi ignorano resistenze ai danni fisici."
+      ]
+    },
+    {
+      "name": "Avatar di Khorne",
+      "source": "Plotinium",
+      "level": 18,
+      "className": "Fratello Astartes",
+      "classSource": "Plotinium",
+      "subclassShortName": "Khorne",
+      "subclassSource": "Plotinium",
+      "entries": [
+        "Ottieni immunità a paura e charme.",
+        "I tuoi colpi critici infliggono danni massimizzati.",
+        "Quando entri in ira, guadagni vantaggio a tutti i tiri per colpire per 1 minuto."
+      ]
+    },
+    {
+      "name": "Rito di Nurgle",
+      "source": "Plotinium",
+      "className": "Fratello Astartes",
+      "classSource": "Plotinium",
+      "subclassShortName": "Nurgle",
+      "subclassSource": "Plotinium",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "I Putrefatti di Nurgle. {@b «Attraverso la corruzione, la perfezione.»}",
+        "I seguaci di Nurgle sono incarnazioni di pestilenza e resistenza. La loro carne marcisce, ma la loro volontà è eterna."
+      ]
+    },
+    {
+      "name": "Benedizione della Putrefazione",
+      "source": "Plotinium",
+      "level": 2,
+      "className": "Fratello Astartes",
+      "classSource": "Plotinium",
+      "subclassShortName": "Nurgle",
+      "subclassSource": "Plotinium",
+      "entries": [
+        "Ottieni resistenza ai danni da veleno e necrotico.",
+        "Quando vieni colpito da un'arma da mischia, il nemico subisce {@dice 1d6} danni necrotici."
+      ]
+    },
+    {
+      "name": "Aura Pestilenziale",
+      "source": "Plotinium",
+      "level": 6,
+      "className": "Fratello Astartes",
+      "classSource": "Plotinium",
+      "subclassShortName": "Nurgle",
+      "subclassSource": "Plotinium",
+      "entries": [
+        "I nemici entro 3 m subiscono {@dice 2d6} danni necrotici all'inizio del loro turno.",
+        "Sei immune alla condizione avvelenato."
+      ]
+    },
+    {
+      "name": "Corpo di Pus e Ruggine",
+      "source": "Plotinium",
+      "level": 13,
+      "className": "Fratello Astartes",
+      "classSource": "Plotinium",
+      "subclassShortName": "Nurgle",
+      "subclassSource": "Plotinium",
+      "entries": [
+        "Quando scendi a 0 PF, puoi restare a 1 PF (1 volta per riposo lungo).",
+        "Puoi lanciare *Nube Mortale* una volta al giorno."
+      ]
+    },
+    {
+      "name": "Avatar della Pestilenza",
+      "source": "Plotinium",
+      "level": 18,
+      "className": "Fratello Astartes",
+      "classSource": "Plotinium",
+      "subclassShortName": "Nurgle",
+      "subclassSource": "Plotinium",
+      "entries": [
+        "Ottieni immunità a necrotico, veleno e malattie.",
+        "Tutti i tuoi attacchi infliggono {@dice 2d8} danni necrotici aggiuntivi.",
+        "Le creature entro 3 m hanno svantaggio ai tiri salvezza su Costituzione."
+      ]
+    },
+    {
+      "name": "Rito di Tzeentch",
+      "source": "Plotinium",
+      "className": "Fratello Astartes",
+      "classSource": "Plotinium",
+      "subclassShortName": "Tzeentch",
+      "subclassSource": "Plotinium",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "Stregoni di Tzeentch. {@b «Tutto cambia, tutto è volontà del Caos.»}",
+        "I seguaci di Tzeentch sono maestri della magia e della mutazione, tessitori di sortilegi e manipolatori del destino."
+      ]
+    },
+    {
+      "name": "Iniziazione Psionica",
+      "source": "Plotinium",
+      "level": 3,
+      "className": "Fratello Astartes",
+      "classSource": "Plotinium",
+      "subclassShortName": "Tzeentch",
+      "subclassSource": "Plotinium",
+      "entries": [
+        "Ottieni incantesimi come uno Stregone di 1° livello (Carisma come attributo).",
+        "Conosci {@i Mano Magica}, {@i Dardo di Fuoco}, {@i Scudo}."
+      ]
+    },
+    {
+      "name": "Maestro del Warp",
+      "source": "Plotinium",
+      "level": 6,
+      "className": "Fratello Astartes",
+      "classSource": "Plotinium",
+      "subclassShortName": "Tzeentch",
+      "subclassSource": "Plotinium",
+      "entries": [
+        "Ottieni 2 slot di incantesimo di 2° livello e conosci {@i Raggio Rovente}, {@i Visione del Vero}.",
+        "Quando lanci un incantesimo, puoi teletrasportarti di 3 m come azione bonus."
+      ]
+    },
+    {
+      "name": "Mago del Caos",
+      "source": "Plotinium",
+      "level": 13,
+      "className": "Fratello Astartes",
+      "classSource": "Plotinium",
+      "subclassShortName": "Tzeentch",
+      "subclassSource": "Plotinium",
+      "entries": [
+        "Ottieni incantesimi fino al 4° livello (es. {@i Palla di Fuoco}, {@i Metamorfosi}).",
+        "I tuoi incantesimi ignorano resistenze."
+      ]
+    },
+    {
+      "name": "Figlio di Tzeentch",
+      "source": "Plotinium",
+      "level": 18,
+      "className": "Fratello Astartes",
+      "classSource": "Plotinium",
+      "subclassShortName": "Tzeentch",
+      "subclassSource": "Plotinium",
+      "entries": [
+        "Ottieni immunità a charme e confusione.",
+        "Una volta per riposo lungo, puoi lanciare {@i Tempesta di Fuoco} o {@i Dominare Mostri} senza consumare slot."
       ]
     }
   ],
