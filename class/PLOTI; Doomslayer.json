@@ -79,8 +79,7 @@
           "light",
           "medium",
           "heavy",
-          "shield",
-          "Praetor"
+          "shield"
         ],
         "weapons": [
           "all"
