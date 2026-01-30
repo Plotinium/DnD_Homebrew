@@ -1,0 +1,135 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "json": "Plotinium",
+                "abbreviation": "PLOTI",
+                "full": "Plotinium",
+                "version": "1.0.0",
+                "authors": [
+                    "Plotinium"
+                ],
+                "convertedBy": [
+                    "Plotinium"
+                ],
+                "color": "9813C9"
+            }
+        ],
+        "dateAdded": 1769782054,
+        "dateLastModified": 1769782054,
+        "edition": "classic"
+    },
+    "race": [
+        {
+            "name": "Kasatha",
+            "source": "Plotinium",
+            "size": [
+                "M"
+            ],
+            "speed": {
+                "walk": 30
+            },
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Quattro Braccia",
+                    "entries": [
+                        "Hai quattro braccia, che ti garantiscono una coordinazione superiore.",
+                        {
+                            "type": "list",
+                            "items": [
+                                "Puoi impugnare o tenere fino a quattro oggetti che richiedono una mano.",
+                                "Puoi effettuare un'interazione con oggetti aggiuntiva per ogni braccio che ha libero.",
+                                "Non ottieni attacchi extra o azioni bonus aggiuntive.",
+                                "Un'arma con la proprietà {@itemProperty 2H|XPHB|two-handed} richiede comunque due mani per essere usata correttamente.",
+                                "Puoi beneficiare di un solo {@item Shield|XPHB|Scudo} alla volta."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Addestramento Nomade",
+                    "entries": [
+                        "La cultura kasatha enfatizza sopravvivenza, consapevolezza e disciplina fisica.",
+                        {
+                            "type": "list",
+                            "items": [
+                                "Ottieni competenza nell'abilità {@skill Survival|XPHB|Sopravvivenza}.",
+                                "Ottieni competenza in una delle seguenti abilità a tua scelta: {@skill Perception|XPHB|Percezione}, {@skill Acrobatics|XPHB|Acrobazia} o {@skill Stealth|XPHB|Furtività}."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Corridore del Deserto",
+                    "entries": [
+                        "Sei adattato al movimento negli ambienti aridi. Il terreno difficile non magico composto da sabbia, dune o ambienti desertici simili non ti costa movimento extra."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Saltatore Instancabile",
+                    "entries": [
+                        "Quando effettui un {@variantrule Jumping|XPHB|Salto}, sei sempre considerato come se avessi una rincorsa, anche se parti da fermo.",
+                        {
+                            "type": "list",
+                            "items": [
+                                "Puoi lanciare l'incantesimo {@spell Jump|XPHB|Salto} un numero di volte pari al tuo Bonus di Competenza, senza consumare slot incantesimo.",
+                                "Recuperi tutti gli usi al termine di un riposo lungo.",
+                                "Questo tratto non richiede componenti materiali."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Resistenza del Deserto",
+                    "entries": [
+                        "La tua fisiologia è temprata da generazioni di sopravvivenza in condizioni estreme.",
+                        {
+                            "type": "list",
+                            "items": [
+                                "Hai vantaggio ai tiri salvezza per evitare di ottenere livelli di {@condition Exhaustion|XPHB|Esaustione} causati da caldo estremo, marce forzate o mancanza di nutrienti.",
+                                "Questo tratto non si applica all'affaticamento causato da incantesimi, capacità di classe o effetti magici."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Lottatore a Quattro Braccia",
+                    "entries": [
+                        "Le tue braccia aggiuntive ti permettono di controllare gli avversari con maggiore efficacia.",
+                        {
+                            "type": "list",
+                            "items": [
+                                "Quando tenti di iniziare una lotta ({@variantrule Grappling|XPHB|Afferrare}), ottieni vantaggio alla prova.",
+                                "Questo tratto non fornisce vantaggio per mantenere una lotta già in corso."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Linguaggi",
+                    "entries": [
+                        "Conosci i linguaggi forniti dal tuo background. Il DM può permetterti di scegliere il Kasatha come linguaggio aggiuntivo per riflettere la tua eredità culturale."
+                    ]
+                }
+            ],
+            "fluff": {
+                "entries": [
+                    {
+                        "type": "entries",
+                        "name": "Aspetto e Natura",
+                        "entries": [
+                            "I Kasatha sono umanoidi a quattro braccia provenienti da un mondo desertico lontano. Nomadi, disciplinati e profondamente legati alla tradizione, sono sopravvissuti per generazioni in ambienti ostili grazie a una fisiologia resistente e a un addestramento rigoroso."
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}
